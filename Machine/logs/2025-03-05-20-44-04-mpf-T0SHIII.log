@@ -1,8 +1,0 @@
-2025-03-05 20:44:04,401 : INFO : root : Loading config.
-2025-03-05 20:44:04,404 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
-2025-03-05 20:44:04,404 : WARNING : ConfigProcessor : Config file in cache changed: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\config\config.yaml
-2025-03-05 20:44:04,404 : INFO : ConfigProcessor : Loading config from file C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\mpfconfig.yaml.
-2025-03-05 20:44:04,404 : DEBUG : YAML File Interface : Loading file: C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\mpfconfig.yaml
-2025-03-05 20:44:04,413 : INFO : ConfigProcessor : Loading config: C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\mpfconfig.yaml
-2025-03-05 20:44:04,413 : INFO : ConfigProcessor : Loading config from file C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\config\config.yaml.
-2025-03-05 20:44:04,414 : DEBUG : YAML File Interface : Loading file: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\config\config.yaml
