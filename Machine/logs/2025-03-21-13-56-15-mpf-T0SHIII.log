@@ -1,0 +1,131 @@
+2025-03-21 13:56:15,875 : INFO : root : Loading config.
+2025-03-21 13:56:15,878 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-03-21 13:56:15,879 : INFO : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\cadfdee4981114acd6fff59d1071b59b.mpf_cache
+2025-03-21 13:56:16,000 : INFO : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\ee7db1e8d011f44c876692bb4657f2e9.mpf_cache
+2025-03-21 13:56:16,001 : INFO : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\9f058d482eac17116727d62a93500be7.mpf_cache
+2025-03-21 13:56:16,002 : INFO : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\2c9362052ff91db960f514d041b7f4e4.mpf_cache
+2025-03-21 13:56:16,003 : INFO : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\9e006ea23aa21ec68e01f6c49afad9f4.mpf_cache
+2025-03-21 13:56:16,005 : INFO : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\fd253b339e263587268891c4dd997fbd.mpf_cache
+2025-03-21 13:56:16,006 : INFO : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\c114ce798d07012a33b8b14d8f953bb7.mpf_cache
+2025-03-21 13:56:16,008 : WARNING : ConfigProcessor : Config file in cache changed: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\modes\intro\shows\.\intro_display_loop.yaml
+2025-03-21 13:56:16,008 : INFO : ConfigProcessor : Loading config from file C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\modes\intro\shows\.\intro_display_loop.yaml.
+2025-03-21 13:56:16,025 : INFO : ConfigProcessor : Loading config: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\modes\intro\shows\.\intro_display_loop.yaml
+2025-03-21 13:56:16,026 : INFO : ConfigProcessor : Config file cache created: C:\Users\duffb\AppData\Local\Temp\ef70c2e65c3659b77bacdd3a7a24b233.mpf_cache
+2025-03-21 13:56:16,026 : INFO : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\ec6e376f0ea10a5fdf8f7130b4bbbe7c.mpf_cache
+2025-03-21 13:56:16,027 : INFO : Machine : Mission Pinball Framework Core Engine v0.57.0
+2025-03-21 13:56:16,027 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs\\2025-03-21-13-56-15-mpf-T0SHIII.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2025-03-21 13:56:16,027 : INFO : Machine : MPF path: C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf
+2025-03-21 13:56:16,027 : INFO : Machine : Machine path: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine
+2025-03-21 13:56:16,027 : INFO : Machine : Platform: win32
+2025-03-21 13:56:16,027 : INFO : Machine : Python executable location: C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\python.exe
+2025-03-21 13:56:16,027 : INFO : Machine : Python version: 3.11.0 (64-bit)
+2025-03-21 13:56:16,029 : INFO : Machine : Initializing MPF...
+2025-03-21 13:56:16,270 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2025-03-21 13:56:16,341 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2025-03-21 13:56:16,341 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 8000, 'prev_value': None, 'change': True}
+2025-03-21 13:56:16,341 : INFO : EventManager : Event: ======'machine_var_player2_score'====== Args={'value': 1000, 'prev_value': None, 'change': True}
+2025-03-21 13:56:16,341 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.57.0', 'prev_value': None, 'change': True}
+2025-03-21 13:56:16,341 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.57.0, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2025-03-21 13:56:16,341 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.11.0', 'prev_value': None, 'change': True}
+2025-03-21 13:56:16,364 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.26100-SP0', 'prev_value': None, 'change': True}
+2025-03-21 13:56:16,364 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2025-03-21 13:56:16,364 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2025-03-21 13:56:16,364 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.26100', 'prev_value': None, 'change': True}
+2025-03-21 13:56:16,364 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2025-03-21 13:56:16,364 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2025-03-21 13:56:16,389 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2025-03-21 13:56:16,390 : INFO : SwitchController : Found active switch: ('3', <Platform.SmartVirtual>) <switch.s_trough1>
+2025-03-21 13:56:16,390 : INFO : SwitchController : Found active switch: ('4', <Platform.SmartVirtual>) <switch.s_trough2>
+2025-03-21 13:56:16,390 : INFO : SwitchController : Found active switch: ('5', <Platform.SmartVirtual>) <switch.s_trough3>
+2025-03-21 13:56:16,393 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2025-03-21 13:56:16,396 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2025-03-21 13:56:18,445 : INFO : BCPClientSocket : Connected BCP to 'local_display' localhost:5050
+2025-03-21 13:56:18,447 : INFO : EventManager : Event: ======'bcp_clients_connected'====== Args={}
+2025-03-21 13:56:18,975 : INFO : ball_device.bd_trough : BCH: Initial count: 3
+2025-03-21 13:56:18,976 : INFO : EventManager : Event: ======'machine_var_mc_version'====== Args={'value': 'MPF-MC v0.57.1', 'prev_value': None, 'change': True}
+2025-03-21 13:56:18,976 : INFO : EventManager : Event: ======'machine_var_mc_extended_version'====== Args={'value': 'MPF-MC v0.57.1 (config_version=6, BCP v1.1,                      Requires MPF API compatibility v0.57.0 or newer)', 'prev_value': None, 'change': True}
+2025-03-21 13:56:18,978 : INFO : ball_device.bd_trough : State: idle
+2025-03-21 13:56:19,081 : INFO : ball_device.bd_plunger_lane : BCH: Initial count: 0
+2025-03-21 13:56:19,081 : INFO : ball_device.bd_plunger_lane : State: idle
+2025-03-21 13:56:19,103 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2025-03-21 13:56:19,110 : ERROR : ConfigValidator : Your config contains a value for the setting "widgets:text:widgets:text:when_done", but this is not a valid setting name.
+2025-03-21 13:56:19,110 : ERROR : asyncio : Exception in callback EventManager._queue_task_done(<Task finishe...tting name.')>)
+handle: <Handle EventManager._queue_task_done(<Task finishe...tting name.')>)>
+Traceback (most recent call last):
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\events.py", line 791, in _queue_task_done
+    future.result()
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\events.py", line 704, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\show_controller.py", line 53, in _load_shows
+    self.machine.shows[show_name].load(show_config)
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\assets\show.py", line 171, in load
+    self._process_step_actions(step, actions)
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\assets\show.py", line 201, in _process_step_actions
+    raise e
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\assets\show.py", line 197, in _process_step_actions
+    self.machine.show_controller.show_players[key].validate_config_entry(value, self.name)
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\config_players\device_config_player.py", line 56, in validate_config_entry
+    raise e
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\config_players\device_config_player.py", line 52, in validate_config_entry
+    self._validate_config_item(device, device_settings))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpfmc\config_players\plugins\slide_player.py", line 64, in _validate_config_item
+    device_settings['widgets'] = self.process_widgets(
+                                 ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpfmc\config_players\plugins\slide_player.py", line 92, in process_widgets
+    widget_list.append(self.process_widget(widget))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpfmc\config_players\plugins\slide_player.py", line 111, in process_widget
+    self.machine.config_validator.validate_config('widgets:{}'.format(
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\config_validator.py", line 164, in validate_config
+    return self._validate_config(config_spec, source, base_spec=base_spec, add_missing_keys=add_missing_keys,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\config_validator.py", line 177, in _validate_config
+    self.check_for_invalid_sections(this_spec, source, validation_failure_info)
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\config_validator.py", line 336, in check_for_invalid_sections
+    raise ConfigFileError('Your config contains a value for the '
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in ConfigValidator: Show "intro_display_loop" >> Failed to load config player intro_display_loop:slides with settings {'objective_slide': {'widgets': [{'type': 'text', 'text': 'Go get them soldier!!!', 'font_size': 20, 'y': '50%', 'when_done': 'intro_stop', '_default_settings': ['type', 'text', 'font_size', 'y', 'when_done']}], 'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'priority': None, 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play'}} >> Your config contains a value for the setting "widgets:text:widgets:text:when_done", but this is not a valid setting name. Error Code: CFE-ConfigValidator-2 (https://missionpinball.org/logs)
+2025-03-21 13:56:19,184 : INFO : Machine : Starting the main run loop.
+2025-03-21 13:56:19,184 : INFO : Machine : Shutting down...
+2025-03-21 13:56:19,184 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2025-03-21 13:56:20,204 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\machine.py", line 794, in _run_loop
+    raise self._exception['exception']
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\events.py", line 791, in _queue_task_done
+    future.result()
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\events.py", line 704, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\show_controller.py", line 53, in _load_shows
+    self.machine.shows[show_name].load(show_config)
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\assets\show.py", line 171, in load
+    self._process_step_actions(step, actions)
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\assets\show.py", line 201, in _process_step_actions
+    raise e
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\assets\show.py", line 197, in _process_step_actions
+    self.machine.show_controller.show_players[key].validate_config_entry(value, self.name)
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\config_players\device_config_player.py", line 56, in validate_config_entry
+    raise e
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\config_players\device_config_player.py", line 52, in validate_config_entry
+    self._validate_config_item(device, device_settings))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpfmc\config_players\plugins\slide_player.py", line 64, in _validate_config_item
+    device_settings['widgets'] = self.process_widgets(
+                                 ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpfmc\config_players\plugins\slide_player.py", line 92, in process_widgets
+    widget_list.append(self.process_widget(widget))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpfmc\config_players\plugins\slide_player.py", line 111, in process_widget
+    self.machine.config_validator.validate_config('widgets:{}'.format(
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\config_validator.py", line 164, in validate_config
+    return self._validate_config(config_spec, source, base_spec=base_spec, add_missing_keys=add_missing_keys,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\config_validator.py", line 177, in _validate_config
+    self.check_for_invalid_sections(this_spec, source, validation_failure_info)
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\config_validator.py", line 336, in check_for_invalid_sections
+    raise ConfigFileError('Your config contains a value for the '
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in ConfigValidator: Show "intro_display_loop" >> Failed to load config player intro_display_loop:slides with settings {'objective_slide': {'widgets': [{'type': 'text', 'text': 'Go get them soldier!!!', 'font_size': 20, 'y': '50%', 'when_done': 'intro_stop', '_default_settings': ['type', 'text', 'font_size', 'y', 'when_done']}], 'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'priority': None, 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play'}} >> Your config contains a value for the setting "widgets:text:widgets:text:when_done", but this is not a valid setting name. Error Code: CFE-ConfigValidator-2 (https://missionpinball.org/logs)

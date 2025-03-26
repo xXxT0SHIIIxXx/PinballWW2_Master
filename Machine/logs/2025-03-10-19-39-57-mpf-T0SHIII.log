@@ -1,0 +1,16 @@
+2025-03-10 19:39:57,431 : INFO : root : Loading config.
+2025-03-10 19:39:57,434 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-03-10 19:39:57,435 : INFO : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\cadfdee4981114acd6fff59d1071b59b.mpf_cache
+2025-03-10 19:39:57,523 : WARNING : ConfigProcessor : Config file in cache changed: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\modes\attract\config\attract.yaml
+2025-03-10 19:39:57,523 : INFO : ConfigProcessor : Loading config from file C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\modes\attract\config\attract.yaml.
+2025-03-10 19:39:57,525 : INFO : ConfigProcessor : Loading config: C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\modes\attract\config\attract.yaml
+2025-03-10 19:39:57,525 : INFO : ConfigProcessor : Loading config from file C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\modes\attract\config\attract.yaml.
+2025-03-10 19:39:57,527 : INFO : ConfigProcessor : Loading config: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\modes\attract\config\attract.yaml
+2025-03-10 19:39:57,527 : INFO : ConfigProcessor : Config file cache created: C:\Users\duffb\AppData\Local\Temp\ee7db1e8d011f44c876692bb4657f2e9.mpf_cache
+2025-03-10 19:39:57,528 : INFO : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\9f058d482eac17116727d62a93500be7.mpf_cache
+2025-03-10 19:39:57,529 : INFO : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\9e006ea23aa21ec68e01f6c49afad9f4.mpf_cache
+2025-03-10 19:39:57,530 : INFO : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\fd253b339e263587268891c4dd997fbd.mpf_cache
+2025-03-10 19:39:57,530 : WARNING : ConfigProcessor : Config file in cache changed: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\modes\attract\shows\.\attract_light_show.yaml
+2025-03-10 19:39:57,530 : INFO : ConfigProcessor : Loading config from file C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\modes\attract\shows\.\attract_light_show.yaml.
+2025-03-10 19:40:04,472 : ERROR : root : Shutdown because of SIGINT or keyboard interrupt.
+NoneType: None

@@ -1,0 +1,13 @@
+2025-03-02 13:12:10,453 : kivy : deps: Successfully imported "kivy_deps.gstreamer" 0.3.3
+2025-03-02 13:12:10,454 : kivy : deps: Successfully imported "kivy_deps.angle" 0.3.3
+2025-03-02 13:12:10,454 : kivy : deps: Successfully imported "kivy_deps.glew" 0.3.1
+2025-03-02 13:12:10,454 : kivy : deps: Successfully imported "kivy_deps.sdl2" 0.6.0
+2025-03-02 13:12:10,454 : kivy : Kivy: v2.2.1
+2025-03-02 13:12:10,454 : kivy : Kivy: Installed at "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\kivy\__init__.py"
+2025-03-02 13:12:10,454 : kivy : Python: v3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]
+2025-03-02 13:12:10,454 : kivy : Python: Interpreter at "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\python.exe"
+2025-03-02 13:12:11,054 : kivy : Factory: 190 symbols loaded
+2025-03-02 13:12:16,770 : kivy : ImageLoaderFFPy: Using ffpyplayer 4.5.1
+2025-03-02 13:12:16,771 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_ffpyplayer 
+2025-03-02 13:12:19,256 : kivy : VideoGstplayer: Using Gstreamer 1.18.5.0
+2025-03-02 13:12:19,256 : kivy : Video: Provider: gstplayer

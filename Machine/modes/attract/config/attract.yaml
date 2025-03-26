@@ -7,19 +7,19 @@ show_player:
 images:
     ship:
         load: preload
-        file: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\modes\attract\images\ship.jpg
+        file: /root/PinBallWW2_Master/Machine/modes/attract/images/ship.jpg
     start_game:
         load: preload
-        file: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\modes\attract\images\startGame.jpg
+        file: /root/PinBallWW2_Master/Machine/modes/attract/images/startGame.jpg
     last_game:
         load: preload
-        file: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\modes\attract\images\lastGame.jpg
+        file: /root/PinBallWW2_Master/Machine/modes/attract/images/lastGame.jpg
     company:
         load: preload
-        file: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\modes\attract\images\company.jpg
+        file: /root/PinBallWW2_Master/Machine/modes/attract/images/company.jpg
     start:
         load: preload
-        file: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\modes\attract\images\start.jpg
+        file: /root/PinBallWW2_Master/Machine/modes/attract/images/start.jpg
 
 assets:
     sounds:
@@ -28,4 +28,4 @@ assets:
         music:
             track: music
         main:
-            file: C:\Users\duffb\OneDrive\Documents\Python Envs\PinballWW1\Machine\modes\attract\sounds\music\main.wav
+            file: /root/PinBallWW2_Master/Machine/modes/attract/sounds/music/main.wav

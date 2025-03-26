@@ -1,0 +1,26 @@
+2025-03-06 21:27:31,441 : kivy : deps: Successfully imported "kivy_deps.gstreamer" 0.3.3
+2025-03-06 21:27:31,442 : kivy : deps: Successfully imported "kivy_deps.angle" 0.3.3
+2025-03-06 21:27:31,442 : kivy : deps: Successfully imported "kivy_deps.glew" 0.3.1
+2025-03-06 21:27:31,442 : kivy : deps: Successfully imported "kivy_deps.sdl2" 0.6.0
+2025-03-06 21:27:31,442 : kivy : Kivy: v2.2.1
+2025-03-06 21:27:31,442 : kivy : Kivy: Installed at "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\kivy\__init__.py"
+2025-03-06 21:27:31,442 : kivy : Python: v3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]
+2025-03-06 21:27:31,443 : kivy : Python: Interpreter at "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\python.exe"
+2025-03-06 21:27:31,458 : kivy : Factory: 190 symbols loaded
+2025-03-06 21:27:31,706 : kivy : ImageLoaderFFPy: Using ffpyplayer 4.5.1
+2025-03-06 21:27:31,706 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_ffpyplayer 
+2025-03-06 21:27:32,043 : kivy : VideoGstplayer: Using Gstreamer 1.18.5.0
+2025-03-06 21:27:32,044 : kivy : Video: Provider: gstplayer
+2025-03-06 21:27:32,074 : root : Loading MPF-MC controller
+2025-03-06 21:27:32,088 : YamlMultifileConfigLoader : Machine config file #1: config
+2025-03-06 21:27:32,089 : ConfigProcessor : Config file in cache changed: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\config\config
+2025-03-06 21:27:32,089 : ConfigProcessor : Loading config from file C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpfmc\mcconfig.yaml.
+2025-03-06 21:27:32,096 : ConfigProcessor : Loading config: C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpfmc\mcconfig.yaml
+2025-03-06 21:27:32,096 : ConfigProcessor : Loading config from file C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\config\config.
+2025-03-06 21:27:32,099 : ConfigProcessor : Loading config: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\config\config
+2025-03-06 21:27:32,100 : ConfigProcessor : Config file cache created: C:\Users\duffb\AppData\Local\Temp\de7a4651692d89380cb727f0a44dc491.mpf_cache
+2025-03-06 21:27:32,100 : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\2d51d76727b268a801d8dd7a18b89879.mpf_cache
+2025-03-06 21:27:32,101 : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\9f058d482eac17116727d62a93500be7.mpf_cache
+2025-03-06 21:27:32,101 : ConfigProcessor : Config file in cache changed: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\modes\base\config\base.yaml
+2025-03-06 21:27:32,101 : ConfigProcessor : Loading config from file C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\modes\base\config\base.yaml.
+2025-03-06 21:27:32,102 : ConfigProcessor : Loading config: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\modes\base\config\base.yaml

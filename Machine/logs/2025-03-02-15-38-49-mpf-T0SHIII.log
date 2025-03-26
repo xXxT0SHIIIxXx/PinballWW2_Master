@@ -1,0 +1,159 @@
+2025-03-02 15:38:49,350 : INFO : root : Loading config.
+2025-03-02 15:38:49,353 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-03-02 15:38:49,354 : WARNING : ConfigProcessor : Config file in cache changed: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\config\config.yaml
+2025-03-02 15:38:49,354 : INFO : ConfigProcessor : Loading config from file C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\mpfconfig.yaml.
+2025-03-02 15:38:49,363 : INFO : ConfigProcessor : Loading config: C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\mpfconfig.yaml
+2025-03-02 15:38:49,363 : INFO : ConfigProcessor : Loading config from file C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\config\config.yaml.
+2025-03-02 15:38:49,381 : INFO : ConfigProcessor : Loading config: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\config\config.yaml
+2025-03-02 15:38:49,382 : INFO : ConfigProcessor : Config file cache created: C:\Users\duffb\AppData\Local\Temp\cadfdee4981114acd6fff59d1071b59b.mpf_cache
+2025-03-02 15:38:49,470 : INFO : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\2d51d76727b268a801d8dd7a18b89879.mpf_cache
+2025-03-02 15:38:49,471 : INFO : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\9f058d482eac17116727d62a93500be7.mpf_cache
+2025-03-02 15:38:49,471 : INFO : Machine : Mission Pinball Framework Core Engine v0.57.0
+2025-03-02 15:38:49,471 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs\\2025-03-02-15-38-49-mpf-T0SHIII.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2025-03-02 15:38:49,471 : INFO : Machine : MPF path: C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf
+2025-03-02 15:38:49,472 : INFO : Machine : Machine path: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine
+2025-03-02 15:38:49,472 : INFO : Machine : Platform: win32
+2025-03-02 15:38:49,472 : INFO : Machine : Python executable location: C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\python.exe
+2025-03-02 15:38:49,472 : INFO : Machine : Python version: 3.11.0 (64-bit)
+2025-03-02 15:38:49,474 : INFO : Machine : Initializing MPF...
+2025-03-02 15:38:49,802 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2025-03-02 15:38:49,845 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2025-03-02 15:38:49,845 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.57.0', 'prev_value': None, 'change': True}
+2025-03-02 15:38:49,845 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.57.0, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2025-03-02 15:38:49,845 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.11.0', 'prev_value': None, 'change': True}
+2025-03-02 15:38:49,856 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.26100-SP0', 'prev_value': None, 'change': True}
+2025-03-02 15:38:49,856 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2025-03-02 15:38:49,856 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2025-03-02 15:38:49,856 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.26100', 'prev_value': None, 'change': True}
+2025-03-02 15:38:49,856 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2025-03-02 15:38:49,856 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2025-03-02 15:38:49,868 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2025-03-02 15:38:49,868 : INFO : SwitchController : Found active switch: ('8', <Platform.SmartVirtual>) <switch.s_trough_enter>
+2025-03-02 15:38:49,869 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2025-03-02 15:38:49,870 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2025-03-02 15:38:51,937 : INFO : BCPClientSocket : Connected BCP to 'local_display' localhost:5050
+2025-03-02 15:38:51,938 : INFO : EventManager : Event: ======'bcp_clients_connected'====== Args={}
+2025-03-02 15:38:52,042 : INFO : ball_device.bd_drain : BCH: Initial count: 0
+2025-03-02 15:38:52,042 : INFO : ball_device.bd_drain : State: idle
+2025-03-02 15:38:52,043 : INFO : ball_device.bd_trough : BCH: Initial count: 3
+2025-03-02 15:38:52,043 : INFO : ball_device.bd_trough : State: idle
+2025-03-02 15:38:52,043 : INFO : ball_device.bd_plunger_lane : BCH: Initial count: 0
+2025-03-02 15:38:52,043 : INFO : ball_device.bd_plunger_lane : State: idle
+2025-03-02 15:38:52,051 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2025-03-02 15:38:52,053 : INFO : EventManager : Event: ======'init_phase_4'====== Args={}
+2025-03-02 15:38:52,053 : INFO : BallController : Initial balls found: 3
+2025-03-02 15:38:52,054 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_plunger_lane'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-03-02 15:38:52,054 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_launcher_button'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-03-02 15:38:52,054 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_playfield_entry'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-03-02 15:38:52,054 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough_enter'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-03-02 15:38:52,054 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-03-02 15:38:52,054 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-03-02 15:38:52,054 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_drain'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-03-02 15:38:52,054 : INFO : EventManager : Event: ======'machine_var_audits_events_game_started'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-03-02 15:38:52,054 : INFO : EventManager : Event: ======'machine_var_audits_events_game_ended'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-03-02 15:38:52,054 : INFO : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'top': [], 'average': 0, 'total': 0}, 'prev_value': None, 'change': True}
+2025-03-02 15:38:52,055 : INFO : EventManager : Event: ======'init_phase_5'====== Args={}
+2025-03-02 15:38:52,090 : INFO : EventManager : Event: ======'init_done'====== Args={}
+2025-03-02 15:38:52,091 : INFO : EventManager : Event: ======'machine_reset_phase_1'====== Args={}
+2025-03-02 15:38:52,367 : INFO : EventManager : Event: ======'machine_var_mc_version'====== Args={'value': 'MPF-MC v0.57.1', 'prev_value': None, 'change': True}
+2025-03-02 15:38:52,372 : INFO : EventManager : Event: ======'machine_var_mc_extended_version'====== Args={'value': 'MPF-MC v0.57.1 (config_version=6, BCP v1.1,                      Requires MPF API compatibility v0.57.0 or newer)', 'prev_value': None, 'change': True}
+2025-03-02 15:38:52,379 : INFO : EventManager : Event: ======'slide_welcome_slide_removed'====== Args={'_from_bcp': True}
+2025-03-02 15:38:52,379 : INFO : EventManager : Event: ======'slide_welcome_slide_created'====== Args={'_from_bcp': True}
+2025-03-02 15:38:52,379 : INFO : EventManager : Event: ======'slide_welcome_slide_active'====== Args={'_from_bcp': True}
+2025-03-02 15:38:52,379 : INFO : EventManager : Event: ======'machine_reset_phase_2'====== Args={}
+2025-03-02 15:38:52,379 : INFO : EventManager : Event: ======'machine_reset_phase_3'====== Args={}
+2025-03-02 15:38:52,379 : INFO : EventManager : Event: ======'reset_complete'====== Args={}
+2025-03-02 15:38:52,379 : INFO : EventManager : Event: ======'mode_attract_will_start'====== Args={}
+2025-03-02 15:38:52,380 : INFO : EventManager : Event: ======'mode_attract_starting'====== Args={}
+2025-03-02 15:38:52,380 : INFO : Mode.attract : Started. Priority: 10
+2025-03-02 15:38:52,380 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2025-03-02 15:38:52,380 : INFO : EventManager : Event: ======'mode_attract_started'====== Args={}
+2025-03-02 15:38:52,380 : INFO : EventManager : Event: ======'collecting_balls_complete'====== Args={}
+2025-03-02 15:38:52,424 : INFO : Machine : Starting the main run loop.
+2025-03-02 15:38:54,116 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2025-03-02 15:38:54,287 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2025-03-02 15:38:54,472 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2025-03-02 15:38:54,654 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2025-03-02 15:38:56,441 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-02 15:38:56,601 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-02 15:38:56,899 : INFO : SwitchController : <<<<<<< 's_playfield_entry' active >>>>>>>
+2025-03-02 15:38:57,085 : INFO : SwitchController : <<<<<<< 's_playfield_entry' inactive >>>>>>>
+2025-03-02 15:38:58,816 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-02 15:38:58,974 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-02 15:38:59,127 : INFO : SwitchController : <<<<<<< 's_playfield_entry' active >>>>>>>
+2025-03-02 15:38:59,302 : INFO : SwitchController : <<<<<<< 's_playfield_entry' inactive >>>>>>>
+2025-03-02 15:38:59,653 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-02 15:38:59,795 : INFO : SwitchController : <<<<<<< 's_playfield_entry' active >>>>>>>
+2025-03-02 15:39:00,114 : INFO : SwitchController : <<<<<<< 's_playfield_entry' inactive >>>>>>>
+2025-03-02 15:39:00,207 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-02 15:39:00,495 : INFO : SwitchController : <<<<<<< 's_playfield_entry' active >>>>>>>
+2025-03-02 15:39:00,495 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-02 15:39:00,901 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-02 15:39:00,940 : INFO : SwitchController : <<<<<<< 's_playfield_entry' inactive >>>>>>>
+2025-03-02 15:39:01,177 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-02 15:39:01,209 : INFO : SwitchController : <<<<<<< 's_playfield_entry' active >>>>>>>
+2025-03-02 15:39:01,489 : INFO : SwitchController : <<<<<<< 's_playfield_entry' inactive >>>>>>>
+2025-03-02 15:39:01,490 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-02 15:39:01,874 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-02 15:39:01,875 : INFO : SwitchController : <<<<<<< 's_playfield_entry' active >>>>>>>
+2025-03-02 15:39:01,966 : INFO : SwitchController : <<<<<<< 's_playfield_entry' inactive >>>>>>>
+2025-03-02 15:39:01,967 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-02 15:39:02,071 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-02 15:39:02,103 : INFO : SwitchController : <<<<<<< 's_playfield_entry' active >>>>>>>
+2025-03-02 15:39:02,193 : INFO : SwitchController : <<<<<<< 's_playfield_entry' inactive >>>>>>>
+2025-03-02 15:39:02,194 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-02 15:39:02,337 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-02 15:39:02,341 : INFO : SwitchController : <<<<<<< 's_playfield_entry' active >>>>>>>
+2025-03-02 15:39:02,411 : INFO : SwitchController : <<<<<<< 's_playfield_entry' inactive >>>>>>>
+2025-03-02 15:39:02,411 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-02 15:39:02,580 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-02 15:39:02,581 : INFO : SwitchController : <<<<<<< 's_playfield_entry' active >>>>>>>
+2025-03-02 15:39:02,746 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-02 15:39:02,747 : INFO : SwitchController : <<<<<<< 's_playfield_entry' inactive >>>>>>>
+2025-03-02 15:39:02,950 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-02 15:39:03,079 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-02 15:39:03,204 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-02 15:39:03,549 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-02 15:39:03,649 : INFO : SwitchController : <<<<<<< 's_playfield_entry' active >>>>>>>
+2025-03-02 15:39:03,777 : INFO : SwitchController : <<<<<<< 's_playfield_entry' inactive >>>>>>>
+2025-03-02 15:39:03,907 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-02 15:39:04,057 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-02 15:39:04,379 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-02 15:39:04,576 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-02 15:39:04,656 : INFO : SwitchController : <<<<<<< 's_playfield_entry' active >>>>>>>
+2025-03-02 15:39:04,826 : INFO : SwitchController : <<<<<<< 's_playfield_entry' inactive >>>>>>>
+2025-03-02 15:39:04,951 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-02 15:39:05,081 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-02 15:39:05,416 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-02 15:39:05,576 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-02 15:39:05,673 : INFO : SwitchController : <<<<<<< 's_playfield_entry' active >>>>>>>
+2025-03-02 15:39:05,828 : INFO : SwitchController : <<<<<<< 's_playfield_entry' inactive >>>>>>>
+2025-03-02 15:39:06,004 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-02 15:39:06,130 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-02 15:39:06,481 : INFO : SwitchController : <<<<<<< 's_playfield_entry' active >>>>>>>
+2025-03-02 15:39:06,645 : INFO : SwitchController : <<<<<<< 's_playfield_entry' inactive >>>>>>>
+2025-03-02 15:39:06,969 : INFO : SwitchController : <<<<<<< 's_playfield_entry' active >>>>>>>
+2025-03-02 15:39:07,048 : INFO : SwitchController : <<<<<<< 's_playfield_entry' inactive >>>>>>>
+2025-03-02 15:39:07,144 : INFO : SwitchController : <<<<<<< 's_playfield_entry' active >>>>>>>
+2025-03-02 15:39:07,245 : INFO : SwitchController : <<<<<<< 's_playfield_entry' inactive >>>>>>>
+2025-03-02 15:39:07,357 : INFO : SwitchController : <<<<<<< 's_playfield_entry' active >>>>>>>
+2025-03-02 15:39:07,454 : INFO : SwitchController : <<<<<<< 's_playfield_entry' inactive >>>>>>>
+2025-03-02 15:39:07,568 : INFO : SwitchController : <<<<<<< 's_playfield_entry' active >>>>>>>
+2025-03-02 15:39:07,618 : INFO : SwitchController : <<<<<<< 's_playfield_entry' inactive >>>>>>>
+2025-03-02 15:39:07,743 : INFO : SwitchController : <<<<<<< 's_playfield_entry' active >>>>>>>
+2025-03-02 15:39:07,854 : INFO : SwitchController : <<<<<<< 's_playfield_entry' inactive >>>>>>>
+2025-03-02 15:39:08,588 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-02 15:39:08,951 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-02 15:39:09,785 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-02 15:39:10,798 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-02 15:39:11,677 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-02 15:39:11,946 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-02 15:39:12,414 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-02 15:39:12,782 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-02 15:39:13,099 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-02 15:39:13,383 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-02 15:39:14,087 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-02 15:39:14,299 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-02 15:39:15,588 : INFO : Machine : Shutting down...
+2025-03-02 15:39:15,589 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2025-03-02 15:39:15,598 : INFO : root : MPF run loop ended.

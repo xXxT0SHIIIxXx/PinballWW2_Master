@@ -1,0 +1,20 @@
+2025-03-22 22:14:02,260 : kivy : deps: Successfully imported "kivy_deps.gstreamer" 0.3.3
+2025-03-22 22:14:02,260 : kivy : deps: Successfully imported "kivy_deps.angle" 0.3.3
+2025-03-22 22:14:02,260 : kivy : deps: Successfully imported "kivy_deps.glew" 0.3.1
+2025-03-22 22:14:02,260 : kivy : deps: Successfully imported "kivy_deps.sdl2" 0.6.0
+2025-03-22 22:14:02,260 : kivy : Kivy: v2.2.1
+2025-03-22 22:14:02,260 : kivy : Kivy: Installed at "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\kivy\__init__.py"
+2025-03-22 22:14:02,260 : kivy : Python: v3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]
+2025-03-22 22:14:02,262 : kivy : Python: Interpreter at "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\python.exe"
+2025-03-22 22:14:02,275 : kivy : Factory: 190 symbols loaded
+2025-03-22 22:14:02,450 : kivy : ImageLoaderFFPy: Using ffpyplayer 4.5.1
+2025-03-22 22:14:02,450 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_ffpyplayer 
+2025-03-22 22:14:02,658 : kivy : VideoGstplayer: Using Gstreamer 1.18.5.0
+2025-03-22 22:14:02,659 : kivy : Video: Provider: gstplayer
+2025-03-22 22:14:02,693 : root : Loading MPF-MC controller
+2025-03-22 22:14:02,709 : YamlMultifileConfigLoader : Machine config file #1: config
+2025-03-22 22:14:02,710 : ConfigProcessor : Config file in cache changed: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\config\config
+2025-03-22 22:14:02,710 : ConfigProcessor : Loading config from file C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpfmc\mcconfig.yaml.
+2025-03-22 22:14:02,717 : ConfigProcessor : Loading config: C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpfmc\mcconfig.yaml
+2025-03-22 22:14:02,717 : ConfigProcessor : Loading config from file C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\config\config.
+2025-03-22 22:14:02,723 : ConfigProcessor : Loading config: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\config\config

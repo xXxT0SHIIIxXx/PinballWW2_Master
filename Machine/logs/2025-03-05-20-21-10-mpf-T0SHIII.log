@@ -1,0 +1,271 @@
+2025-03-05 20:21:10,821 : INFO : root : Loading config.
+2025-03-05 20:21:10,824 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-03-05 20:21:10,824 : INFO : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\cadfdee4981114acd6fff59d1071b59b.mpf_cache
+2025-03-05 20:21:10,899 : DEBUG : YamlMultifileConfigLoader : Loading mode attract from C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\modes\attract\config\attract.yaml
+2025-03-05 20:21:10,899 : INFO : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\2d51d76727b268a801d8dd7a18b89879.mpf_cache
+2025-03-05 20:21:10,900 : DEBUG : YamlMultifileConfigLoader : Loading mode game from C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\modes\game\config\game.yaml
+2025-03-05 20:21:10,900 : INFO : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\9f058d482eac17116727d62a93500be7.mpf_cache
+2025-03-05 20:21:10,901 : INFO : Machine : Mission Pinball Framework Core Engine v0.57.0
+2025-03-05 20:21:10,901 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs\\2025-03-05-20-21-10-mpf-T0SHIII.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 10, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2025-03-05 20:21:10,901 : INFO : Machine : MPF path: C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf
+2025-03-05 20:21:10,901 : INFO : Machine : Machine path: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine
+2025-03-05 20:21:10,901 : INFO : Machine : Platform: win32
+2025-03-05 20:21:10,901 : INFO : Machine : Python executable location: C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\python.exe
+2025-03-05 20:21:10,901 : INFO : Machine : Python version: 3.11.0 (64-bit)
+2025-03-05 20:21:10,902 : DEBUG : asyncio : Using proactor: IocpProactor
+2025-03-05 20:21:10,903 : INFO : Machine : Initializing MPF...
+2025-03-05 20:21:10,963 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,963 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,963 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,963 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,963 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,963 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,963 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,963 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,963 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,963 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,963 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,963 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,963 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x0000017DF06045F0>
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x0000017DF0689B10>
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x0000017DF068A4D0>
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.layout : Blur: <asciimatics.widgets.layout.Layout object at 0x0000017DF18CB220>
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.layout : Blur: <mpf.core.text_ui.MpfLayout object at 0x0000017DF18BD8D0>
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x0000017DF0436330>
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x0000017DF0437AC0>
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x0000017DF07FCD40>
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x0000017DF0437370>
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x0000017DF06FCEE0>
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x0000017DF0689CB0>
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.layout : Blur: <asciimatics.widgets.layout.Layout object at 0x0000017DF18CB2E0>
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.layout : Focus: <asciimatics.widgets.layout.Layout object at 0x0000017DF18CB220>
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.layout : Focus: <mpf.core.text_ui.MpfLayout object at 0x0000017DF18BD8D0>
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.layout : Focus: <asciimatics.widgets.layout.Layout object at 0x0000017DF18CB2E0>
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.frame : Cloning: Test
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,964 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,965 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,965 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,965 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,965 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,965 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,965 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,965 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:10,968 : DEBUG : asciimatics.screen : Processing key: d
+2025-03-05 20:21:11,068 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2025-03-05 20:21:11,104 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2025-03-05 20:21:11,104 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.57.0', 'prev_value': None, 'change': True}
+2025-03-05 20:21:11,104 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.57.0, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2025-03-05 20:21:11,104 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.11.0', 'prev_value': None, 'change': True}
+2025-03-05 20:21:11,114 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.26100-SP0', 'prev_value': None, 'change': True}
+2025-03-05 20:21:11,114 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2025-03-05 20:21:11,114 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2025-03-05 20:21:11,114 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.26100', 'prev_value': None, 'change': True}
+2025-03-05 20:21:11,114 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2025-03-05 20:21:11,114 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2025-03-05 20:21:11,120 : DEBUG : ModeController : Loaded mode game
+2025-03-05 20:21:11,122 : DEBUG : ModeController : Loaded mode attract
+2025-03-05 20:21:11,125 : DEBUG : ball_device.bd_trough : Configuring device with settings: '{'entrance_switch': 's_trough_enter', 'entrance_switch_full_timeout': '500ms', 'ball_capacity': 3, 'eject_coil': 'c_trough_release', 'eject_targets': [<ball_device.bd_plunger_lane>], 'tags': ['trough', 'home'], 'eject_timeouts': [3000], 'debug': True, 'label': '%', 'console_log': 'full', 'file_log': 'full', 'entrance_events': {}, 'idle_missing_ball_timeout': 5.0, 'confirm_eject_type': 'target', 'captures_from': <playfield.playfield>, 'ball_missing_timeouts': [], 'ball_missing_target': <playfield.playfield>, 'confirm_eject_switch': None, 'confirm_eject_event': None, 'max_eject_attempts': 0, 'request_ball_events': {}, 'eject_events': {}, 'eject_all_events': {}, 'mechanical_eject': False, 'player_controlled_eject_event': None, 'ball_search_order': 200, 'auto_fire_on_unexpected_ball': True, 'target_on_unexpected_ball': None}'
+2025-03-05 20:21:11,127 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2025-03-05 20:21:11,128 : INFO : SwitchController : Found active switch: ('8', <Platform.SmartVirtual>) <switch.s_trough_enter>
+2025-03-05 20:21:11,128 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2025-03-05 20:21:11,130 : DEBUG : asciimatics.widgets.layout : Updating: message
+2025-03-05 20:21:11,130 : DEBUG : asciimatics.widgets.layout : Updating: message
+2025-03-05 20:21:11,130 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.textbox.TextBox object at 0x0000017DF18DAE60>
+2025-03-05 20:21:11,130 : DEBUG : asciimatics.widgets.layout : Blur: <asciimatics.widgets.layout.Layout object at 0x0000017DF1A07D00>
+2025-03-05 20:21:11,130 : DEBUG : asciimatics.widgets.layout : Blur: <asciimatics.widgets.layout.Layout object at 0x0000017DF1A07D60>
+2025-03-05 20:21:11,130 : DEBUG : asciimatics.widgets.layout : Focus: <asciimatics.widgets.layout.Layout object at 0x0000017DF1A07D00>
+2025-03-05 20:21:11,130 : DEBUG : asciimatics.widgets.layout : Focus: <asciimatics.widgets.layout.Layout object at 0x0000017DF1A07D60>
+2025-03-05 20:21:11,130 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2025-03-05 20:21:13,165 : INFO : BCPClientSocket : Connected BCP to 'local_display' localhost:5050
+2025-03-05 20:21:13,168 : INFO : EventManager : Event: ======'bcp_clients_connected'====== Args={}
+2025-03-05 20:21:13,176 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,177 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,177 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,177 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,177 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,177 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,178 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,178 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,178 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,178 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,178 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,179 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,179 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x0000017DF1A441E0>
+2025-03-05 20:21:13,179 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x0000017DF1A442B0>
+2025-03-05 20:21:13,179 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x0000017DF1A44380>
+2025-03-05 20:21:13,179 : DEBUG : asciimatics.widgets.layout : Blur: <asciimatics.widgets.layout.Layout object at 0x0000017DF1A40640>
+2025-03-05 20:21:13,180 : DEBUG : asciimatics.widgets.layout : Blur: <mpf.core.text_ui.MpfLayout object at 0x0000017DF1A312D0>
+2025-03-05 20:21:13,180 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,180 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,180 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,180 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,180 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,180 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,181 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x0000017DF1A44D40>
+2025-03-05 20:21:13,181 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x0000017DF1A44C70>
+2025-03-05 20:21:13,181 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x0000017DF1A44E10>
+2025-03-05 20:21:13,181 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x0000017DF1A44BA0>
+2025-03-05 20:21:13,181 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x0000017DF1A44520>
+2025-03-05 20:21:13,181 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x0000017DF1A44450>
+2025-03-05 20:21:13,181 : DEBUG : asciimatics.widgets.layout : Blur: <asciimatics.widgets.layout.Layout object at 0x0000017DF1A40760>
+2025-03-05 20:21:13,181 : DEBUG : asciimatics.widgets.layout : Focus: <asciimatics.widgets.layout.Layout object at 0x0000017DF1A40640>
+2025-03-05 20:21:13,181 : DEBUG : asciimatics.widgets.layout : Focus: <mpf.core.text_ui.MpfLayout object at 0x0000017DF1A312D0>
+2025-03-05 20:21:13,183 : DEBUG : asciimatics.widgets.layout : Focus: <asciimatics.widgets.layout.Layout object at 0x0000017DF1A40760>
+2025-03-05 20:21:13,183 : DEBUG : asciimatics.widgets.frame : Cloning: Test
+2025-03-05 20:21:13,184 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,184 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,184 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,184 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,185 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,185 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,185 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,185 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,185 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,185 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,185 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,185 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,185 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,185 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,185 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,185 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,186 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,186 : DEBUG : asciimatics.widgets.layout : Updating: None
+2025-03-05 20:21:13,347 : INFO : ball_device.bd_drain : BCH: Initial count: 0
+2025-03-05 20:21:13,347 : INFO : ball_device.bd_drain : State: idle
+2025-03-05 20:21:13,347 : INFO : ball_device.bd_trough : BCH: Initial count: 3
+2025-03-05 20:21:13,347 : INFO : ball_device.bd_trough : State: idle
+2025-03-05 20:21:13,347 : DEBUG : ball_device.bd_trough : Waiting for eject request.
+2025-03-05 20:21:13,348 : INFO : ball_device.bd_plunger_lane : BCH: Initial count: 0
+2025-03-05 20:21:13,348 : INFO : ball_device.bd_plunger_lane : State: idle
+2025-03-05 20:21:13,352 : DEBUG : Machine : "info_lights:" section not found in machine configuration, so the InfoLights will not be used.
+2025-03-05 20:21:13,354 : DEBUG : Machine : "switch_player:" section not found in machine configuration, so the SwitchPlayer will not be used.
+2025-03-05 20:21:13,357 : DEBUG : Machine : "twitch_client:" section not found in machine configuration, so the TwitchBot will not be used.
+2025-03-05 20:21:13,357 : DEBUG : Machine : "virtual_segment_display_connector:" section not found in machine configuration, so the VirtualSegmentDisplayConnector will not be used.
+2025-03-05 20:21:13,357 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2025-03-05 20:21:13,358 : DEBUG : ShowController : Loading show: flash
+2025-03-05 20:21:13,358 : DEBUG : ShowController : Loading show: on
+2025-03-05 20:21:13,358 : DEBUG : ShowController : Loading show: off
+2025-03-05 20:21:13,358 : DEBUG : ShowController : Loading show: led_color
+2025-03-05 20:21:13,358 : DEBUG : ShowController : Loading show: bl_color
+2025-03-05 20:21:13,359 : DEBUG : ShowController : Loading show: flash_color
+2025-03-05 20:21:13,360 : INFO : EventManager : Event: ======'init_phase_4'====== Args={}
+2025-03-05 20:21:13,360 : INFO : BallController : Initial balls found: 3
+2025-03-05 20:21:13,361 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-03-05 20:21:13,361 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_playfield_entry'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-03-05 20:21:13,361 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_drain'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-03-05 20:21:13,361 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-03-05 20:21:13,361 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_plunger_lane'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-03-05 20:21:13,361 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough_enter'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-03-05 20:21:13,361 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_launcher_button'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-03-05 20:21:13,361 : INFO : EventManager : Event: ======'machine_var_audits_events_game_started'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-03-05 20:21:13,361 : INFO : EventManager : Event: ======'machine_var_audits_events_game_ended'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-03-05 20:21:13,361 : INFO : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'top': [], 'average': 0, 'total': 0}, 'prev_value': None, 'change': True}
+2025-03-05 20:21:13,362 : INFO : EventManager : Event: ======'init_phase_5'====== Args={}
+2025-03-05 20:21:13,391 : INFO : EventManager : Event: ======'init_done'====== Args={}
+2025-03-05 20:21:13,392 : INFO : EventManager : Event: ======'machine_reset_phase_1'====== Args={}
+2025-03-05 20:21:14,199 : INFO : EventManager : Event: ======'machine_var_mc_version'====== Args={'value': 'MPF-MC v0.57.1', 'prev_value': None, 'change': True}
+2025-03-05 20:21:14,199 : INFO : EventManager : Event: ======'machine_var_mc_extended_version'====== Args={'value': 'MPF-MC v0.57.1 (config_version=6, BCP v1.1,                      Requires MPF API compatibility v0.57.0 or newer)', 'prev_value': None, 'change': True}
+2025-03-05 20:21:14,210 : INFO : EventManager : Event: ======'slide_welcome_slide_removed'====== Args={'_from_bcp': True}
+2025-03-05 20:21:14,211 : INFO : EventManager : Event: ======'slide_welcome_slide_created'====== Args={'_from_bcp': True}
+2025-03-05 20:21:14,211 : INFO : EventManager : Event: ======'slide_welcome_slide_active'====== Args={'_from_bcp': True}
+2025-03-05 20:21:14,211 : INFO : EventManager : Event: ======'machine_reset_phase_2'====== Args={}
+2025-03-05 20:21:14,211 : INFO : EventManager : Event: ======'machine_reset_phase_3'====== Args={}
+2025-03-05 20:21:14,211 : INFO : EventManager : Event: ======'reset_complete'====== Args={}
+2025-03-05 20:21:14,212 : INFO : EventManager : Event: ======'mode_attract_will_start'====== Args={}
+2025-03-05 20:21:14,212 : INFO : EventManager : Event: ======'mode_attract_starting'====== Args={}
+2025-03-05 20:21:14,212 : INFO : Mode.attract : Started. Priority: 10
+2025-03-05 20:21:14,212 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2025-03-05 20:21:14,212 : INFO : EventManager : Event: ======'mode_attract_started'====== Args={}
+2025-03-05 20:21:14,212 : INFO : EventManager : Event: ======'collecting_balls_complete'====== Args={}
+2025-03-05 20:21:14,236 : INFO : Machine : Starting the main run loop.
+2025-03-05 20:21:18,623 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-05 20:21:18,769 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-05 20:21:19,130 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-05 20:21:19,300 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-05 20:21:19,511 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-05 20:21:19,639 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-05 20:21:19,754 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-05 20:21:19,851 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-05 20:21:19,999 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-05 20:21:20,130 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-05 20:21:21,577 : WARNING : SwitchController : Received duplicate switch state 1 for switch s_trough_enter from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2025-03-05 20:21:21,742 : INFO : SwitchController : <<<<<<< 's_trough_enter' inactive >>>>>>>
+2025-03-05 20:21:21,961 : INFO : SwitchController : <<<<<<< 's_trough_enter' active >>>>>>>
+2025-03-05 20:21:21,962 : DEBUG : ball_device.bd_trough : Entrance switch hit
+2025-03-05 20:21:21,962 : WARNING : ball_device.bd_trough : Device received balls but is already full!
+2025-03-05 20:21:22,100 : INFO : SwitchController : <<<<<<< 's_trough_enter' inactive >>>>>>>
+2025-03-05 20:21:22,283 : INFO : SwitchController : <<<<<<< 's_trough_enter' active >>>>>>>
+2025-03-05 20:21:22,284 : DEBUG : ball_device.bd_trough : Entrance switch hit
+2025-03-05 20:21:22,285 : WARNING : ball_device.bd_trough : Device received balls but is already full!
+2025-03-05 20:21:22,404 : INFO : SwitchController : <<<<<<< 's_trough_enter' inactive >>>>>>>
+2025-03-05 20:21:22,588 : INFO : SwitchController : <<<<<<< 's_trough_enter' active >>>>>>>
+2025-03-05 20:21:22,588 : DEBUG : ball_device.bd_trough : Entrance switch hit
+2025-03-05 20:21:22,588 : WARNING : ball_device.bd_trough : Device received balls but is already full!
+2025-03-05 20:21:22,692 : INFO : SwitchController : <<<<<<< 's_trough_enter' inactive >>>>>>>
+2025-03-05 20:21:23,048 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2025-03-05 20:21:23,202 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2025-03-05 20:21:23,204 : INFO : EventManager : Event: ======'flipper_cancel'====== Args={'triggering_group': 2, 'triggering_switch': 's_right_flipper'}
+2025-03-05 20:21:23,251 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2025-03-05 20:21:23,252 : INFO : EventManager : Event: ======'both_flippers_one'====== Args={'triggering_group': 1, 'triggering_switch': 's_left_flipper'}
+2025-03-05 20:21:23,356 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2025-03-05 20:21:23,357 : INFO : EventManager : Event: ======'both_flippers_inactive'====== Args={'triggering_group': 2, 'triggering_switch': 's_right_flipper'}
+2025-03-05 20:21:23,389 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2025-03-05 20:21:23,509 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2025-03-05 20:21:23,509 : INFO : EventManager : Event: ======'flipper_cancel'====== Args={'triggering_group': 2, 'triggering_switch': 's_right_flipper'}
+2025-03-05 20:21:23,544 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2025-03-05 20:21:23,544 : INFO : EventManager : Event: ======'both_flippers_one'====== Args={'triggering_group': 1, 'triggering_switch': 's_left_flipper'}
+2025-03-05 20:21:23,634 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2025-03-05 20:21:23,635 : INFO : EventManager : Event: ======'both_flippers_inactive'====== Args={'triggering_group': 2, 'triggering_switch': 's_right_flipper'}
+2025-03-05 20:21:23,635 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2025-03-05 20:21:23,749 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2025-03-05 20:21:23,749 : INFO : EventManager : Event: ======'flipper_cancel'====== Args={'triggering_group': 2, 'triggering_switch': 's_right_flipper'}
+2025-03-05 20:21:23,780 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2025-03-05 20:21:23,781 : INFO : EventManager : Event: ======'both_flippers_one'====== Args={'triggering_group': 1, 'triggering_switch': 's_left_flipper'}
+2025-03-05 20:21:23,874 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2025-03-05 20:21:23,874 : INFO : EventManager : Event: ======'flipper_cancel'====== Args={'triggering_group': 1, 'triggering_switch': 's_left_flipper'}
+2025-03-05 20:21:23,898 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2025-03-05 20:21:23,898 : INFO : EventManager : Event: ======'both_flippers_one'====== Args={'triggering_group': 2, 'triggering_switch': 's_right_flipper'}
+2025-03-05 20:21:23,995 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2025-03-05 20:21:23,996 : INFO : EventManager : Event: ======'flipper_cancel'====== Args={'triggering_group': 2, 'triggering_switch': 's_right_flipper'}
+2025-03-05 20:21:24,018 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2025-03-05 20:21:24,019 : INFO : EventManager : Event: ======'both_flippers_one'====== Args={'triggering_group': 1, 'triggering_switch': 's_left_flipper'}
+2025-03-05 20:21:24,111 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2025-03-05 20:21:24,112 : INFO : EventManager : Event: ======'both_flippers_inactive'====== Args={'triggering_group': 2, 'triggering_switch': 's_right_flipper'}
+2025-03-05 20:21:24,292 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-05 20:21:24,391 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-05 20:21:24,516 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-05 20:21:24,632 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-05 20:21:24,728 : INFO : SwitchController : <<<<<<< 's_launcher_button' active >>>>>>>
+2025-03-05 20:21:24,803 : INFO : SwitchController : <<<<<<< 's_launcher_button' inactive >>>>>>>
+2025-03-05 20:21:24,929 : INFO : SwitchController : <<<<<<< 's_trough_enter' active >>>>>>>
+2025-03-05 20:21:24,929 : DEBUG : ball_device.bd_trough : Entrance switch hit
+2025-03-05 20:21:24,929 : WARNING : ball_device.bd_trough : Device received balls but is already full!
+2025-03-05 20:21:25,031 : INFO : SwitchController : <<<<<<< 's_trough_enter' inactive >>>>>>>
+2025-03-05 20:21:25,154 : INFO : SwitchController : <<<<<<< 's_trough_enter' active >>>>>>>
+2025-03-05 20:21:25,155 : DEBUG : ball_device.bd_trough : Entrance switch hit
+2025-03-05 20:21:25,155 : WARNING : ball_device.bd_trough : Device received balls but is already full!
+2025-03-05 20:21:25,253 : INFO : SwitchController : <<<<<<< 's_trough_enter' inactive >>>>>>>
+2025-03-05 20:21:25,348 : INFO : SwitchController : <<<<<<< 's_trough_enter' active >>>>>>>
+2025-03-05 20:21:25,348 : DEBUG : ball_device.bd_trough : Entrance switch hit
+2025-03-05 20:21:25,348 : WARNING : ball_device.bd_trough : Device received balls but is already full!
+2025-03-05 20:21:25,455 : INFO : SwitchController : <<<<<<< 's_trough_enter' inactive >>>>>>>
+2025-03-05 20:21:27,993 : INFO : Machine : Shutting down...
+2025-03-05 20:21:27,993 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2025-03-05 20:21:27,997 : DEBUG : ball_device.bd_trough : Stopping ball device
+2025-03-05 20:21:28,000 : INFO : root : MPF run loop ended.

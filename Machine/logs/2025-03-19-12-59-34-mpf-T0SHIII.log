@@ -1,0 +1,196 @@
+2025-03-19 12:59:34,666 : INFO : root : Loading config.
+2025-03-19 12:59:34,671 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-03-19 12:59:34,672 : WARNING : ConfigProcessor : Config file in cache changed: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\config\config.yaml
+2025-03-19 12:59:34,672 : INFO : ConfigProcessor : Loading config from file C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\mpfconfig.yaml.
+2025-03-19 12:59:34,684 : INFO : ConfigProcessor : Loading config: C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\mpfconfig.yaml
+2025-03-19 12:59:34,684 : INFO : ConfigProcessor : Loading config from file C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\config\config.yaml.
+2025-03-19 12:59:34,706 : INFO : ConfigProcessor : Loading config: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\config\config.yaml
+2025-03-19 12:59:34,708 : INFO : ConfigProcessor : Config file cache created: C:\Users\duffb\AppData\Local\Temp\cadfdee4981114acd6fff59d1071b59b.mpf_cache
+2025-03-19 12:59:34,830 : INFO : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\ee7db1e8d011f44c876692bb4657f2e9.mpf_cache
+2025-03-19 12:59:34,831 : INFO : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\9f058d482eac17116727d62a93500be7.mpf_cache
+2025-03-19 12:59:34,832 : INFO : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\9e006ea23aa21ec68e01f6c49afad9f4.mpf_cache
+2025-03-19 12:59:34,833 : INFO : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\fd253b339e263587268891c4dd997fbd.mpf_cache
+2025-03-19 12:59:34,834 : INFO : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\5fa2ea82b8edc9fe8478b9f5dddd5453.mpf_cache
+2025-03-19 12:59:34,835 : INFO : Machine : Mission Pinball Framework Core Engine v0.57.0
+2025-03-19 12:59:34,835 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs\\2025-03-19-12-59-34-mpf-T0SHIII.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2025-03-19 12:59:34,835 : INFO : Machine : MPF path: C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf
+2025-03-19 12:59:34,835 : INFO : Machine : Machine path: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine
+2025-03-19 12:59:34,835 : INFO : Machine : Platform: win32
+2025-03-19 12:59:34,835 : INFO : Machine : Python executable location: C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\python.exe
+2025-03-19 12:59:34,835 : INFO : Machine : Python version: 3.11.0 (64-bit)
+2025-03-19 12:59:34,838 : INFO : Machine : Initializing MPF...
+2025-03-19 12:59:35,037 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2025-03-19 12:59:35,110 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2025-03-19 12:59:35,110 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 8000, 'prev_value': None, 'change': True}
+2025-03-19 12:59:35,110 : INFO : EventManager : Event: ======'machine_var_player2_score'====== Args={'value': 1000, 'prev_value': None, 'change': True}
+2025-03-19 12:59:35,110 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.57.0', 'prev_value': None, 'change': True}
+2025-03-19 12:59:35,110 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.57.0, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2025-03-19 12:59:35,110 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.11.0', 'prev_value': None, 'change': True}
+2025-03-19 12:59:35,127 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.26100-SP0', 'prev_value': None, 'change': True}
+2025-03-19 12:59:35,127 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2025-03-19 12:59:35,127 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2025-03-19 12:59:35,127 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.26100', 'prev_value': None, 'change': True}
+2025-03-19 12:59:35,127 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2025-03-19 12:59:35,127 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2025-03-19 12:59:35,154 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2025-03-19 12:59:35,154 : INFO : SwitchController : Found active switch: ('3', <Platform.SmartVirtual>) <switch.s_trough1>
+2025-03-19 12:59:35,154 : INFO : SwitchController : Found active switch: ('4', <Platform.SmartVirtual>) <switch.s_trough2>
+2025-03-19 12:59:35,154 : INFO : SwitchController : Found active switch: ('5', <Platform.SmartVirtual>) <switch.s_trough3>
+2025-03-19 12:59:35,156 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2025-03-19 12:59:35,158 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2025-03-19 12:59:37,218 : INFO : BCPClientSocket : Connected BCP to 'local_display' localhost:5050
+2025-03-19 12:59:37,218 : INFO : EventManager : Event: ======'bcp_clients_connected'====== Args={}
+2025-03-19 12:59:37,218 : ERROR : asyncio : Exception in callback EventManager.process_event_queue()
+handle: <Handle EventManager.process_event_queue()>
+Traceback (most recent call last):
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\events.py", line 751, in _run_handlers
+    result = handler.callback(**merged_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\text_ui.py", line 462, in _bcp_connected
+    self.scene.remove_effect(self._pending_bcp_connection)
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\asciimatics\scene.py", line 85, in remove_effect
+    self._effects.remove(effect)
+ValueError: list.remove(x): x not in list
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\events.py", line 842, in process_event_queue
+    self._process_event(event=event[0],
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\events.py", line 804, in _process_event
+    result = self._run_handlers(event, ev_type, kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\events.py", line 753, in _run_handlers
+    raise EventHandlerException(
+mpf.core.events.EventHandlerException: Exception while processing RegisteredHandler(callback=<bound method TextUi._bcp_connected of <mpf.core.text_ui.TextUi object at 0x000001AB574D7E00>>, priority=1, kwargs={}, key=UUID('b1e7b524-50be-4e8b-b329-b98cd10f1fa0'), condition=None, blocking_facility=None) for event bcp_clients_connected. list.remove(x): x not in list
+2025-03-19 12:59:37,222 : INFO : ball_device.bd_trough : BCH: Initial count: 3
+2025-03-19 12:59:37,222 : INFO : ball_device.bd_trough : State: idle
+2025-03-19 12:59:37,222 : INFO : Machine : Starting the main run loop.
+2025-03-19 12:59:37,222 : INFO : Machine : Shutting down...
+2025-03-19 12:59:37,223 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2025-03-19 12:59:37,224 : INFO : ball_device.bd_plunger_lane : BCH: Initial count: 0
+2025-03-19 12:59:37,225 : INFO : ball_device.bd_plunger_lane : State: idle
+2025-03-19 12:59:37,234 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2025-03-19 12:59:37,240 : INFO : EventManager : Event: ======'init_phase_4'====== Args={}
+2025-03-19 12:59:37,241 : ERROR : asyncio : Exception in callback Util.raise_exceptions(<Task finishe...unt_stable'")>) at C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\utility_functions.py:790
+handle: <Handle Util.raise_exceptions(<Task finishe...unt_stable'")>) at C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\utility_functions.py:790>
+Traceback (most recent call last):
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\utility_functions.py", line 798, in raise_exceptions
+    future.result()
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\ball_controller.py", line 90, in _add_new_balls_to_playfield
+    self.num_balls_known = await self._count_all_balls_in_devices()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\ball_controller.py", line 129, in _count_all_balls_in_devices
+    futures.append(asyncio.ensure_future(device.ball_count_handler.counter.wait_for_count_stable()))
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'wait_for_count_stable'
+2025-03-19 12:59:37,243 : INFO : EventManager : Event: ======'machine_var_audits_events_game_ended'====== Args={'value': 13, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,243 : INFO : EventManager : Event: ======'machine_var_audits_events_game_started'====== Args={'value': 48, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,243 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_Lane1'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,244 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_Lane2'====== Args={'value': 4, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,244 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_Lane3'====== Args={'value': 4, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,244 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_Lane4'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,244 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_Target1'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,244 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_Target2'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,245 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_Target3'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,245 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_Target4'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,245 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_drain'====== Args={'value': 6, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,245 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_launcher_button'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,245 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_playfield_entry'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,246 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough1'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,246 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough2'====== Args={'value': 4, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,246 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough3'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,246 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough_enter'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,247 : INFO : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'average': 124, 'top': [8000, 1000, 0, 0, 0, 0, 0, 0, 0, 0], 'total': 16}, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,247 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_Lane1'====== Args={'value': 34, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,247 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_Lane2'====== Args={'value': 23, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,247 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_Lane3'====== Args={'value': 20, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,247 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_Lane4'====== Args={'value': 24, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,248 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_Target1'====== Args={'value': 64, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,248 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_Target2'====== Args={'value': 57, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,248 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_Target3'====== Args={'value': 62, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,248 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_Target4'====== Args={'value': 49, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,248 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_drain'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,248 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_launcher_button'====== Args={'value': 89, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,249 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 95, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,249 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_playfield_entry'====== Args={'value': 198, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,249 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_plunger_lane'====== Args={'value': 132, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,249 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pointTarget'====== Args={'value': 193, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,250 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 88, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,250 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough1'====== Args={'value': 109, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,250 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough2'====== Args={'value': 17, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,252 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough3'====== Args={'value': 14, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,252 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough_enter'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-03-19 12:59:37,252 : INFO : EventManager : Event: ======'init_phase_5'====== Args={}
+2025-03-19 12:59:37,253 : ERROR : asyncio : Task was destroyed but it is pending!
+task: <Task pending name='Task-76' coro=<IocpProactor.accept.<locals>.accept_coro() running at C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\asyncio\windows_events.py:591> wait_for=<_OverlappedFuture cancelled>>
+2025-03-19 12:59:37,253 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\events.py", line 751, in _run_handlers
+    result = handler.callback(**merged_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\text_ui.py", line 462, in _bcp_connected
+    self.scene.remove_effect(self._pending_bcp_connection)
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\asciimatics\scene.py", line 85, in remove_effect
+    self._effects.remove(effect)
+ValueError: list.remove(x): x not in list
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\machine.py", line 794, in _run_loop
+    raise self._exception['exception']
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\events.py", line 842, in process_event_queue
+    self._process_event(event=event[0],
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\events.py", line 804, in _process_event
+    result = self._run_handlers(event, ev_type, kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\events.py", line 753, in _run_handlers
+    raise EventHandlerException(
+mpf.core.events.EventHandlerException: Exception while processing RegisteredHandler(callback=<bound method TextUi._bcp_connected of <mpf.core.text_ui.TextUi object at 0x000001AB574D7E00>>, priority=1, kwargs={}, key=UUID('b1e7b524-50be-4e8b-b329-b98cd10f1fa0'), condition=None, blocking_facility=None) for event bcp_clients_connected. list.remove(x): x not in list
+2025-03-19 12:59:40,217 : ERROR : root : 
+Traceback (most recent call last):
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\events.py", line 751, in _run_handlers
+    result = handler.callback(**merged_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\text_ui.py", line 462, in _bcp_connected
+    self.scene.remove_effect(self._pending_bcp_connection)
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\asciimatics\scene.py", line 85, in remove_effect
+    self._effects.remove(effect)
+ValueError: list.remove(x): x not in list
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\machine.py", line 794, in _run_loop
+    raise self._exception['exception']
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\events.py", line 842, in process_event_queue
+    self._process_event(event=event[0],
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\events.py", line 804, in _process_event
+    result = self._run_handlers(event, ev_type, kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\events.py", line 753, in _run_handlers
+    raise EventHandlerException(
+mpf.core.events.EventHandlerException: Exception while processing RegisteredHandler(callback=<bound method TextUi._bcp_connected of <mpf.core.text_ui.TextUi object at 0x000001AB574D7E00>>, priority=1, kwargs={}, key=UUID('b1e7b524-50be-4e8b-b329-b98cd10f1fa0'), condition=None, blocking_facility=None) for event bcp_clients_connected. list.remove(x): x not in list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\commands\game.py", line 240, in __init__
+    self.machine.run()
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\machine.py", line 690, in run
+    self._run_loop()
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\machine.py", line 797, in _run_loop
+    report_crash(self._exception['exception'], "exception_during_run", self.config)
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\crash_reporter.py", line 236, in report_crash
+    response = input("Do you want to report the crash to the MPF team (yes/no/show)? ")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+EOFError

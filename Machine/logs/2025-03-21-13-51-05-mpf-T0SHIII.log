@@ -1,0 +1,32 @@
+2025-03-21 13:51:05,857 : INFO : root : Loading config.
+2025-03-21 13:51:05,862 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-03-21 13:51:05,862 : WARNING : ConfigProcessor : Config file in cache changed: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\config\config.yaml
+2025-03-21 13:51:05,863 : INFO : ConfigProcessor : Loading config from file C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\mpfconfig.yaml.
+2025-03-21 13:51:05,879 : INFO : ConfigProcessor : Loading config: C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\mpfconfig.yaml
+2025-03-21 13:51:05,880 : INFO : ConfigProcessor : Loading config from file C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\config\config.yaml.
+2025-03-21 13:51:05,898 : INFO : ConfigProcessor : Loading config: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\config\config.yaml
+2025-03-21 13:51:05,901 : INFO : ConfigProcessor : Config file cache created: C:\Users\duffb\AppData\Local\Temp\cadfdee4981114acd6fff59d1071b59b.mpf_cache
+2025-03-21 13:51:06,039 : INFO : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\ee7db1e8d011f44c876692bb4657f2e9.mpf_cache
+2025-03-21 13:51:06,040 : INFO : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\9f058d482eac17116727d62a93500be7.mpf_cache
+2025-03-21 13:51:06,041 : WARNING : ConfigProcessor : Config file in cache changed: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\modes\intro\config\intro.yaml
+2025-03-21 13:51:06,041 : INFO : ConfigProcessor : Loading config from file C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\modes\intro\config\intro.yaml.
+2025-03-21 13:51:06,053 : INFO : ConfigProcessor : Loading config: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\modes\intro\config\intro.yaml
+2025-03-21 13:51:12,552 : ERROR : root : Shutdown because of SIGINT or keyboard interrupt.
+Traceback (most recent call last):
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\commands\game.py", line 231, in __init__
+    config = config_loader.load_mpf_config()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\config_loader.py", line 166, in load_mpf_config
+    mode_config = self._load_modes(config_spec, machine_config)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\config_loader.py", line 225, in _load_modes
+    config = self.config_processor.load_config_files_with_cache(mode_config_files, "mode",
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\config_processor.py", line 118, in load_config_files_with_cache
+    file_config, file_subfiles = self._load_config_file_and_return_loaded_files(configfile, config_type,
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\config_processor.py", line 186, in _load_config_file_and_return_loaded_files
+    self._check_sections(config_spec, config, config_type, filename, ignore_unknown_sections)
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\config_processor.py", line 155, in _check_sections
+    raise ConfigFileError('Found a "{}:" section in config file {}, '
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in ConfigProcessor: Found a "player_vars:" section in config file C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\modes\intro\config\intro.yaml, but that section is not valid in mode config files (only in machine). Context: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\modes\intro\config\intro.yaml Error Code: CFE-ConfigProcessor-2 (https://missionpinball.org/logs)

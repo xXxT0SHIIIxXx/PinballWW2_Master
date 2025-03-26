@@ -1,0 +1,117 @@
+2025-03-05 22:11:25,695 : kivy : deps: Successfully imported "kivy_deps.gstreamer" 0.3.3
+2025-03-05 22:11:25,695 : kivy : deps: Successfully imported "kivy_deps.angle" 0.3.3
+2025-03-05 22:11:25,695 : kivy : deps: Successfully imported "kivy_deps.glew" 0.3.1
+2025-03-05 22:11:25,695 : kivy : deps: Successfully imported "kivy_deps.sdl2" 0.6.0
+2025-03-05 22:11:25,695 : kivy : Kivy: v2.2.1
+2025-03-05 22:11:25,695 : kivy : Kivy: Installed at "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\kivy\__init__.py"
+2025-03-05 22:11:25,695 : kivy : Python: v3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]
+2025-03-05 22:11:25,696 : kivy : Python: Interpreter at "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\python.exe"
+2025-03-05 22:11:25,709 : kivy : Factory: 190 symbols loaded
+2025-03-05 22:11:25,848 : kivy : ImageLoaderFFPy: Using ffpyplayer 4.5.1
+2025-03-05 22:11:25,849 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_ffpyplayer 
+2025-03-05 22:11:26,010 : kivy : VideoGstplayer: Using Gstreamer 1.18.5.0
+2025-03-05 22:11:26,010 : kivy : Video: Provider: gstplayer
+2025-03-05 22:11:26,049 : root : Loading MPF-MC controller
+2025-03-05 22:11:26,086 : YamlMultifileConfigLoader : Machine config file #1: config
+2025-03-05 22:11:26,086 : ConfigProcessor : Config file in cache changed: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\config\config
+2025-03-05 22:11:26,086 : ConfigProcessor : Loading config from file C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpfmc\mcconfig.yaml.
+2025-03-05 22:11:26,093 : ConfigProcessor : Loading config: C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpfmc\mcconfig.yaml
+2025-03-05 22:11:26,093 : ConfigProcessor : Loading config from file C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\config\config.
+2025-03-05 22:11:26,096 : ConfigProcessor : Loading config: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\config\config
+2025-03-05 22:11:26,097 : ConfigProcessor : Config file cache created: C:\Users\duffb\AppData\Local\Temp\de7a4651692d89380cb727f0a44dc491.mpf_cache
+2025-03-05 22:11:26,098 : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\2d51d76727b268a801d8dd7a18b89879.mpf_cache
+2025-03-05 22:11:26,098 : ConfigProcessor : Loading config from cache: C:\Users\duffb\AppData\Local\Temp\9f058d482eac17116727d62a93500be7.mpf_cache
+2025-03-05 22:11:26,099 : mpfmc : Mission Pinball Framework Media Controller (MPF-MC) v0.57.1. Requires MPF v0.57.0 or newer.
+2025-03-05 22:11:26,099 : mpfmc : Found MPF v0.57.0
+2025-03-05 22:11:26,099 : mpfmc : Machine path: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine
+2025-03-05 22:11:26,099 : mpfmc : Starting clock at 60.0Hz
+2025-03-05 22:11:26,131 : kivy : Text: Provider: sdl2
+2025-03-05 22:11:26,224 : kivy : Window: Provider: sdl2
+2025-03-05 22:11:26,593 : kivy : GL: Using the "OpenGL" graphics system
+2025-03-05 22:11:26,595 : kivy : GL: GLEW initialization succeeded
+2025-03-05 22:11:26,595 : kivy : GL: Backend used <glew>
+2025-03-05 22:11:26,595 : kivy : GL: OpenGL version <b'4.6.0 - Build 31.0.101.5592'>
+2025-03-05 22:11:26,595 : kivy : GL: OpenGL vendor <b'Intel'>
+2025-03-05 22:11:26,595 : kivy : GL: OpenGL renderer <b'Intel(R) UHD Graphics'>
+2025-03-05 22:11:26,595 : kivy : GL: OpenGL parsed version: 4, 6
+2025-03-05 22:11:26,595 : kivy : GL: Shading version <b'4.60 - Build 31.0.101.5592'>
+2025-03-05 22:11:26,595 : kivy : GL: Texture max size <16384>
+2025-03-05 22:11:26,595 : kivy : GL: Texture max units <32>
+2025-03-05 22:11:26,619 : kivy : Window: auto add sdl2 input provider
+2025-03-05 22:11:26,620 : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2025-03-05 22:11:27,105 : AudioInterface : Initialized
+2025-03-05 22:11:27,106 : AudioInterface : Loaded SDL 2.26.4
+2025-03-05 22:11:27,106 : AudioInterface : Loaded SDL_Mixer 2.6.3
+2025-03-05 22:11:27,106 : AudioInterface : Loaded GStreamer 1.18.5.0
+2025-03-05 22:11:27,106 : AudioInterface : Loaded GLib 2.62.6
+2025-03-05 22:11:27,106 : AudioInterface : Settings requested - rate: 44100, channels: 1, buffer: 2048 samples
+2025-03-05 22:11:27,106 : AudioInterface : Settings in use - rate: 44100, channels: 1, buffer: 2048 samples (4096 bytes @ 2 bytes per sample)
+2025-03-05 22:11:27,106 : SoundSystem : Setting master volume to 0.0
+2025-03-05 22:11:27,107 : AudioInterface : Enabling audio playback
+2025-03-05 22:11:27,109 : kivy : Base: Start application main loop
+2025-03-05 22:11:27,109 : EventManager : Event: ======'display_window_initialized'====== Args={}
+2025-03-05 22:11:27,117 : mpfmc : Display: Setting 'window' as default display
+2025-03-05 22:11:27,125 : EventManager : Event: ======'displays_initialized'====== Args={}
+2025-03-05 22:11:27,126 : EventManager : Event: ======'slide_window_blank_created'====== Args={}
+2025-03-05 22:11:27,126 : EventManager : Event: ======'display_window_ready'====== Args={}
+2025-03-05 22:11:27,138 : EventManager : Event: ======'init_phase_1'====== Args={}
+2025-03-05 22:11:27,141 : kivy : Base: Leaving application in progress...
+2025-03-05 22:11:27,141 : root : Exception while processing RegisteredHandler(callback=<bound method McConfigPlayer._initialize_system_wide of McConfigPlayer.slides>, priority=1, kwargs={}, key=UUID('648961b9-db2f-46c4-af26-8043348c9556'), condition=None, blocking_facility=None) for event init_phase_1. expected string or bytes-like object, got 'NoneType'
+Traceback (most recent call last):
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\events.py", line 751, in _run_handlers
+    result = handler.callback(**merged_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpfmc\core\mc_config_player.py", line 35, in _initialize_system_wide
+    self.validate_config(
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpfmc\config_players\slide_player.py", line 269, in validate_config
+    self._validate_config_item(slide, slide_settings))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpfmc\config_players\slide_player.py", line 288, in _validate_config_item
+    slide = self.machine.placeholder_manager.parse_conditional_template(device).name
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\placeholder_manager.py", line 890, in parse_conditional_template
+    match = re.search(r"^(?P<name>[^{}:| ]+)({(?P<condition>.+)})?([|:](?P<number>.+))?$", template)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\re\__init__.py", line 176, in search
+    return _compile(pattern, flags).search(string)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected string or bytes-like object, got 'NoneType'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpfmc\commands\mc.py", line 217, in __init__
+    thread_stopper=thread_stopper).run()
+                                   ^^^^^
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\kivy\app.py", line 956, in run
+    runTouchApp()
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\kivy\base.py", line 574, in runTouchApp
+    EventLoop.mainloop()
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\kivy\base.py", line 339, in mainloop
+    self.idle()
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\kivy\base.py", line 379, in idle
+    Clock.tick()
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\kivy\clock.py", line 733, in tick
+    self.post_idle(ts, self.idle())
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\kivy\clock.py", line 776, in post_idle
+    self._process_events()
+  File "kivy\_clock.pyx", line 620, in kivy._clock.CyClockBase._process_events
+  File "kivy\_clock.pyx", line 653, in kivy._clock.CyClockBase._process_events
+  File "kivy\_clock.pyx", line 649, in kivy._clock.CyClockBase._process_events
+  File "kivy\_clock.pyx", line 218, in kivy._clock.ClockEvent.tick
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpfmc\uix\display.py", line 211, in _displays_initialized
+    self.mc.displays_initialized()
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpfmc\core\mc.py", line 347, in displays_initialized
+    self._init()
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpfmc\core\mc.py", line 372, in _init
+    self.events.process_event_queue()
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\events.py", line 842, in process_event_queue
+    self._process_event(event=event[0],
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\events.py", line 804, in _process_event
+    result = self._run_handlers(event, ev_type, kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\duffb\.pyenv\pyenv-win\versions\3.11.0\Lib\site-packages\mpf\core\events.py", line 753, in _run_handlers
+    raise EventHandlerException(
+mpf.core.events.EventHandlerException: Exception while processing RegisteredHandler(callback=<bound method McConfigPlayer._initialize_system_wide of McConfigPlayer.slides>, priority=1, kwargs={}, key=UUID('648961b9-db2f-46c4-af26-8043348c9556'), condition=None, blocking_facility=None) for event init_phase_1. expected string or bytes-like object, got 'NoneType'
+2025-03-05 22:11:27,501 : root : Stopping child threads... (1 remaining)
+2025-03-05 22:11:28,206 : root : All child threads stopped.

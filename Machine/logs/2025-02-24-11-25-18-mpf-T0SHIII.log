@@ -1,0 +1,6 @@
+2025-02-24 11:25:18,692 : INFO : root : Loading config.
+2025-02-24 11:25:18,914 : INFO : ConfigProcessor : Config spec file cache created: C:\Users\duffb\AppData\Local\Temp\config_spec.mpf_cache
+2025-02-24 11:25:18,915 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-02-24 11:25:18,915 : INFO : ConfigProcessor : Loading config from file C:\Users\duffb\OneDrive\Documents\Python Envs\PinballWW1\mpf\mpf\mpfconfig.yaml.
+2025-02-24 11:25:18,954 : INFO : ConfigProcessor : Loading config: C:\Users\duffb\OneDrive\Documents\Python Envs\PinballWW1\mpf\mpf\mpfconfig.yaml
+2025-02-24 11:25:18,954 : INFO : ConfigProcessor : Loading config from file C:\Users\duffb\OneDrive\Documents\Python Envs\PinballWW1\Machine\config\config.yaml.
