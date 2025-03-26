@@ -1,0 +1,34 @@
+#show_version=6
+
+- duration: 0.3
+  lights:
+    led_playfield_lights: 0
+    led_lane_lights: 0
+- duration: 0.3
+  lights:
+    led_playfield_lights: yellow
+    led_lane_lights: green
+- duration: 0.3
+  lights:
+    led_playfield_lights: 0
+    led_lane_lights: 0
+- duration: 0.3
+  lights:
+    led_playfield_lights: yellow
+    led_lane_lights: red
+- duration: 0.3
+  lights:
+    led_playfield_lights: 0
+    led_lane_lights: 0
+- duration: 0.3
+  lights:
+    led_playfield_lights: yellow
+    led_lane_lights: green
+- duration: 0.3
+  lights:
+    led_playfield_lights: 0
+    led_lane_lights: 0
+- duration: 0.3
+  lights:
+    led_playfield_lights: yellow
+    led_lane_lights: red

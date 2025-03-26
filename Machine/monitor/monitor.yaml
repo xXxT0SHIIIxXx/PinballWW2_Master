@@ -1,0 +1,192 @@
+device_size: 0.02
+flipper:
+  left_flipper:
+    rotation: 150
+    shape: FLIPPER
+    size: 0.07
+    x: 0.4298156164822831
+    y: 0.8215488215488216
+  right_flipper:
+    rotation: 220
+    shape: FLIPPER
+    size: 0.07
+    x: 0.5632066698733366
+    y: 0.8232323232323233
+light:
+  led_lane_lights_light_0:
+    size: 0.06
+    x: 0.7917094895512161
+    y: 0.10215827338129496
+  led_lane_lights_light_1:
+    size: 0.06
+    x: 0.6270339157245631
+    y: 0.03884892086330935
+  led_lane_lights_light_2:
+    size: 0.06
+    x: 0.3578526892771497
+    y: 0.04028776978417266
+  led_lane_lights_light_3:
+    size: 0.06
+    x: 0.19951079136690644
+    y: 0.10503597122302157
+  led_lane_lights_light_4:
+    size: 0.06
+    x: 0.7188722165125042
+    y: 0.1251798561151079
+  led_lane_lights_light_5:
+    size: 0.06
+    x: 0.5921986981843097
+    y: 0.08345323741007193
+  led_lane_lights_light_6:
+    size: 0.06
+    x: 0.3831873929427886
+    y: 0.08633093525179855
+  led_lane_lights_light_7:
+    size: 0.06
+    x: 0.2691812264474135
+    y: 0.13237410071942446
+  led_playfield_lights_light_0:
+    size: 0.06
+    x: 0.49402672147995885
+    y: 0.5928057553956834
+  led_playfield_lights_light_1:
+    size: 0.06
+    x: 0.722039054470709
+    y: 0.5294964028776978
+  led_playfield_lights_light_10:
+    size: 0.06
+    x: 0.24701336073997943
+    y: 0.5266187050359712
+  led_playfield_lights_light_11:
+    size: 0.06
+    x: 0.1520082219938335
+    y: 0.38992805755395676
+  led_playfield_lights_light_12:
+    size: 0.06
+    x: 0.12667351832819457
+    y: 0.25755395683453236
+  led_playfield_lights_light_13:
+    x: 0.8518794107571085
+    y: 0.14964028776978414
+  led_playfield_lights_light_2:
+    size: 0.06
+    x: 0.8265447070914695
+    y: 0.4057553956834532
+  led_playfield_lights_light_3:
+    size: 0.06
+    x: 0.8677136005481328
+    y: 0.27482014388489207
+  led_playfield_lights_light_4:
+    size: 0.06
+    x: 0.6397012675573825
+    y: 0.5381294964028777
+  led_playfield_lights_light_5:
+    size: 0.06
+    x: 0.744206920178143
+    y: 0.414388489208633
+  led_playfield_lights_light_6:
+    size: 0.06
+    x: 0.7885426515930112
+    y: 0.27482014388489207
+  led_playfield_lights_light_7:
+    size: 0.06
+    x: 0.34201849948612534
+    y: 0.535251798561151
+  led_playfield_lights_light_8:
+    size: 0.06
+    x: 0.2311791709489551
+    y: 0.39856115107913664
+  led_playfield_lights_light_9:
+    size: 0.06
+    x: 0.1963439534087016
+    y: 0.25755395683453236
+switch:
+  s_Lane1:
+    rotation: 350
+    shape: RECTANGLE
+    size: 0.06
+    x: 0.8753212917350848
+    y: 0.20459770114942527
+  s_Lane2:
+    rotation: 350
+    shape: RECTANGLE
+    size: 0.06
+    x: 0.79664101330768
+    y: 0.20033670033670034
+  s_Lane3:
+    rotation: 10
+    shape: RECTANGLE
+    size: 0.06
+    x: 0.2000865800865801
+    y: 0.2053872053872054
+  s_Lane4:
+    shape: RECTANGLE
+    size: 0.06
+    x: 0.12598043931377265
+    y: 0.19696969696969696
+  s_Target1:
+    rotation: 270
+    shape: RECTANGLE
+    size: 0.06
+    x: 0.7058226600985221
+    y: 0.20919540229885056
+  s_Target2:
+    rotation: 270
+    shape: RECTANGLE
+    size: 0.06
+    x: 0.5717416529830321
+    y: 0.2126436781609195
+  s_Target3:
+    rotation: 270
+    shape: RECTANGLE
+    size: 0.06
+    x: 0.4275231243576567
+    y: 0.21007194244604313
+  s_Target4:
+    rotation: 270
+    shape: RECTANGLE
+    size: 0.06
+    x: 0.2884006568144499
+    y: 0.20919540229885056
+  s_launcher_button:
+    shape: CIRCLE
+    size: 0.08
+    x: 0.699871188763275
+    y: 0.972661870503597
+  s_left_flipper:
+    rotation: 90
+    shape: TRIANGLE
+    size: 0.07
+    x: 0.16303350970017638
+    y: 0.9713804713804713
+  s_playfield_entry:
+    shape: RECTANGLE
+    size: 0.11
+    x: 0.9152108385441718
+    y: 0.6515151515151516
+  s_right_flipper:
+    rotation: 270
+    shape: TRIANGLE
+    size: 0.07
+    x: 0.8411046977713644
+    y: 0.9713804713804713
+  s_start_button:
+    shape: CIRCLE
+    size: 0.08
+    x: 0.5066940733127783
+    y: 0.9712230215827338
+  s_trough1:
+    x: 0.9003896103896104
+    y: 0.8956228956228957
+  s_trough2:
+    x: 0.8225781625781625
+    y: 0.9006734006734007
+  s_trough3:
+    x: 0.7558826358826358
+    y: 0.8973063973063973
+  s_trough_enter:
+    rotation: 280
+    shape: RECTANGLE
+    size: 0.07
+    x: 0.485727422003284
+    y: 0.8793103448275861

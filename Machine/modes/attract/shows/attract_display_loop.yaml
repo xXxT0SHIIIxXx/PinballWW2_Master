@@ -1,0 +1,59 @@
+#show_version=6
+
+- duration: 5s
+  slides:
+    ship_slide:
+        widgets:
+            - type: image
+              image: ship
+
+- duration: 5s
+  slides:
+      starting_slide:
+        widgets:
+            - type: image
+              image: start
+              animations:
+                pre_show_slide:
+                  - property: opacity
+                    value: 0
+                    duration: .5s
+                  - property: opacity
+                    value: 1
+                    duration: .5s
+                    repeat: true
+            - type: image
+              image: start_game
+        transition:
+              type: push
+              duration: 1s
+              direction: left
+
+
+- duration: 5s
+  slides:
+      company_slide:
+        widgets:
+            - type: image
+              image: company
+            - type: text
+              text: (machine|player1_score)
+              number_grouping: true
+              min_digits: 2
+              font_size: 50
+              y: 40%
+        transition:
+              type: move_in
+              duration: 1s
+              direction: right
+
+- duration: 5s
+  slides:
+      lastgame_slide:
+        widgets:
+            - type: image
+              image: last_game
+        transition:
+              type: move_in
+              duration: 1s
+              direction: top

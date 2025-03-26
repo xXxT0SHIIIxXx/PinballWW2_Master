@@ -1,0 +1,51 @@
+events:
+  game_ended: 13
+  game_started: 79
+missing_switches:
+  s_Lane2: 7
+  s_Lane3: 7
+  s_Target4: 6
+  s_drain: 6
+  s_left_flipper: 27
+  s_right_flipper: 27
+  s_start_button: 14
+  s_trough1: 32
+  s_trough2: 35
+  s_trough3: 39
+  s_trough_enter: 34
+player:
+  score:
+    average: 124
+    top:
+    - 8000
+    - 1000
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    total: 16
+switches:
+  s_Lane1: 50
+  s_Lane2: 26
+  s_Lane3: 24
+  s_Lane4: 32
+  s_Target1: 70
+  s_Target2: 63
+  s_Target3: 70
+  s_Target4: 58
+  s_drain: 0
+  s_launcher_button: 178
+  s_left_flipper: 103
+  s_playfield_entry: 214
+  s_plunger_lane: 163
+  s_pointTarget: 193
+  s_right_flipper: 95
+  s_start_button: 0
+  s_trough1: 109
+  s_trough2: 17
+  s_trough3: 14
+  s_trough_enter: 1

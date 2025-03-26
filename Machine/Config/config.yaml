@@ -1,0 +1,251 @@
+#config_version=6
+
+switches:
+    s_left_flipper: #internal Name for device (switch in this case)
+        number: 0 #hardware number for device (switch)
+        tags: left_flipper #allows events to play based off cur state
+    s_right_flipper:
+        number: 1
+        tags: right_flipper
+    s_trough_enter:
+        number: 2
+    s_trough1:
+        number: 3
+    s_trough2:
+        number: 4
+    s_trough3:
+        number: 5
+    s_plunger_lane:
+        number: 6
+    s_start_button:
+        number: 7
+        tags: start
+    s_launcher_button:
+        number: 8
+        debounce: quick
+    s_playfield_entry:
+        number: 9
+        tags: playfield_active
+    s_Target1:
+        number: 10
+        tags: playfield_active
+        debounce: quick
+        ignore_window_ms: 1000ms
+    s_Target2:
+        number: 11
+        tags: playfield_active
+        debounce: quick
+        ignore_window_ms: 1000ms
+    s_Target3:
+        number: 12
+        tags: playfield_active
+        debounce: quick
+        ignore_window_ms: 1000ms
+    s_Target4:
+        number: 13
+        tags: playfield_active
+        debounce: quick
+        ignore_window_ms: 1000ms
+    s_Lane1:
+        number: 14
+        tags: playfield_active
+        debounce: quick
+        ignore_window_ms: 1000ms
+    s_Lane2:
+        number: 15
+        tags: playfield_active
+    s_Lane3:
+        number: 16
+        tags: playfield_active
+    s_Lane4:
+        number: 17
+        tags: playfield_active
+
+
+coils:
+    c_flipper_left_main:
+        number: 0
+    c_flipper_left_hold:
+        number: 1 #check platform specific docs for actual numbers (based off controller hardware & driver boards)
+        allow_enable: true #safety to stop code from allowing any coil to be held on. Only the ones we define.
+    c_flipper_right_main:
+        number: 2
+    c_flipper_right_hold:
+        number: 3
+        allow_enable: true
+    c_trough_release:
+        number: 4
+        default_pulse_ms: 20
+    c_autolauncher:
+        number: 5
+        default_pulse_ms: 20
+
+
+light_stripes:
+    led_uvlightStrip:
+        number_start: 0
+        count: 18
+        number_template: 0-0-{}
+        light_template:
+            type: rgb
+            tags: gi
+    led_playfield_lights:
+        number_start: 19
+        count: 13
+        number_template: 0-0-{}
+        light_template:
+            type: rgb
+            tags: playfieldLEDs
+    led_lane_lights:
+        number_start: 34
+        count: 8
+        number_template: 0-0-{}
+        light_template:
+            type: rgb
+            tags: laneLEDs
+
+keyboard:
+    Q:
+        switch: s_left_flipper
+    E:
+        switch: s_right_flipper
+    S:
+        switch: s_start_button
+    Enter:
+        switch: s_launcher_button
+    D:
+        switch: s_pointTarget
+    P:
+        switch: s_plunger_lane
+    U:
+        switch: s_trough1
+        toggle: true
+    I:
+        switch: s_trough2
+        toggle: true
+    O:
+        switch: s_trough3
+        toggle: true
+    M:
+        switch: s_Target1
+    N:
+        switch: s_Target2
+    B:
+        switch: s_Target3
+    V:
+        switch: s_Target4
+    L:
+        switch: s_Lane1
+    K:
+        switch: s_Lane2
+    J:
+        switch: s_Lane3
+    H:
+        switch: s_Lane4
+
+playfields:
+    playfield:
+        tags: default
+        default_source_device: bd_plunger_lane
+
+machine:
+    balls_installed: 3
+
+virtual_platform_start_active_switches: 
+    - s_trough1
+    - s_trough2
+    - s_trough3
+
+flippers:
+    left_flipper:
+        main_coil: c_flipper_left_main
+        hold_coil: c_flipper_left_hold
+        activation_switch: s_left_flipper
+        enable_events: cmd_flipper_enable
+        disable_events: cmd_flipper_disable
+    right_flipper:
+        main_coil: c_flipper_right_main
+        hold_coil: c_flipper_right_hold
+        activation_switch: s_right_flipper
+        enable_events: cmd_flipper_enable
+        disable_events: cmd_flipper_disable
+
+ball_devices:
+    bd_trough:
+        ball_switches: s_trough1, s_trough2, s_trough3
+        eject_coil: c_trough_release
+        eject_targets: bd_plunger_lane
+        entrance_count_delay: 300ms
+        tags: trough, home
+        eject_timeouts: 3s
+        debug: true
+    bd_plunger_lane:
+        eject_coil: c_autolauncher
+        ball_switches: s_plunger_lane
+        mechanical_eject: false
+        player_controlled_eject_event: s_launcher_button_active{mode.base.active}
+        eject_targets: playfield
+        confirm_eject_type: target
+        confirm_eject_switch: s_playfield_entry
+        eject_timeouts: 3s
+
+displays:
+    window:
+        width: 800
+        height: 600
+
+
+slides:
+  welcome_slide:
+    widgets:
+      - type: text
+        text: Init DONE!
+        font_size: 50
+        color: red
+      - type: rectangle
+        width: 240
+        height: 60
+
+slide_player:
+  init_done: welcome_slide
+
+sound_system:
+    tracks:
+        music:
+            type: standard
+            simultaneous_sounds: 1
+            volume: 1
+            loop: true
+
+assets:
+    sounds:
+        default:
+            load: on_demand
+        music:
+            track: music
+        main:
+            file: C:\Users\duffb\OneDrive\Documents\Python Envs\PinballWW1\Machine\modes\attract\sounds\music\main.wav
+
+sound_player:
+    mode_attract_started:
+        main:
+            action: play
+    mode_attract_stopped:
+        main:
+            action: stop
+
+event_player:
+  mode_attract_started:
+    - cmd_flipper_disable
+    - cmd_launcher_disable 
+  mode_base_started:
+    - cmd_flipper_enable
+    - cmd_launcher_enable 
+
+player_vars:
+    score:
+        initial_value: 0
+
+modes:
+    - intro
+    - base

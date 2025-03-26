@@ -1,0 +1,31 @@
+#config_version=6
+
+show_player:
+    mode_attract_started: attract_display_loop
+    mode_attract_started.1: attract_playfieldLED_show
+
+images:
+    ship:
+        load: preload
+        file: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\modes\attract\images\ship.jpg
+    start_game:
+        load: preload
+        file: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\modes\attract\images\startGame.jpg
+    last_game:
+        load: preload
+        file: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\modes\attract\images\lastGame.jpg
+    company:
+        load: preload
+        file: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\modes\attract\images\company.jpg
+    start:
+        load: preload
+        file: C:\Users\duffb\OneDrive\Documents\Python Envs\PinBallWW1\Machine\modes\attract\images\start.jpg
+
+assets:
+    sounds:
+        default:
+            load: on_demand
+        music:
+            track: music
+        main:
+            file: C:\Users\duffb\OneDrive\Documents\Python Envs\PinballWW1\Machine\modes\attract\sounds\music\main.wav
