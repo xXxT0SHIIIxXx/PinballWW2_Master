@@ -224,7 +224,7 @@ assets:
         music:
             track: music
         main:
-            file: /root/PinBallWW2_Master/Machine/modes/attract/sounds/music/main.wav
+            file: /root/PinballWW2_Master/Machine/modes/attract/sounds/music/main.wav
 
 sound_player:
     mode_attract_started:
