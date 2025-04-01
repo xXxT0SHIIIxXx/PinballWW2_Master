@@ -15,7 +15,6 @@
     led_playfield_lights_light_10: 0
     led_playfield_lights_light_11: 0
     led_playfield_lights_light_12: 0
-    led_lane_lights: 0
 - duration: 0.3
   lights:
     led_playfield_lights_light_0: yellow
@@ -91,7 +90,6 @@
     led_playfield_lights_light_10: 0
     led_playfield_lights_light_11: 0
     led_playfield_lights_light_12: 0
-    led_lane_lights_light_0: yellow
 - duration: 0.3
   lights:
     led_playfield_lights_light_0: yellow
@@ -137,7 +135,6 @@
     led_playfield_lights_light_10: 0
     led_playfield_lights_light_11: 0
     led_playfield_lights_light_12: 0
-    led_lane_lights_light_4: yellow
 - duration: 0.3
   lights:
     led_playfield_lights_light_0: yellow
@@ -153,8 +150,6 @@
     led_playfield_lights_light_10: 0
     led_playfield_lights_light_11: 0
     led_playfield_lights_light_12: 0
-    led_lane_lights_light_5: yellow
-    led_lane_lights_light_1: yellow
 - duration: 0.3
   lights:
     led_playfield_lights_light_0: yellow
@@ -170,8 +165,6 @@
     led_playfield_lights_light_10: 0
     led_playfield_lights_light_11: 0
     led_playfield_lights_light_12: 0
-    led_lane_lights_light_6: yellow
-    led_lane_lights_light_2: yellow
 - duration: 0.3
   lights:
     led_playfield_lights_light_0: yellow
@@ -187,7 +180,6 @@
     led_playfield_lights_light_10: yellow
     led_playfield_lights_light_11: 0
     led_playfield_lights_light_12: 0
-    led_lane_lights_light_7: yellow
 - duration: 0.3
   lights:
     led_playfield_lights_light_0: yellow
@@ -218,36 +210,27 @@
     led_playfield_lights_light_10: yellow
     led_playfield_lights_light_11: yellow
     led_playfield_lights_light_12: yellow
-    led_lane_lights_light_3: yellow
 - duration: 0.3
   lights:
     led_playfield_lights: 0
-    led_lane_lights: 0
 - duration: 0.3
   lights:
     led_playfield_lights: yellow
-    led_lane_lights: green
 - duration: 0.3
   lights:
     led_playfield_lights: 0
-    led_lane_lights: 0
 - duration: 0.3
   lights:
     led_playfield_lights: yellow
-    led_lane_lights: red
 - duration: 0.3
   lights:
     led_playfield_lights: 0
-    led_lane_lights: 0
 - duration: 0.3
   lights:
     led_playfield_lights: yellow
-    led_lane_lights: green
 - duration: 0.3
   lights:
     led_playfield_lights: 0
-    led_lane_lights: 0
 - duration: 0.3
   lights:
     led_playfield_lights: yellow
-    led_lane_lights: red
