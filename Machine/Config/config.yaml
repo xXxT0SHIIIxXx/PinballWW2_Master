@@ -6,9 +6,11 @@ hardware:
 fast:
   net:
     debug: false
+    port: auto
     controller: neuron
   exp:
     debug: false
+    port: auto
     boards:
       neuron:
         model: FP-EXP-2000
