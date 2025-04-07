@@ -201,6 +201,13 @@ displays:
     window:
         width: 800
         height: 600
+window:
+      title: Victory At Sea
+      resizable: true
+      fullscreen: false
+      borderless: false
+      exit_on_escape: true
+      source_display: window
 
 
 slides:
