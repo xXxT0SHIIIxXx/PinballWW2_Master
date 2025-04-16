@@ -15,6 +15,9 @@ fast:
     boards:
       neuron:
         model: FP-EXP-2000
+        breakouts:
+            - port: 1
+              model: FP-PWR-0030-1
 
 switches:
     s_left_flipper: #internal Name for device (switch in this case)
