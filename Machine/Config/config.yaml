@@ -6,11 +6,10 @@ hardware:
 fast:
   net:
     debug: false
-    port: /dev/ttyACM0
     controller: neuron
+
   exp:
     debug: false
-    port: /dev/ttyACM1
     boards:
       neuron:
         model: FP-EXP-2000
