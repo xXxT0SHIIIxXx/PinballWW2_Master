@@ -16,7 +16,7 @@ fast:
       neuron:
         model: FP-EXP-2000
         breakouts:
-            - port: 0
+            - port: 1
               model: FP-PWR-0030
 
 switches:
