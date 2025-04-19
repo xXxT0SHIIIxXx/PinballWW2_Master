@@ -9,13 +9,6 @@ fast:
     port: /dev/ttyACM0
     controller: neuron
 
-  exp:
-    debug: true
-    port: /dev/ttyACM1
-    boards:
-      0:
-        model: FP-EXP-2000
-
 switches:
     s_left_flipper: #internal Name for device (switch in this case)
         number: 0 #hardware number for device (switch)
