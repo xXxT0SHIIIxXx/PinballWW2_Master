@@ -17,7 +17,7 @@ fast:
         model: FP-EXP-2000
         breakouts: 
            - port: 1
-             model: FP-BRK-0001
+             model: BRK FP-EXP-2000
 
 switches:
     s_left_flipper: #internal Name for device (switch in this case)
