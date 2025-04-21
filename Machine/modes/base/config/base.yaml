@@ -28,11 +28,5 @@ slide_player:
             font_size: 50
 
 variable_player:
-    s_Target1_active:
-        score: 250
-    s_Target2_active:
-        score: 500
-    s_Target3_active:
-        score: 1000
-    s_Target4_active:
-        score: 1500
+    s_carrierDamage_active:
+        score: 1250

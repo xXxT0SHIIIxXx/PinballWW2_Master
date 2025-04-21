@@ -8,16 +8,16 @@ fast:
     debug: true
     port: /dev/ttyACM0
     controller: neuron
-
+    io_loop:
+      3208:
+        model: FP-I/O-3208
+        order: 1
   exp:
     debug: true
     port: /dev/ttyACM1
     boards:
       neuron:
         model: FP-EXP-2000
-        breakouts: 
-           - port: 0
-             model: FP-BRK-0001
 
 switches:
     s_left_flipper: #internal Name for device (switch in this case)
@@ -45,39 +45,24 @@ switches:
     s_playfield_entry:
         number: 9
         tags: playfield_active
-    s_Target1:
-        number: 10
-        tags: playfield_active
-        debounce: quick
-        ignore_window_ms: 1000ms
-    s_Target2:
-        number: 11
-        tags: playfield_active
-        debounce: quick
-        ignore_window_ms: 1000ms
-    s_Target3:
-        number: 12
-        tags: playfield_active
-        debounce: quick
-        ignore_window_ms: 1000ms
-    s_Target4:
-        number: 13
+    s_carrierDamage: #Registers as damage to aircraft carrier 
+        number: 3208-11
         tags: playfield_active
         debounce: quick
         ignore_window_ms: 1000ms
     s_Lane1:
-        number: 14
+        number: 3208-12
         tags: playfield_active
         debounce: quick
         ignore_window_ms: 1000ms
     s_Lane2:
-        number: 15
+        number: 3208-13
         tags: playfield_active
     s_Lane3:
-        number: 16
+        number: 3208-14
         tags: playfield_active
     s_Lane4:
-        number: 17
+        number: 3208-15
         tags: playfield_active
 
 
@@ -139,13 +124,7 @@ keyboard:
         switch: s_trough3
         toggle: true
     M:
-        switch: s_Target1
-    N:
-        switch: s_Target2
-    B:
-        switch: s_Target3
-    V:
-        switch: s_Target4
+        switch: s_carrierDamage
     L:
         switch: s_Lane1
     K:
@@ -243,7 +222,7 @@ assets:
         music:
             track: music
         main:
-            file: /root/PinballWW2_Master/Machine/modes/attract/sounds/music/main.wav
+            file: root/PinballWW2_Master/Machine/modes/attract/sounds/music/main.wav
             #C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/sounds/music/main.wav
             #/root/PinballWW2_Master/Machine/modes/attract/sounds/music/main.wav
 

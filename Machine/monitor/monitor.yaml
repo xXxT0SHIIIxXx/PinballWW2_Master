@@ -148,6 +148,12 @@ switch:
     size: 0.06
     x: 0.2884006568144499
     y: 0.20919540229885056
+  s_carrierDamage:
+    rotation: 90
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.5035272353545734
+    y: 0.22158273381294963
   s_launcher_button:
     shape: CIRCLE
     size: 0.08
