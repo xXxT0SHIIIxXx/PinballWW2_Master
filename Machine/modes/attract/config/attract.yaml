@@ -9,27 +9,27 @@ images:
         load: preload
         file: /home/wkwickham/PinballWW2_Master/Machine/modes/attract/images/ship.jpg
         #C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/images/ship.jpg
-        #~/PinballWW2_Master/Machine/modes/attract/images/ship.jpg
+        #/home/wkwickham/PinballWW2_Master/Machine/modes/attract/images/ship.jpg
     start_game:
         load: preload
         file: /home/wkwickham/PinballWW2_Master/Machine/modes/attract/images/startGame.jpg
         #C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/images/startGame.jpg
-        #~/PinballWW2_Master/Machine/modes/attract/images/startGame.jpg
+        #/home/wkwickham/PinballWW2_Master/Machine/modes/attract/images/startGame.jpg
     last_game:
         load: preload
         file: /home/wkwickham/PinballWW2_Master/Machine/modes/attract/images/lastGame.jpg
         #C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/images/lastGame.jpg
-        #~/PinballWW2_Master/Machine/modes/attract/images/lastGame.jpg
+        #/home/wkwickham/PinballWW2_Master/Machine/modes/attract/images/lastGame.jpg
     company:
         load: preload
         file: /home/wkwickham/PinballWW2_Master/Machine/modes/attract/images/company.jpg
         #C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/images/company.jpg
-        #~/PinballWW2_Master/Machine/modes/attract/images/company.jpg
+        #/home/wkwickham/PinballWW2_Master/Machine/modes/attract/images/company.jpg
     start:
         load: preload
         file: /home/wkwickham/PinballWW2_Master/Machine/modes/attract/images/start.jpg
         #C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/images/start.jpg
-        #~/PinballWW2_Master/Machine/modes/attract/images/start.jpg
+        #/home/wkwickham/PinballWW2_Master/Machine/modes/attract/images/start.jpg
 
 assets:
     sounds:
@@ -40,4 +40,4 @@ assets:
         main:
             file: /home/wkwickham/PinballWW2_Master/Machine/modes/attract/sounds/music/main.wav
             #C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/sounds/music/main.wav
-            #/root/PinballWW2_Master/Machine/modes/attract/sounds/music/main.wav
+            #/home/wkwickham/PinballWW2_Master/Machine/modes/attract/sounds/music/main.wav

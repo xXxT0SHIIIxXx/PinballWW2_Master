@@ -47,24 +47,43 @@ switches:
     s_playfield_entry:
         number: 9
         tags: playfield_active
-    s_carrierDamage: #Registers as damage to aircraft carrier 
+
+    s_lowerTargets: #Registers as damage to aircraft carrier 
         number: 3208-11
         tags: playfield_active
         debounce: quick
         ignore_window_ms: 1000ms
-    s_Lane1:
+    s_Lane1: #Right side Entry to top lane on lower playfield
         number: 3208-12
         tags: playfield_active
         debounce: quick
         ignore_window_ms: 1000ms
-    s_Lane2:
+    s_Lane2: #Right side Entry to bottom lane on lower playfield
         number: 3208-13
         tags: playfield_active
-    s_Lane3:
+        debounce: quick
+        ignore_window_ms: 1000ms
+    s_Lane3: #Left side Entry to bottom lane on lower playfield
         number: 3208-14
         tags: playfield_active
-    s_Lane4:
+        debounce: quick
+        ignore_window_ms: 1000ms
+    s_Lane4: #Left side entry to top lane on lower playfield
         number: 3208-15
+        tags: playfield_active
+        debounce: quick
+        ignore_window_ms: 1000ms
+    s_millPtTarget: #1 million point target
+        number: 3208-16
+        tags: playfield_active
+    s_bonus1: 
+        number: 3208-9
+        tags: playfield_active
+    s_bonus2: 
+        number: 3208-8
+        tags: playfield_active
+    s_bonus3: 
+        number: 3208-17
         tags: playfield_active
 
 
@@ -226,7 +245,7 @@ assets:
         main:
             file: /home/wkwickham/PinballWW2_Master/Machine/modes/attract/sounds/music/main.wav
             #C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/sounds/music/main.wav
-            #~/PinballWW2_Master/Machine/modes/attract/sounds/music/main.wav
+            #/home/wkwickham/PinballWW2_Master/Machine/modes/attract/sounds/music/main.wav
 
 sound_player:
     mode_attract_started:
