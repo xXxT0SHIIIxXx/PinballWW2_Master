@@ -18,6 +18,8 @@ fast:
     boards:
       neuron:
         model: FP-EXP-2000
+      expBoard:
+        model: FP-EXP-0081
 
 switches:
     s_left_flipper: #internal Name for device (switch in this case)
