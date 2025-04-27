@@ -222,9 +222,9 @@ assets:
         music:
             track: music
         main:
-            file: root/PinballWW2_Master/Machine/modes/attract/sounds/music/main.wav
+            file: ~/PinballWW2_Master/Machine/modes/attract/sounds/music/main.wav
             #C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/sounds/music/main.wav
-            #/root/PinballWW2_Master/Machine/modes/attract/sounds/music/main.wav
+            #~/PinballWW2_Master/Machine/modes/attract/sounds/music/main.wav
 
 sound_player:
     mode_attract_started:
