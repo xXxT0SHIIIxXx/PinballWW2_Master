@@ -39,7 +39,7 @@ switches:
     s_plunger_lane:
         number: 6
     s_start_button:
-        number: 7
+        number: 3208-25
         tags: start
     s_launcher_button:
         number: 8
@@ -76,15 +76,12 @@ switches:
     s_millPtTarget: #1 million point target
         number: 3208-16
         tags: playfield_active
-    s_bonus1: 
+    s_bonus1:  #Drop target 1 // Upgrade for player ==
         number: 3208-9
-        tags: playfield_active
-    s_bonus2: 
+    s_bonus2:  #Drop target 2 // Upgrade for player ==
         number: 3208-8
-        tags: playfield_active
-    s_bonus3: 
+    s_bonus3: #Drop Target 3 // Upgrade for player ==
         number: 3208-17
-        tags: playfield_active
 
 
 coils:
@@ -104,6 +101,24 @@ coils:
     c_autolauncher:
         number: 5
         default_pulse_ms: 20
+    c_dTargetReset1:
+        number: 6
+    c_dTargetReset2:
+        number: 7
+    c_dTargetReset3:
+        number: 8
+
+drop_targets:
+    dt_bonus1_target:
+        switch: s_bonus1
+        reset_coil: c_dTargetReset1
+    dt_bonus2_target:
+        switch: s_bonus2
+        reset_coil: c_dTargetReset2
+    dt_bonus3_target:
+        switch: s_bonus3
+        reset_coil: c_dTargetReset3
+
 
 
 light_stripes:
