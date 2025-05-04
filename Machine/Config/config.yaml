@@ -9,7 +9,7 @@ fast:
     port: /dev/ttyACM0
     controller: neuron
     io_loop:
-      3208:
+      ioBoard:
         model: FP-I/O-3208
         order: 1
   exp:
@@ -39,7 +39,7 @@ switches:
     s_plunger_lane:
         number: 6
     s_start_button:
-        number: 3208-25
+        number: ioBoard-25
         tags: start
     s_launcher_button:
         number: 8
@@ -49,39 +49,39 @@ switches:
         tags: playfield_active
 
     s_lowerTargets: #Registers as damage to aircraft carrier 
-        number: 3208-11
+        number: ioBoard-11
         tags: playfield_active
         debounce: quick
         ignore_window_ms: 1000ms
     s_Lane1: #Right side Entry to top lane on lower playfield
-        number: 3208-12
+        number: ioBoard-12
         tags: playfield_active
         debounce: quick
         ignore_window_ms: 1000ms
     s_Lane2: #Right side Entry to bottom lane on lower playfield
-        number: 3208-13
+        number: ioBoard-13
         tags: playfield_active
         debounce: quick
         ignore_window_ms: 1000ms
     s_Lane3: #Left side Entry to bottom lane on lower playfield
-        number: 3208-14
+        number: ioBoard-14
         tags: playfield_active
         debounce: quick
         ignore_window_ms: 1000ms
     s_Lane4: #Left side entry to top lane on lower playfield
-        number: 3208-15
+        number: ioBoard-15
         tags: playfield_active
         debounce: quick
         ignore_window_ms: 1000ms
     s_millPtTarget: #1 million point target
-        number: 3208-16
+        number: ioBoard-16
         tags: playfield_active
     s_bonus1:  #Drop target 1 // Upgrade for player ==
-        number: 3208-9
+        number: ioBoard-9
     s_bonus2:  #Drop target 2 // Upgrade for player ==
-        number: 3208-8
+        number: ioBoard-8
     s_bonus3: #Drop Target 3 // Upgrade for player ==
-        number: 3208-17
+        number: ioBoard-17
 
 
 coils:
