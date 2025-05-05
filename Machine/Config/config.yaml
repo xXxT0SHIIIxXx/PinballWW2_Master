@@ -42,7 +42,7 @@ switches:
         number: ioBoard-25
         tags: start
     s_launcher_button:
-        number: 8
+        number: ioBoard-24
         debounce: quick
     s_playfield_entry:
         number: 9
@@ -160,7 +160,7 @@ keyboard:
         switch: s_trough3
         toggle: true
     M:
-        switch: s_carrierDamage
+        switch: s_lowerTargets
     L:
         switch: s_Lane1
     K:
