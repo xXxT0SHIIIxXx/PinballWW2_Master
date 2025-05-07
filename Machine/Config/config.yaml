@@ -11,15 +11,6 @@ fast:
     io_loop:
       ioBoard:
         model: FP-I/O-3208
-        order: 2
-  exp:
-    debug: true
-    port: /dev/ttyACM1
-    boards:
-      neuron:
-        model: FP-EXP-2000
-      expBoard:
-        model: FP-EXP-0081
         order: 1
 
 switches:
