@@ -37,7 +37,7 @@
             - type: image
               image: company
             - type: text
-              text: (machine|player1_score)
+              text: Game | 130,234,432
               number_grouping: true
               min_digits: 2
               font_size: 50
