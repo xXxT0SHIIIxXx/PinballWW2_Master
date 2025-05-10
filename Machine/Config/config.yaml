@@ -12,12 +12,6 @@ fast:
       ioBoard:
         model: FP-I/O-3208-5
         order: 1
-  exp:
-    debug: true
-    port: /dev/ttyACM1
-    boards:
-      neuron:
-        model: FP-EXP-2000
 
 switches:
     s_left_flipper: #internal Name for device (switch in this case)

@@ -28,5 +28,5 @@ slide_player:
             font_size: 50
 
 variable_player:
-    s_lowerTargets_active:
+    s_carrierDamage_active:
         score: 1250
