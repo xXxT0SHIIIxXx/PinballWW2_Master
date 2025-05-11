@@ -152,11 +152,6 @@ playfields:
 machine:
     balls_installed: 3
 
-virtual_platform_start_active_switches: 
-    - s_trough1
-    - s_trough2
-    - s_trough3
-
 flippers:
     left_flipper:
         main_coil: c_flipper_left_main
