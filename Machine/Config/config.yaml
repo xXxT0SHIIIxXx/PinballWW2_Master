@@ -250,9 +250,9 @@ assets:
         music:
             track: music
         main:
-            file: /home/wkwickham/PinballWW2_Master/Machine/modes/attract/sounds/music/main.wav
+            file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/sounds/music/main.wav
             #C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/sounds/music/main.wav
-            #/home/wkwickham/PinballWW2_Master/Machine/modes/attract/sounds/music/main.wav
+            #/home/wicky567/PinballWW2_Master/Machine/modes/attract/sounds/music/main.wav
 
 sound_player:
     mode_attract_started:

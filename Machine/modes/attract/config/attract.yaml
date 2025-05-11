@@ -7,29 +7,29 @@ show_player:
 images:
     ship:
         load: preload
-        file: /home/wkwickham/PinballWW2_Master/Machine/modes/attract/images/ship.jpg
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/images/ship.jpg
         #C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/images/ship.jpg
-        #/home/wkwickham/PinballWW2_Master/Machine/modes/attract/images/ship.jpg
+        #/home/wicky567/PinballWW2_Master/Machine/modes/attract/images/ship.jpg
     start_game:
         load: preload
-        file: /home/wkwickham/PinballWW2_Master/Machine/modes/attract/images/startGame.jpg
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/images/startGame.jpg
         #C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/images/startGame.jpg
-        #/home/wkwickham/PinballWW2_Master/Machine/modes/attract/images/startGame.jpg
+        #/home/wicky567/PinballWW2_Master/Machine/modes/attract/images/startGame.jpg
     last_game:
         load: preload
-        file: /home/wkwickham/PinballWW2_Master/Machine/modes/attract/images/lastGame.jpg
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/images/lastGame.jpg
         #C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/images/lastGame.jpg
-        #/home/wkwickham/PinballWW2_Master/Machine/modes/attract/images/lastGame.jpg
+        #/home/wicky567/PinballWW2_Master/Machine/modes/attract/images/lastGame.jpg
     company:
         load: preload
-        file: /home/wkwickham/PinballWW2_Master/Machine/modes/attract/images/company.jpg
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/images/company.jpg
         #C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/images/company.jpg
-        #/home/wkwickham/PinballWW2_Master/Machine/modes/attract/images/company.jpg
+        #/home/wicky567/PinballWW2_Master/Machine/modes/attract/images/company.jpg
     start:
         load: preload
-        file: /home/wkwickham/PinballWW2_Master/Machine/modes/attract/images/start.jpg
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/images/start.jpg
         #C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/images/start.jpg
-        #/home/wkwickham/PinballWW2_Master/Machine/modes/attract/images/start.jpg
+        #/home/wicky567/PinballWW2_Master/Machine/modes/attract/images/start.jpg
 
 assets:
     sounds:
@@ -38,6 +38,6 @@ assets:
         music:
             track: music
         main:
-            file: /home/wkwickham/PinballWW2_Master/Machine/modes/attract/sounds/music/main.wav
+            file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/sounds/music/main.wav
             #C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/sounds/music/main.wav
-            #/home/wkwickham/PinballWW2_Master/Machine/modes/attract/sounds/music/main.wav
+            #/home/wicky567/PinballWW2_Master/Machine/modes/attract/sounds/music/main.wav
