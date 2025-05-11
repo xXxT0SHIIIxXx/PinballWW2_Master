@@ -37,7 +37,7 @@ switches:
         number: ioBoard-24
         debounce: quick
     s_playfield_entry:
-        number: 9
+        number: 28
         tags: playfield_active
 
     s_lowerTargets: #Registers as damage to aircraft carrier 
