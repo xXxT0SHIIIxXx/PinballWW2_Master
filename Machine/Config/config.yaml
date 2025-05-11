@@ -111,24 +111,6 @@ drop_targets:
         switch: s_bonus3
         reset_coil: c_dTargetReset3
 
-
-
-light_stripes:
-    led_uvlightStrip:
-        number_start: 0
-        count: 18
-        number_template: 0-0-{}
-        light_template:
-            type: rgb
-            tags: gi
-    led_playfield_lights:
-        number_start: 19
-        count: 13
-        number_template: 0-0-{}
-        light_template:
-            type: rgb
-            tags: playfieldLEDs
-
 keyboard:
     Q:
         switch: s_left_flipper
