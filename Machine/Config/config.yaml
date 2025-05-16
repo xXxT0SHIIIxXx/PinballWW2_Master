@@ -135,6 +135,8 @@ keyboard:
         switch: s_launcher_button
     P:
         switch: s_plunger_lane
+    R:
+        switch: s_playfield_entry
     U:
         switch: s_trough2
         toggle: true
