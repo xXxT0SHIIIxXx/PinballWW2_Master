@@ -9,107 +9,120 @@ fast:
     port: /dev/ttyACM0
     controller: neuron
     io_loop:
-      ioBoard:
+      3208:
         model: FP-I/O-3208-5
         order: 1
+      1616:
+        model: FP-I/O-1616
+        order: 2
 
 switches:
-    s_left_flipper: #internal Name for device (switch in this case)
-        number: 0 #hardware number for device (switch)
-        tags: left_flipper #allows events to play based off cur state
-    s_right_flipper:
-        number: 1
-        tags: right_flipper
     s_trough_enter:
         number: 2
-    s_trough1:
-        number: 3
-    s_trough2:
-        number: 4
-    s_trough3:
-        number: 5
-    s_plunger_lane:
+    s_playfield_entry: #Used to track after ball launch if it makes it to the playfield. If this is not hit then the ball did not make it to the playfield
         number: 6
-    s_start_button:
-        number: ioBoard-25
-        tags: start
-    s_launcher_button:
-        number: ioBoard-24
-        debounce: quick
-    s_playfield_entry:
-        number: 28
         tags: playfield_active
-
-    s_lowerTargets: #Registers as damage to aircraft carrier 
-        number: ioBoard-11
+    s_bonus2:  #Drop target 2 // Upgrade for player ==
+        number: 3208-8
+    s_bonus1:  #Drop target 1 // Upgrade for player ==
+        number: 3208-9
+    s_lowerTargets: #Registers as damage to aircraft carrier, all 4 switches as one.
+        number: 3208-11
         tags: playfield_active
         debounce: quick
         ignore_window_ms: 1000ms
-    s_Lane1: #Right side Entry to top lane on lower playfield
-        number: ioBoard-12
+    s_Lane4: #Right side Entry to top lane on lower playfield
+        number: 3208-12
         tags: playfield_active
         debounce: quick
         ignore_window_ms: 1000ms
-    s_Lane2: #Right side Entry to bottom lane on lower playfield
-        number: ioBoard-13
+    s_Lane3: #Right side Entry to bottom lane on lower playfield
+        number: 3208-13
         tags: playfield_active
         debounce: quick
         ignore_window_ms: 1000ms
-    s_Lane3: #Left side Entry to bottom lane on lower playfield
-        number: ioBoard-14
+    s_Lane2: #Left side Entry to bottom lane on lower playfield
+        number: 3208-14
         tags: playfield_active
         debounce: quick
         ignore_window_ms: 1000ms
-    s_Lane4: #Left side entry to top lane on lower playfield
-        number: ioBoard-15
+    s_Lane1: #Left side entry to top lane on lower playfield
+        number: 3208-15
         tags: playfield_active
         debounce: quick
         ignore_window_ms: 1000ms
     s_millPtTarget: #1 million point target
-        number: ioBoard-16
+        number: 3208-16
         tags: playfield_active
-    s_bonus1:  #Drop target 1 // Upgrade for player ==
-        number: ioBoard-9
-    s_bonus2:  #Drop target 2 // Upgrade for player ==
-        number: ioBoard-8
+    s_plunger_lane: # Lets MPF know a ball is readt for launching
+        number: 3208-18
     s_bonus3: #Drop Target 3 // Upgrade for player ==
-        number: ioBoard-17
+        number: 3208-17
+    s_right_flipper_eos: #Triggers when Right Flipper is held up to drop the Power of the coil it hold it up without burnout
+        number: 3208-19
+        type: 'NC'
+    s_left_flipper_eos: #Triggers when Left Flipper is held up to drop the Power of the coil it hold it up without burnout
+        number: 10
+        type: 'NC'
+    s_trough2: #Tracks The Second ball in the trough. Next one to be played
+        number: 3208-20
+    s_trough3: #Tracks The Third ball in the trough.
+        number: 3208-21
+    s_trough4: #Tracks The Forth and last ball in the trough. Should be up once first ball in ejected to plunger
+        number: 3208-22
+    s_launcher_button: #Button used to launch the ball on the cabinet
+        number: 3208-24
+        debounce: quick
+    s_start_button:
+        number: 3208-25
+        tags: start
+    s_right_flipper:
+        number: 3208-26
+        tags: right_flipper
+    s_left_flipper: #internal Name for device (switch in this case)
+        number: 3208-27 #hardware pin number for device (switch)
+        tags: left_flipper #allows events to play based off cur state
 
 
 coils:
     c_flipper_left_main:
         number: 0
-    c_flipper_left_hold:
-        number: 1 #check platform specific docs for actual numbers (based off controller hardware & driver boards)
-        allow_enable: true #safety to stop code from allowing any coil to be held on. Only the ones we define.
-    c_flipper_right_main:
-        number: 2
-    c_flipper_right_hold:
-        number: 3
         allow_enable: true
-    c_trough_release:
-        number: 4
-        default_pulse_ms: 20
+        default_pulse_ms: 10
+        default_hold_power: 0.125
+        max_hold_power: 0.5
+    c_flipper_right_main:
+        number: 3208-5
+        allow_enable: true
+        default_pulse_ms: 10
+        default_hold_power: 0.125
+        max_hold_power: 0.5
+    c_trough_eject:
+        number: 3208-6
+        default_pulse_ms: 10
+        platform_settings:
+            pwm2_ms: 20
     c_autolauncher:
-        number: 5
-        default_pulse_ms: 20
-    c_dTargetReset1:
-        number: 6
-    c_dTargetReset2:
-        number: 7
-    c_dTargetReset3:
-        number: 8
+        number: 3208-7
+        default_pulse_ms: 10
+        platform_settings:
+            pwm2_ms: 20
+    c_dt_reset:
+        number: 1616-13
 
 drop_targets:
     dt_bonus1_target:
         switch: s_bonus1
-        reset_coil: c_dTargetReset1
     dt_bonus2_target:
         switch: s_bonus2
-        reset_coil: c_dTargetReset2
     dt_bonus3_target:
         switch: s_bonus3
-        reset_coil: c_dTargetReset3
+
+drop_target_banks:
+  dt_bonus_bank:
+    drop_targets: dt_bonus1_target, dt_bonus2_target, dt_bonus3_target
+    reset_coils: c_dt_reset
+    reset_on_complete: 1s
 
 keyboard:
     Q:
@@ -120,18 +133,16 @@ keyboard:
         switch: s_start_button
     Enter:
         switch: s_launcher_button
-    D:
-        switch: s_pointTarget
     P:
         switch: s_plunger_lane
     U:
-        switch: s_trough1
-        toggle: true
-    I:
         switch: s_trough2
         toggle: true
-    O:
+    I:
         switch: s_trough3
+        toggle: true
+    O:
+        switch: s_trough4
         toggle: true
     M:
         switch: s_lowerTargets
@@ -155,21 +166,27 @@ machine:
 flippers:
     left_flipper:
         main_coil: c_flipper_left_main
-        hold_coil: c_flipper_left_hold
         activation_switch: s_left_flipper
+        eos_switch: s_left_flipper_eos
+        use_eos: true
+        repulse_on_eos_open: true
+        eos_active_ms_before_repulse: 500
         enable_events: cmd_flipper_enable
         disable_events: cmd_flipper_disable
     right_flipper:
         main_coil: c_flipper_right_main
-        hold_coil: c_flipper_right_hold
         activation_switch: s_right_flipper
+        eos_switch: s_right_flipper_eos
+        use_eos: true
+        repulse_on_eos_open: true
+        eos_active_ms_before_repulse: 500
         enable_events: cmd_flipper_enable
         disable_events: cmd_flipper_disable
 
 ball_devices:
     bd_trough:
-        ball_switches: s_trough1, s_trough2, s_trough3
-        eject_coil: c_trough_release
+        ball_switches: s_trough2, s_trough3, s_trough4
+        eject_coil: c_trough_eject
         eject_targets: bd_plunger_lane
         entrance_count_delay: 300ms
         tags: trough, home
@@ -181,7 +198,7 @@ ball_devices:
         mechanical_eject: false
         player_controlled_eject_event: s_launcher_button_active{mode.base.active}
         eject_targets: playfield
-        confirm_eject_type: target
+        confirm_eject_type: switch
         confirm_eject_switch: s_playfield_entry
         eject_timeouts: 3s
 
@@ -227,9 +244,8 @@ assets:
         music:
             track: music
         main:
+            #file: C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/sounds/music/main.wav
             file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/sounds/music/main.wav
-            #C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/sounds/music/main.wav
-            #/home/wicky567/PinballWW2_Master/Machine/modes/attract/sounds/music/main.wav
 
 sound_player:
     mode_attract_started:
