@@ -10,5 +10,4 @@ show_player:
         intro_display_loop:
             loops: 0
             events_when_completed: Intro_end
-    mode_intro_started.1: intro_show
 
