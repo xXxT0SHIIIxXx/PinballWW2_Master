@@ -124,6 +124,22 @@ drop_target_banks:
     reset_coils: c_dt_reset
     reset_on_complete: 1s
 
+#light_stripes:
+#    led_uvlightStrip:
+#        number_start: 0
+#        count: 18
+#        number_template: 0-0-{}
+#        light_template:
+#            type: rgb
+#            tags: gi
+#    led_playfield_lights:
+#        number_start: 19
+#        count: 13
+#        number_template: 0-0-{}
+#        light_template:
+#            type: rgb
+#            tags: playfieldLEDs
+
 keyboard:
     Q:
         switch: s_left_flipper
@@ -190,7 +206,7 @@ ball_devices:
         ball_switches: s_trough2, s_trough3, s_trough4
         eject_coil: c_trough_eject
         eject_targets: bd_plunger_lane
-        entrance_count_delay: 300ms
+        mechanical_eject: false
         tags: trough, home
         eject_timeouts: 3s
         debug: true
