@@ -17,15 +17,18 @@ fast:
         order: 2
 
 switches:
-    s_trough_enter:
-        number: 2
-    s_playfield_entry: #Used to track after ball launch if it makes it to the playfield. If this is not hit then the ball did not make it to the playfield
-        number: 6
-        tags: playfield_active
+    s_trough_jam: #used to make sure ball leaves ball trough and enters plunger/launcher lane
+        number: 3208-6
+    s_trough1: #Opto switch for the first ball in the trough
+        number: 3208-7
+        type: 'NC'
     s_bonus2:  #Drop target 2 // Upgrade for player ==
         number: 3208-8
     s_bonus1:  #Drop target 1 // Upgrade for player ==
         number: 3208-9
+    s_playfield_entry: #Used to track after ball launch if it makes it to the playfield. If this is not hit then the ball did not make it to the playfield
+        number: 10
+        tags: playfield_active
     s_lowerTargets: #Registers as damage to aircraft carrier, all 4 switches as one.
         number: 3208-11
         tags: playfield_active
@@ -62,7 +65,7 @@ switches:
         number: 3208-19
         type: 'NC'
     s_left_flipper_eos: #Triggers when Left Flipper is held up to drop the Power of the coil it hold it up without burnout
-        number: 10
+        number: 23
         type: 'NC'
     s_trough2: #Tracks The Second ball in the trough. Next one to be played
         number: 3208-20
@@ -98,7 +101,7 @@ coils:
         default_hold_power: 0.125
         max_hold_power: 0.5
     c_trough_eject:
-        number: 3208-6
+        number: 3208-1
         default_pulse_ms: 10
         platform_settings:
             pwm2_ms: 20
@@ -179,7 +182,7 @@ playfields:
         default_source_device: bd_plunger_lane
 
 machine:
-    balls_installed: 3
+    balls_installed: 4
 
 flippers:
     left_flipper:
@@ -203,11 +206,13 @@ flippers:
 
 ball_devices:
     bd_trough:
-        ball_switches: s_trough2, s_trough3, s_trough4
+        ball_switches: s_trough2, s_trough3, s_trough4, s_trough_jam
         eject_coil: c_trough_eject
         eject_targets: bd_plunger_lane
         mechanical_eject: false
-        tags: trough, home
+        jam_switch: s_trough_jam
+        eject_coil_jam_pulse: 15ms
+        tags: trough, home,drain
         eject_timeouts: 3s
         debug: true
     bd_plunger_lane:
