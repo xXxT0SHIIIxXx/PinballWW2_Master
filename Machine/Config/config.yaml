@@ -102,7 +102,7 @@ coils:
         max_hold_power: 0.5
     c_trough_eject:
         number: 3208-1
-        default_pulse_ms: 10
+        default_pulse_ms: 20
         platform_settings:
             pwm2_ms: 20
     c_autolauncher:
@@ -112,6 +112,7 @@ coils:
             pwm2_ms: 20
     c_dt_reset:
         number: 1616-13
+        default_pulse_ms: 20
 
 drop_targets:
     dt_bonus1_target:
