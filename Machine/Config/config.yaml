@@ -60,10 +60,8 @@ switches:
         number: 3208-17
     s_right_flipper_eos: #Triggers when Right Flipper is held up to drop the Power of the coil it hold it up without burnout
         number: 3208-19
-        type: 'NC'
     s_left_flipper_eos: #Triggers when Left Flipper is held up to drop the Power of the coil it hold it up without burnout
         number: 23
-        type: 'NC'
     s_trough2: #Tracks The Second ball in the trough. Next one to be played
         number: 3208-20
     s_trough3: #Tracks The Third ball in the trough.
