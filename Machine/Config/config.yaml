@@ -19,6 +19,7 @@ fast:
 switches:
     s_trough_jam: #used to make sure ball leaves ball trough and enters plunger/launcher lane
         number: 3208-6
+        type: 'NC'
     s_trough1: #Opto switch for the first ball in the trough
         number: 3208-7
         type: 'NC'
