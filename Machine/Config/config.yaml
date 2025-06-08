@@ -5,7 +5,6 @@ hardware:
 
 fast:
   net:
-    debug: true
     port: /dev/ttyACM0
     controller: neuron
     io_loop:
@@ -219,6 +218,7 @@ ball_devices:
         player_controlled_eject_event: s_launcher_button_active{s_plunger_lane_active}
         eject_targets: playfield
         eject_timeouts: 2s
+        debug: true
 
 displays:
     window:
