@@ -27,9 +27,6 @@ switches:
         number: 3208-8
     s_bonus1:  #Drop target 1 // Upgrade for player ==
         number: 3208-9
-    s_playfield_entry: #Used to track after ball launch if it makes it to the playfield. If this is not hit then the ball did not make it to the playfield
-        number: 10
-        tags: playfield_active
     s_lowerTargets: #Registers as damage to aircraft carrier, all 4 switches as one.
         number: 3208-11
         tags: playfield_active
@@ -223,9 +220,7 @@ ball_devices:
         mechanical_eject: false
         player_controlled_eject_event: s_launcher_button_active{s_plunger_lane_active}
         eject_targets: playfield
-        confirm_eject_type: switch
-        confirm_eject_switch: s_playfield_entry
-        eject_timeouts: 3s
+        eject_timeouts: 2s
 
 displays:
     window:
