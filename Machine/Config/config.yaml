@@ -190,6 +190,7 @@ flippers:
         eos_active_ms_before_repulse: 500
         enable_events: cmd_flipper_enable
         disable_events: cmd_flipper_disable
+        #debug: true
     right_flipper:
         main_coil: c_flipper_right_main
         activation_switch: s_right_flipper
@@ -199,6 +200,7 @@ flippers:
         eos_active_ms_before_repulse: 500
         enable_events: cmd_flipper_enable
         disable_events: cmd_flipper_disable
+        debug: true
 
 ball_devices:
     bd_trough:
@@ -210,7 +212,7 @@ ball_devices:
         eject_coil_jam_pulse: 15ms
         tags: trough, home,drain
         eject_timeouts: 3s
-        debug: true
+        #debug: true
     bd_plunger_lane:
         eject_coil: c_autolauncher
         ball_switches: s_plunger_lane
@@ -218,7 +220,7 @@ ball_devices:
         player_controlled_eject_event: s_launcher_button_active
         eject_targets: playfield
         eject_timeouts: 2s
-        debug: true
+        #debug: true
 
 displays:
     window:
@@ -276,10 +278,8 @@ sound_player:
 event_player:
   mode_attract_started:
     - cmd_flipper_disable
-    #- cmd_launcher_disable 
   mode_base_started:
     - cmd_flipper_enable
-    #- cmd_launcher_enable 
 
 player_vars:
     score:
