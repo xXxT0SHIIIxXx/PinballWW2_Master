@@ -220,7 +220,7 @@ ball_devices:
         eject_coil: c_autolauncher
         ball_switches: s_plunger_lane
         mechanical_eject: false
-        player_controlled_eject_event: s_launcher_button_inactive{s_plunger_lane_active}
+        player_controlled_eject_event: s_launcher_button_active{s_plunger_lane_active}
         eject_targets: playfield
         confirm_eject_type: switch
         confirm_eject_switch: s_playfield_entry
