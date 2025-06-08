@@ -276,10 +276,10 @@ sound_player:
 event_player:
   mode_attract_started:
     - cmd_flipper_disable
-    - cmd_launcher_disable 
+    #- cmd_launcher_disable 
   mode_base_started:
     - cmd_flipper_enable
-    - cmd_launcher_enable 
+    #- cmd_launcher_enable 
 
 player_vars:
     score:
