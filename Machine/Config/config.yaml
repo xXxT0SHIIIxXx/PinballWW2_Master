@@ -213,7 +213,9 @@ ball_devices:
         jam_switch: s_trough_jam
         eject_coil_jam_pulse: 15ms
         tags: trough, home,drain
-        eject_timeouts: 750ms
+        eject_timeouts: 3s
+        confirm_eject_type: switch
+        confirm_eject_switch: s_plunger_lane
         #debug: true
     bd_plunger_lane:
         eject_coil: c_autolauncher
