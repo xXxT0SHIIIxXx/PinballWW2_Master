@@ -188,7 +188,8 @@ flippers:
         use_eos: true
         repulse_on_eos_open: true
         eos_active_ms_before_repulse: 500
-        enable_events: machine_reset_phase_3
+        enable_events: cmd_flipper_enable
+        disable_events: cmd_flipper_disable
     right_flipper_top:
         main_coil: c_RtFlipper_top_main
         hold_coil: c_RtFlipper_top_hold
@@ -197,7 +198,8 @@ flippers:
         use_eos: true
         repulse_on_eos_open: true
         eos_active_ms_before_repulse: 500
-        enable_events: machine_reset_phase_3
+        enable_events: cmd_flipper_enable
+        disable_events: cmd_flipper_disable
 
 autofire_coils:
   ac_right_slingshot:
@@ -279,12 +281,15 @@ sound_player:
         main:
             action: stop
 
-#event_player:
- # mode_attract_started:
-  #  - cmd_flipper_disable
-  #mode_base_started:
-  #  - cmd_flipper_enable
-
+event_player:
+#  mode_attract_started:
+#    - cmd_flipper_disable
+#  mode_base_started:
+#    - cmd_flipper_enable
+   tilt:
+     - cmd_flipper_disable
+   ball_will_start:
+     - cmd_flipper_enable
 player_vars:
     score:
         initial_value: 0
