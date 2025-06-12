@@ -70,6 +70,9 @@ switches:
     s_left_flipper: #internal Name for device (switch in this case)
         number: 3208-27 #hardware pin number for device (switch)
         tags: left_flipper #allows events to play based off cur state
+    s_tilt_bob:
+        number: 3208-30
+        tags: tilt_warning
 
 
 coils:
@@ -166,7 +169,8 @@ keyboard:
         switch: s_Lane4
     B:
         switch: s_right_slingshot
-
+    T:
+        switch: s_tilt_bob
 playfields:
     playfield:
         tags: default
@@ -284,4 +288,5 @@ player_vars:
         initial_value: 0
 
 modes:
+    - tilt
     - base
