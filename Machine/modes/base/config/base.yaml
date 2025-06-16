@@ -32,3 +32,9 @@ variable_player:
         score: 1250
     s_right_slingshot_active:
         score: 1500
+    s_popbumper_1:
+        score: 10000
+    s_popbumper_2:
+        score: 10000
+    s_popbumper_3:
+        score: 10000
