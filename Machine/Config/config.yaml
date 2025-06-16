@@ -16,6 +16,7 @@ fast:
         order: 2
 
 switches:
+#3208 switches
     s_trough_jam: #used to make sure ball leaves ball trough and enters plunger/launcher lane
         number: 3208-6
         type: 'NC'
@@ -73,9 +74,17 @@ switches:
     s_tilt_bob:
         number: 3208-30
         tags: tilt_warning
+#1616 switches
+    s_popbumper_1:
+        number: 1616-13
+    s_popbumper_2:
+        number: 1616-14
+    s_popbumper_3:
+        number: 1616-15
 
 
 coils:
+#3208 coils
     c_RtFlipper_upper_main: #RIGHT FLIPPER UPPER
         number: 3208-0
         default_pulse_ms: 20
@@ -103,9 +112,16 @@ coils:
         number: 3208-7
         default_hold_power: .2
         allow_enable: true
+#1616 coils
+    c_popbumper_1:
+        number: 1616-12
     c_dt_reset: #DROP TARGETS RESET
         number: 1616-13
         default_pulse_ms: 20
+    c_popbumper_2:
+        number: 1616-14
+    c_popbumper_3:
+        number: 1616-15
 
 drop_targets:
     dt_bonus1_target:
@@ -171,6 +187,13 @@ keyboard:
         switch: s_right_slingshot
     T:
         switch: s_tilt_bob
+
+#virtual_platform_start_active_switches:
+#    - s_trough2
+#    - s_trough3
+#    - s_trough4
+#    - s_right_flipper_eos
+
 playfields:
     playfield:
         tags: default
@@ -205,6 +228,15 @@ autofire_coils:
   ac_right_slingshot:
     coil: c_right_slingshot
     switch: s_right_slingshot
+  ac_popbumper_1:
+    coil: c_popbumper_1
+    switch: s_popbumper_1
+  ac_popbumper_2:
+    coil: c_popbumper_2
+    switch: s_popbumper_2
+  ac_popbumper_3:
+    coil: c_popbumper_3
+    switch: s_popbumper_3
 
 ball_devices:
     bd_trough:
