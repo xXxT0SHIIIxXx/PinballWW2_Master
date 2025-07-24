@@ -75,6 +75,8 @@ switches:
         number: 3208-30
         tags: tilt_warning
 #1616 switches
+    s_left_diveflipper_eos: #Triggers when Right Flipper is held up to drop the Power of the coil it hold it up without burnout
+        number: 1616-12
     s_popbumper_1:
         number: 1616-13
     s_popbumper_2:
@@ -113,6 +115,13 @@ coils:
         default_hold_power: .2
         allow_enable: true
 #1616 coils
+    c_LtDiveFlipper_hold:
+        number: 1616-10
+        default_hold_power: .2
+        allow_enable: true
+    c_LtDiveFlipper_main: #Left dive flipper main coil
+        number: 1616-11
+        default_pulse_ms: 20
     c_popbumper_1:
         number: 1616-12
     c_dt_reset: #DROP TARGETS RESET
@@ -202,6 +211,9 @@ playfields:
 machine:
     balls_installed: 4
 
+game:
+  balls_per_game: 4
+
 flippers:
     right_flipper_upper:
         main_coil: c_RtFlipper_upper_main
@@ -218,6 +230,16 @@ flippers:
         hold_coil: c_RtFlipper_top_hold
         activation_switch: s_right_flipper
         eos_switch: s_right_flipper_eos
+        use_eos: true
+        repulse_on_eos_open: true
+        eos_active_ms_before_repulse: 500
+        enable_events: cmd_flipper_enable
+        disable_events: cmd_flipper_disable
+    left_dive_flipper:
+        main_coil: c_LtDiveFlipper_main
+        hold_coil: c_LtDiveFlipper_hold
+        activation_switch: s_left_flipper
+        eos_switch: s_left_diveflipper_eos
         use_eos: true
         repulse_on_eos_open: true
         eos_active_ms_before_repulse: 500
@@ -262,8 +284,8 @@ ball_devices:
 
 displays:
     window:
-        width: 800
-        height: 600
+        width: 1920
+        height: 1080
 window:
       title: Victory At Sea
       resizable: true
@@ -325,7 +347,10 @@ event_player:
 player_vars:
     score:
         initial_value: 0
+    level:
+        initial_value: 1
 
 modes:
     - tilt
     - base
+    - level1

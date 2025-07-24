@@ -4,28 +4,27 @@ show_player:
     mode_attract_started: attract_display_loop
 
 images:
-    ship:
+    credits:
         load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/images/ship.jpg
-        #file: C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/images/ship.jpg
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/images/Credits.png
+        #file: C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/images/Credits.png
 
-    start_game:
-        load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/images/startGame.jpg
-        #file: C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/images/startGame.jpg
-       
-    last_game:
-        load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/images/lastGame.jpg
-        #file: C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/images/lastGame.jpg
-    company:
-        load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/images/company.jpg
-        #file: C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/images/company.jpg
-    start:
-        load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/images/start.jpg
-        #file: C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/images/start.jpg
+videos:
+    mainmenu:
+        width: 1920
+        height: 1080
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/videos/MainMenu.mp4
+        #file: C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/videos/MainMenu.mp4
+    lastscore:
+        width: 1920
+        height: 1080
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/videos/LastScores.mp4
+        #file: C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/videos/LastScores.mp4
+    highscore:
+        width: 1920
+        height: 1080
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/videos/HighScores.mp4
+        #file: C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/videos/HighScores.mp4
 
 assets:
     sounds:

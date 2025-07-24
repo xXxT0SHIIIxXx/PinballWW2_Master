@@ -1,59 +1,48 @@
 #show_version=6
 
-- duration: 5s
+- duration: 6s
   slides:
-    ship_slide:
+    credits_slide:
         widgets:
             - type: image
-              image: ship
+              image: credits
 
-- duration: 5s
+- duration: 15s
   slides:
-      starting_slide:
+      mainMenu_slide:
         widgets:
-            - type: image
-              image: start
-              animations:
-                pre_show_slide:
-                  - property: opacity
-                    value: 0
-                    duration: .5s
-                  - property: opacity
-                    value: 1
-                    duration: .5s
-                    repeat: true
-            - type: image
-              image: start_game
+            - type: video
+              video: mainmenu
+              height: 1080
+              width: 1920
+              end_behavior: loop
         transition:
-              type: push
+              type: fade
               duration: 1s
-              direction: left
 
-
-- duration: 5s
+- duration: 10s
   slides:
-      company_slide:
+      highscore_slide:
         widgets:
-            - type: image
-              image: company
-            - type: text
-              text: (machine|player1_score)
-              number_grouping: true
-              min_digits: 2
-              font_size: 50
-              y: 40%
+            - type: video
+              video: highscore
+              height: 1080
+              width: 1920
+              end_behavior: loop
         transition:
-              type: move_in
+              type: fade
               duration: 1s
-              direction: right
 
-- duration: 5s
+- duration: 10s
   slides:
-      lastgame_slide:
+      lastscore_slide:
         widgets:
-            - type: image
-              image: last_game
+            - type: video
+              video: lastscore
+              height: 1080
+              width: 1920
+              end_behavior: loop
         transition:
-              type: move_in
+              type: fade
               duration: 1s
-              direction: top
+

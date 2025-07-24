@@ -1,0 +1,236 @@
+#show_version=6
+
+- duration: 0.3
+  lights:
+    led_playfield_lights_light_0: 0
+    led_playfield_lights_light_1: 0
+    led_playfield_lights_light_2: 0
+    led_playfield_lights_light_3: 0
+    led_playfield_lights_light_4: 0
+    led_playfield_lights_light_5: 0
+    led_playfield_lights_light_6: 0
+    led_playfield_lights_light_7: 0
+    led_playfield_lights_light_8: 0
+    led_playfield_lights_light_9: 0
+    led_playfield_lights_light_10: 0
+    led_playfield_lights_light_11: 0
+    led_playfield_lights_light_12: 0
+- duration: 0.3
+  lights:
+    led_playfield_lights_light_0: yellow
+    led_playfield_lights_light_1: 0
+    led_playfield_lights_light_2: 0
+    led_playfield_lights_light_3: 0
+    led_playfield_lights_light_4: 0
+    led_playfield_lights_light_5: 0
+    led_playfield_lights_light_6: 0
+    led_playfield_lights_light_7: 0
+    led_playfield_lights_light_8: 0
+    led_playfield_lights_light_9: 0
+    led_playfield_lights_light_10: 0
+    led_playfield_lights_light_11: 0
+    led_playfield_lights_light_12: 0
+- duration: 0.3
+  lights:
+    led_playfield_lights_light_0: yellow
+    led_playfield_lights_light_1: yellow
+    led_playfield_lights_light_2: 0
+    led_playfield_lights_light_3: 0
+    led_playfield_lights_light_4: 0
+    led_playfield_lights_light_5: 0
+    led_playfield_lights_light_6: 0
+    led_playfield_lights_light_7: 0
+    led_playfield_lights_light_8: 0
+    led_playfield_lights_light_9: 0
+    led_playfield_lights_light_10: 0
+    led_playfield_lights_light_11: 0
+    led_playfield_lights_light_12: 0
+- duration: 0.3
+  lights:
+    led_playfield_lights_light_0: yellow
+    led_playfield_lights_light_1: yellow
+    led_playfield_lights_light_2: yellow
+    led_playfield_lights_light_3: 0
+    led_playfield_lights_light_4: 0
+    led_playfield_lights_light_5: 0
+    led_playfield_lights_light_6: 0
+    led_playfield_lights_light_7: 0
+    led_playfield_lights_light_8: 0
+    led_playfield_lights_light_9: 0
+    led_playfield_lights_light_10: 0
+    led_playfield_lights_light_11: 0
+    led_playfield_lights_light_12: 0
+- duration: 0.3
+  lights:
+    led_playfield_lights_light_0: yellow
+    led_playfield_lights_light_1: yellow
+    led_playfield_lights_light_2: yellow
+    led_playfield_lights_light_3: yellow
+    led_playfield_lights_light_4: 0
+    led_playfield_lights_light_5: 0
+    led_playfield_lights_light_6: 0
+    led_playfield_lights_light_7: 0
+    led_playfield_lights_light_8: 0
+    led_playfield_lights_light_9: 0
+    led_playfield_lights_light_10: 0
+    led_playfield_lights_light_11: 0
+    led_playfield_lights_light_12: 0
+- duration: 0.3
+  lights:
+    led_playfield_lights_light_0: yellow
+    led_playfield_lights_light_1: yellow
+    led_playfield_lights_light_2: yellow
+    led_playfield_lights_light_3: yellow
+    led_playfield_lights_light_4: yellow
+    led_playfield_lights_light_5: 0
+    led_playfield_lights_light_6: 0
+    led_playfield_lights_light_7: 0
+    led_playfield_lights_light_8: 0
+    led_playfield_lights_light_9: 0
+    led_playfield_lights_light_10: 0
+    led_playfield_lights_light_11: 0
+    led_playfield_lights_light_12: 0
+- duration: 0.3
+  lights:
+    led_playfield_lights_light_0: yellow
+    led_playfield_lights_light_1: yellow
+    led_playfield_lights_light_2: yellow
+    led_playfield_lights_light_3: yellow
+    led_playfield_lights_light_4: yellow
+    led_playfield_lights_light_5: yellow
+    led_playfield_lights_light_6: 0
+    led_playfield_lights_light_7: 0
+    led_playfield_lights_light_8: 0
+    led_playfield_lights_light_9: 0
+    led_playfield_lights_light_10: 0
+    led_playfield_lights_light_11: 0
+    led_playfield_lights_light_12: 0
+- duration: 0.3
+  lights:
+    led_playfield_lights_light_0: yellow
+    led_playfield_lights_light_1: yellow
+    led_playfield_lights_light_2: yellow
+    led_playfield_lights_light_3: yellow
+    led_playfield_lights_light_4: yellow
+    led_playfield_lights_light_5: yellow
+    led_playfield_lights_light_6: yellow
+    led_playfield_lights_light_7: 0
+    led_playfield_lights_light_8: 0
+    led_playfield_lights_light_9: 0
+    led_playfield_lights_light_10: 0
+    led_playfield_lights_light_11: 0
+    led_playfield_lights_light_12: 0
+- duration: 0.3
+  lights:
+    led_playfield_lights_light_0: yellow
+    led_playfield_lights_light_1: yellow
+    led_playfield_lights_light_2: yellow
+    led_playfield_lights_light_3: yellow
+    led_playfield_lights_light_4: yellow
+    led_playfield_lights_light_5: yellow
+    led_playfield_lights_light_6: yellow
+    led_playfield_lights_light_7: yellow
+    led_playfield_lights_light_8: 0
+    led_playfield_lights_light_9: 0
+    led_playfield_lights_light_10: 0
+    led_playfield_lights_light_11: 0
+    led_playfield_lights_light_12: 0
+- duration: 0.3
+  lights:
+    led_playfield_lights_light_0: yellow
+    led_playfield_lights_light_1: yellow
+    led_playfield_lights_light_2: yellow
+    led_playfield_lights_light_3: yellow
+    led_playfield_lights_light_4: yellow
+    led_playfield_lights_light_5: yellow
+    led_playfield_lights_light_6: yellow
+    led_playfield_lights_light_7: yellow
+    led_playfield_lights_light_8: yellow
+    led_playfield_lights_light_9: 0
+    led_playfield_lights_light_10: 0
+    led_playfield_lights_light_11: 0
+    led_playfield_lights_light_12: 0
+- duration: 0.3
+  lights:
+    led_playfield_lights_light_0: yellow
+    led_playfield_lights_light_1: yellow
+    led_playfield_lights_light_2: yellow
+    led_playfield_lights_light_3: yellow
+    led_playfield_lights_light_4: yellow
+    led_playfield_lights_light_5: yellow
+    led_playfield_lights_light_6: yellow
+    led_playfield_lights_light_7: yellow
+    led_playfield_lights_light_8: yellow
+    led_playfield_lights_light_9: yellow
+    led_playfield_lights_light_10: 0
+    led_playfield_lights_light_11: 0
+    led_playfield_lights_light_12: 0
+- duration: 0.3
+  lights:
+    led_playfield_lights_light_0: yellow
+    led_playfield_lights_light_1: yellow
+    led_playfield_lights_light_2: yellow
+    led_playfield_lights_light_3: yellow
+    led_playfield_lights_light_4: yellow
+    led_playfield_lights_light_5: yellow
+    led_playfield_lights_light_6: yellow
+    led_playfield_lights_light_7: yellow
+    led_playfield_lights_light_8: yellow
+    led_playfield_lights_light_9: yellow
+    led_playfield_lights_light_10: yellow
+    led_playfield_lights_light_11: 0
+    led_playfield_lights_light_12: 0
+- duration: 0.3
+  lights:
+    led_playfield_lights_light_0: yellow
+    led_playfield_lights_light_1: yellow
+    led_playfield_lights_light_2: yellow
+    led_playfield_lights_light_3: yellow
+    led_playfield_lights_light_4: yellow
+    led_playfield_lights_light_5: yellow
+    led_playfield_lights_light_6: yellow
+    led_playfield_lights_light_7: yellow
+    led_playfield_lights_light_8: yellow
+    led_playfield_lights_light_9: yellow
+    led_playfield_lights_light_10: yellow
+    led_playfield_lights_light_11: yellow
+    led_playfield_lights_light_12: 0
+- duration: 0.3
+  lights:
+    led_playfield_lights_light_0: yellow
+    led_playfield_lights_light_1: yellow
+    led_playfield_lights_light_2: yellow
+    led_playfield_lights_light_3: yellow
+    led_playfield_lights_light_4: yellow
+    led_playfield_lights_light_5: yellow
+    led_playfield_lights_light_6: yellow
+    led_playfield_lights_light_7: yellow
+    led_playfield_lights_light_8: yellow
+    led_playfield_lights_light_9: yellow
+    led_playfield_lights_light_10: yellow
+    led_playfield_lights_light_11: yellow
+    led_playfield_lights_light_12: yellow
+- duration: 0.3
+  lights:
+    led_playfield_lights: 0
+- duration: 0.3
+  lights:
+    led_playfield_lights: yellow
+- duration: 0.3
+  lights:
+    led_playfield_lights: 0
+- duration: 0.3
+  lights:
+    led_playfield_lights: yellow
+- duration: 0.3
+  lights:
+    led_playfield_lights: 0
+- duration: 0.3
+  lights:
+    led_playfield_lights: yellow
+- duration: 0.3
+  lights:
+    led_playfield_lights: 0
+- duration: 0.3
+  lights:
+    led_playfield_lights: yellow
