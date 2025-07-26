@@ -59,22 +59,24 @@ switches:
         number: 3208-21
     s_trough4: #Tracks The Forth and last ball in the trough. Should be up once first ball in ejected to plunger
         number: 3208-22
-    s_launcher_button: #Button used to launch the ball on the cabinet
+    s_launcher_button: #LAUNCH BUTTON
         number: 3208-24
         debounce: quick
-    s_start_button:
+    s_start_button: #START BUTTON
         number: 3208-25
         tags: start
-    s_right_flipper:
+    s_right_flipper: # RIGHT FLIPPER SWITCH
         number: 3208-26
         tags: right_flipper
-    s_left_flipper: #internal Name for device (switch in this case)
-        number: 3208-27 #hardware pin number for device (switch)
-        tags: left_flipper #allows events to play based off cur state
-    s_tilt_bob:
+    s_left_flipper: #LEFT FLIPPER SWITCH
+        number: 3208-27 
+        tags: left_flipper
+    s_tilt_bob: #TILT SWITCH
         number: 3208-30
         tags: tilt_warning
 #1616 switches
+    s_right_diveflipper_eos: #Triggers when Right Flipper is held up to drop the Power of the coil it hold it up without burnout
+        number: 1616-11
     s_left_diveflipper_eos: #Triggers when Right Flipper is held up to drop the Power of the coil it hold it up without burnout
         number: 1616-12
     s_popbumper_1:
@@ -115,11 +117,18 @@ coils:
         default_hold_power: .2
         allow_enable: true
 #1616 coils
-    c_LtDiveFlipper_hold:
+    c_RtDiveFlipper_hold: #RIGHT DIVE FLIPPER
+        number: 1616-8
+        default_hold_power: .2
+        allow_enable: true
+    c_RtDiveFlipper_main: #RIGHT DIVE FLIPPER
+        number: 1616-9
+        default_pulse_ms: 20
+    c_LtDiveFlipper_hold: #LEFT DIVE FLIPPER
         number: 1616-10
         default_hold_power: .2
         allow_enable: true
-    c_LtDiveFlipper_main: #Left dive flipper main coil
+    c_LtDiveFlipper_main: #LEFT DIVE FLIPPER
         number: 1616-11
         default_pulse_ms: 20
     c_popbumper_1:
@@ -240,6 +249,16 @@ flippers:
         hold_coil: c_LtDiveFlipper_hold
         activation_switch: s_left_flipper
         eos_switch: s_left_diveflipper_eos
+        use_eos: true
+        repulse_on_eos_open: true
+        eos_active_ms_before_repulse: 500
+        enable_events: cmd_flipper_enable
+        disable_events: cmd_flipper_disable
+    right_dive_flipper:
+        main_coil: c_RtDiveFlipper_main
+        hold_coil: c_RtDiveFlipper_hold
+        activation_switch: s_right_flipper
+        eos_switch: s_right_diveflipper_eos
         use_eos: true
         repulse_on_eos_open: true
         eos_active_ms_before_repulse: 500
