@@ -75,6 +75,8 @@ switches:
         number: 3208-30
         tags: tilt_warning
 #1616 switches
+    s_left_upperflipper_eos:
+        number: 1616-10
     s_right_diveflipper_eos: #Triggers when Right Flipper is held up to drop the Power of the coil it hold it up without burnout
         number: 1616-11
     s_left_diveflipper_eos: #Triggers when Right Flipper is held up to drop the Power of the coil it hold it up without burnout
@@ -117,6 +119,12 @@ coils:
         default_hold_power: .2
         allow_enable: true
 #1616 coils
+    c_LtFlipper_upper_hold:
+        number: 1616-6
+        default_hold_power: .2
+    c_LtFlipper_upper_main:
+        number: 1616-7
+        default_pulse_ms: 20
     c_RtDiveFlipper_hold: #RIGHT DIVE FLIPPER
         number: 1616-8
         default_hold_power: .2
@@ -224,6 +232,16 @@ game:
   balls_per_game: 4
 
 flippers:
+    left_flipper_upper:
+        main_coil: c_LtFlipper_upper_main
+        hold_coil: c_LtFlipper_upper_hold
+        activation_switch: s_left_flipper
+        eos_switch: s_left_upperflipper_eos
+        use_eos: true
+        repulse_on_eos_open: true
+        eos_active_ms_before_repulse: 500
+        enable_events: cmd_flipper_enable
+        disable_events: cmd_flipper_disable
     right_flipper_upper:
         main_coil: c_RtFlipper_upper_main
         hold_coil: c_RtFlipper_upper_hold
