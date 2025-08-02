@@ -10,11 +10,11 @@ show_player:
 images:
     location:
         load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/level1/images/level_1_location.png
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/level1/images/level1_location.png
         #file: C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/level1/images/level1_location.png
     blip:
         load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/level1/images/level_1_blip.png
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/level1/images/level1_blip.png
         #file: C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/level1/images/level1_blip.png
     score:
         load: preload
