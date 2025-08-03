@@ -6,12 +6,26 @@ mode:
 
 variable_player:
     s_lowerTargets_active:
-        score: 1250
+        score: 1250 * current_player.multiplier
     s_right_slingshot_active:
-        score: 1500
+        score: 1500 * current_player.multiplier
     s_popbumper_1_active:
-        score: 10000
+        score: 10000 * current_player.multiplier
     s_popbumper_2_active:
-        score: 10000
+        score: 10000 * current_player.multiplier
     s_popbumper_3_active:
-        score: 10000
+        score: 10000 * current_player.multiplier
+    s_bonus1_active:
+        multiplier:
+            int: 2
+            action: set
+    s_bonus2_active:
+        multiplier:
+            int: 3
+            action: set
+    s_bonus3_active:
+        multiplier: 
+            int: 4
+            action: set
+    s_millPtTarget_active:
+        score: 1000000

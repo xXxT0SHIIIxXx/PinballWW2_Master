@@ -13,6 +13,15 @@
           font_size: 150
           x: 1000
           y: 90
+        - type: text #multiplier NUMBER
+          text: (multiplier)X
+          font_name: charlie
+          color: yellow
+          number_grouping: true
+          min_digits: 1
+          font_size: 130
+          x: 1700
+          y: 75
         - type: image #Start of background
           image: score
         - type: image
@@ -45,6 +54,15 @@
           font_size: 150
           x: 1000
           y: 90
+        - type: text #multiplier NUMBER
+          text: (multiplier)X
+          font_name: charlie
+          color: yellow
+          number_grouping: true
+          min_digits: 1
+          font_size: 130
+          x: 1700
+          y: 75
         - type: image #Start of background
           image: score
         - type: video
@@ -72,6 +90,15 @@
           font_size: 150
           x: 1000
           y: 90
+        - type: text #multiplier NUMBER
+          text: (multiplier)X
+          font_name: charlie
+          color: yellow
+          number_grouping: true
+          min_digits: 1
+          font_size: 130
+          x: 1700
+          y: 75
         - type: image #Start of background
           image: score
         - type: video
