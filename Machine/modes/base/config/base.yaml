@@ -16,14 +16,17 @@ variable_player:
     s_popbumper_3_active:
         score: 10000 * current_player.multiplier
     s_bonus1_active:
+        score: 10000
         multiplier:
             int: 2
             action: set
     s_bonus2_active:
+        score: 10000
         multiplier:
             int: 3
             action: set
     s_bonus3_active:
+        score: 10000
         multiplier: 
             int: 4
             action: set
