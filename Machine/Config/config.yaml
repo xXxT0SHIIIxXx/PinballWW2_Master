@@ -75,6 +75,8 @@ switches:
         number: 3208-30
         tags: tilt_warning
 #1616 switches
+    s_upper_slingshot:
+        number: 1616-9
     s_left_upperflipper_eos:
         number: 1616-10
     s_right_diveflipper_eos: #Triggers when Right Flipper is held up to drop the Power of the coil it hold it up without burnout
@@ -119,6 +121,9 @@ coils:
         default_hold_power: .2
         allow_enable: true
 #1616 coils
+    c_upper_slingshot:
+        number: 1616-5
+        default_pulse_ms: 15
     c_LtFlipper_upper_hold:
         number: 1616-6
         default_hold_power: .2
@@ -284,6 +289,9 @@ flippers:
         disable_events: cmd_flipper_disable
 
 autofire_coils:
+  ac_upper_slingshot:
+    coil:  c_upper_slingshot
+    switch: s_upper_slingshot
   ac_right_slingshot:
     coil: c_right_slingshot
     switch: s_right_slingshot
