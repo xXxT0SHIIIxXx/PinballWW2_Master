@@ -9,6 +9,8 @@ variable_player:
         score: 1250 * current_player.multiplier
     s_right_slingshot_active:
         score: 1500 * current_player.multiplier
+    s_upper_slingshot_active:
+        score: 1500 * current_player.multiplier
     s_popbumper_1_active:
         score: 10000 * current_player.multiplier
     s_popbumper_2_active:
