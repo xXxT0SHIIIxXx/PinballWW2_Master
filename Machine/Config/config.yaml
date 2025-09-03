@@ -75,6 +75,8 @@ switches:
         number: 3208-30
         tags: tilt_warning
 #1616 switches
+    s_upper_dive_hold:
+        number: 1616-8
     s_upper_slingshot:
         number: 1616-9
     s_left_upperflipper_eos:
@@ -89,6 +91,8 @@ switches:
         number: 1616-14
     s_popbumper_3:
         number: 1616-15
+    s_lower_dive:
+        number: 1616-7
 
 
 coils:
@@ -121,6 +125,9 @@ coils:
         default_hold_power: .2
         allow_enable: true
 #1616 coils
+    c_upper_dive_hold:
+        number: 1616-4
+        default_pulse_ms: 20
     c_upper_slingshot:
         number: 1616-5
         default_pulse_ms: 15
