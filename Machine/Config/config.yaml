@@ -152,6 +152,8 @@ coils:
     c_LtDiveFlipper_main: #LEFT DIVE FLIPPER
         number: 1616-11
         default_pulse_ms: 20
+    c_pillbox:
+        number: 1616-11
     c_popbumper_1:
         number: 1616-12
     c_dt_reset: #DROP TARGETS RESET
