@@ -27,7 +27,7 @@ switches:
         number: 3208-8
     s_bonus1:  #Drop target 1 // Upgrade for player ==
         number: 3208-9
-    s_right_slingshot:
+    s_millPtTarget:  #1 million point target
         number: 3208-10
     s_lowerTargets: #Registers as damage to aircraft carrier, all 4 switches as one.
         number: 3208-11
@@ -44,13 +44,10 @@ switches:
     s_Lane1: #Left side entry to top lane on lower playfield
         number: 3208-15
         tags: playfield_active
-    s_millPtTarget: #1 million point target
-        number: 3208-16
-        tags: playfield_active
+    s_right_slingshot: #1 million point target
+        number: 3208-17
     s_plunger_lane: # Lets MPF know a ball is readt for launching
         number: 3208-18
-    s_bonus3: #Drop Target 3 // Upgrade for player ==
-        number: 3208-17
     s_right_flipper_eos: #Triggers when Right Flipper is held up to drop the Power of the coil it hold it up without burnout
         number: 3208-19
     s_trough2: #Tracks The Second ball in the trough. Next one to be played
@@ -75,9 +72,13 @@ switches:
         number: 3208-30
         tags: tilt_warning
 #1616 switches
-    s_lower_dive:
+    s_pillbox:
+        number: 1616-5
+    s_bonus3:  #Drop target 3 // Upgrade for player ==
+        number: 1616-6
+    s_dive_launch:
         number: 1616-7
-    s_upper_dive:
+    s_dive_hold:
         number: 1616-8
     s_upper_slingshot:
         number: 1616-9
@@ -124,11 +125,16 @@ coils:
         default_hold_power: .2
         allow_enable: true
 #1616 coils
-    c_lower_dive:
+    c_dive_launch:
         number: 1616-0
+    c_LtDiveFlipper_main:
+        number: 1616-1
+        default_pulse_ms: 20
+    c_Lt_slingshot:
+        number: 1616-3
     c_upper_dive_hold:
         number: 1616-4
-        default_pulse_ms: 20
+        default_hold_power: .2
     c_upper_slingshot:
         number: 1616-5
         default_pulse_ms: 15
@@ -149,9 +155,6 @@ coils:
         number: 1616-10
         default_hold_power: .2
         allow_enable: true
-    c_LtDiveFlipper_main: #LEFT DIVE FLIPPER
-        number: 1616-11
-        default_pulse_ms: 20
     c_pillbox:
         number: 1616-11
     c_popbumper_1:
@@ -299,6 +302,9 @@ flippers:
         disable_events: cmd_flipper_disable
 
 autofire_coils:
+  ac_pillbox:
+    coil: c_pillbox
+    switch: s_pillbox
   ac_upper_slingshot:
     coil:  c_upper_slingshot
     switch: s_upper_slingshot
