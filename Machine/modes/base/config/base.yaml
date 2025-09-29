@@ -3,6 +3,32 @@
 mode:
     start_events: ball_started
     priority: 100  #(100 - 1,000,000)
+  
+images:
+    infoPanel:
+        load: preload
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/base/images/infopanel.png
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/base/images/infopanel.png
+
+event_player:
+    mode_base_started{current_player.level==0}: level1_Begin
+    mode_base_started{current_player.level==1}: level1_Begin
+    mode_base_started{current_player.level==2}: level2_Begin
+    mode_base_started{current_player.level==3}: level3_Begin
+    level1_Complete: level2_Begin
+    level2_Complete: level3_Begin
+    s_lowerTargets_active{dive_mode_Begin}: torpedo_hit
+
+timers:
+    dive_detect:
+        start_value: 0
+        end_value: 3
+        tick_interval: 1s
+        control_events:
+            - action: start
+              event: s_dive_hold_active
+            - action: stop
+              event: dive_detection_done
 
 variable_player:
     s_lowerTargets_active:
@@ -34,3 +60,16 @@ variable_player:
             action: set
     s_millPtTarget_active:
         score: 1000000
+    score_check{current_player.score >= 100000}:
+        rank:
+            action: set
+            string: "PRIVATE"
+    score_check{current_player.score >= 200000}:
+        rank:
+            action: set
+            string: "GENERAL"
+    score_check{current_player.score >= 300000}:
+        rank:
+            action: set
+            string: "CAPTAIN"
+        

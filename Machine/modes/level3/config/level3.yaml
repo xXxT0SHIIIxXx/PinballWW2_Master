@@ -1,0 +1,105 @@
+#config_version=6
+
+mode:
+    start_events: level2_Complete
+    stop_events: level3_Complete
+    priority: 100  #(100 - 1,000,000)
+ 
+show_player:
+    mode_level3_started: level3_display_loop
+
+images:
+    location3:
+        load: preload
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/level3/images/level3_location.png
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level3/images/level3_location.png
+    blip3:
+        load: preload
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/level3/images/level3_blip.png
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level3/images/level3_blip.png
+    score3:
+        load: preload
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/level3/images/score_overlay.png
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level3/images/score_overlay.png
+
+videos:
+    level3Slide1:
+        width: 1920
+        height: 1080
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/level3/videos/level3_slide1.mp4
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level3/videos/level3_slide1.mp4
+    level3Slide2:
+        width: 1920
+        height: 1080
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/level3/videos/level3_slide2.mp4
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level3/videos/level3_slide2.mp4
+
+widgets:
+    scoreTxtWidget:
+         type: text #Score NUMBER
+         text: (score)
+         font_name: charlie
+         color: black
+         number_grouping: true
+         min_digits: 1
+         font_size: 150
+         x: 1000
+         y: 90
+    scoreBGWidget:
+         type: image #Start of background
+         image: score
+    locationBlip:
+         type: image
+         image: blip
+         animations:
+            pre_show_slide:
+               - property: opacity
+                 value: 0
+                 duration: 0.5s
+               - property: opacity
+                 value: 1
+                 duration: 2s
+                 repeat: true
+    locationBG:
+         type: image
+         image: location
+    slide1Widget:
+         type: video
+         video: level3Slide1
+         height: 1080
+         width: 1920
+         end_behavior: loop
+    slide2Widget:
+         type: video
+         video: level3Slide2
+         height: 1080
+         width: 1920
+         end_behavior: loop
+
+
+event_player:
+    mode_level3_started:
+        - l3_scoreReq_Begin
+    player_score{current_player.score>=300000}: 
+        - l3_scoreReq_complete
+        - rr_Begin
+    rr_Complete:
+        - mb_Begin
+        - mb_time_start
+    mb_Complete:
+        - level3_Complete
+        - score_check
+        - game_will_end
+
+
+variable_player:
+    mode_level3_started:
+        level:
+            action: set
+            int: 3
+        mb_time:
+            action: set
+            int: 20
+        mb_curTime:
+            action: set
+            int: 20

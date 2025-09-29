@@ -135,6 +135,7 @@ coils:
     c_upper_dive_hold:
         number: 1616-4
         default_hold_power: .2
+        allow_enable: true
     c_upper_slingshot:
         number: 1616-5
         default_pulse_ms: 15
@@ -220,23 +221,28 @@ keyboard:
     M:
         switch: s_lowerTargets
     L:
-        switch: s_Lane1
+        switch: s_bonus1
     K:
-        switch: s_Lane2
+        switch: s_bonus2
     J:
-        switch: s_Lane3
+        switch: s_bonus3
     H:
-        switch: s_Lane4
+        switch: s_millPtTarget
     B:
         switch: s_right_slingshot
     T:
         switch: s_tilt_bob
+    Z:
+        switch: s_dive_hold
+    X:
+        switch: s_pillbox
 
-#virtual_platform_start_active_switches:
-#    - s_trough2
-#    - s_trough3
-#    - s_trough4
-#    - s_right_flipper_eos
+virtual_platform_start_active_switches:
+    - s_trough1
+    - s_trough2
+    - s_trough3
+    - s_trough4
+    - s_right_flipper_eos
 
 playfields:
     playfield:
@@ -247,7 +253,7 @@ machine:
     balls_installed: 4
 
 game:
-  balls_per_game: 4
+  balls_per_game: 1
 
 flippers:
     left_flipper_upper:
@@ -258,8 +264,8 @@ flippers:
         use_eos: true
         repulse_on_eos_open: true
         eos_active_ms_before_repulse: 500
-        enable_events: cmd_flipper_enable
-        disable_events: cmd_flipper_disable
+        enable_events: cmd_all_flippers_enable, cmd_upper_flippers_enable
+        disable_events: cmd_all_flipper_disable, cmd_upper_flippers_disable
     right_flipper_upper:
         main_coil: c_RtFlipper_upper_main
         hold_coil: c_RtFlipper_upper_hold
@@ -268,8 +274,8 @@ flippers:
         use_eos: true
         repulse_on_eos_open: true
         eos_active_ms_before_repulse: 500
-        enable_events: cmd_flipper_enable
-        disable_events: cmd_flipper_disable
+        enable_events: cmd_all_flippers_enable, cmd_upper_flippers_enable
+        disable_events: cmd_all_flipper_disable, cmd_upper_flippers_disable
     right_flipper_top:
         main_coil: c_RtFlipper_top_main
         hold_coil: c_RtFlipper_top_hold
@@ -278,8 +284,8 @@ flippers:
         use_eos: true
         repulse_on_eos_open: true
         eos_active_ms_before_repulse: 500
-        enable_events: cmd_flipper_enable
-        disable_events: cmd_flipper_disable
+        enable_events: cmd_all_flippers_enable, cmd_upper_flippers_enable
+        disable_events: cmd_all_flipper_disable, cmd_upper_flippers_disable
     left_dive_flipper:
         main_coil: c_LtDiveFlipper_main
         hold_coil: c_LtDiveFlipper_hold
@@ -288,8 +294,8 @@ flippers:
         use_eos: true
         repulse_on_eos_open: true
         eos_active_ms_before_repulse: 500
-        enable_events: cmd_flipper_enable
-        disable_events: cmd_flipper_disable
+        enable_events: cmd_all_flippers_enable, cmd_dive_flippers_enable
+        disable_events: cmd_all_flipper_disable, cmd_dive_flippers_disable
     right_dive_flipper:
         main_coil: c_RtDiveFlipper_main
         hold_coil: c_RtDiveFlipper_hold
@@ -298,8 +304,8 @@ flippers:
         use_eos: true
         repulse_on_eos_open: true
         eos_active_ms_before_repulse: 500
-        enable_events: cmd_flipper_enable
-        disable_events: cmd_flipper_disable
+        enable_events: cmd_all_flippers_enable, cmd_dive_flippers_enable
+        disable_events: cmd_all_flipper_disable, cmd_dive_flippers_disable
 
 autofire_coils:
   ac_pillbox:
@@ -343,6 +349,16 @@ ball_devices:
         eject_timeouts: 500ms
         #debug: true
 
+multiballs:
+    mb_MultiBall:
+        ball_count: 4
+        ball_count_type: add
+        shoot_again: 3s
+        enable_events: MultiBall_Initiate
+        disable_events: Multiball_Disengage
+        start_events: MultiBall_Start
+        stop_events: MultiBall_Stop
+
 displays:
     window:
         width: 1920
@@ -354,6 +370,136 @@ window:
       borderless: false
       exit_on_escape: true
       source_display: window
+
+widget_styles:
+    font_style:
+        style: big
+        font_name: charlie
+        font_size: 60
+        color: black
+    cur_user:
+        color: green
+    replaced:
+        color: red
+    score_size:
+        font_size: 45
+    name_x:
+        x: center - 75
+    score_x:
+        x: center + 180
+    rank_x:
+        x: center - 250
+    label_y:
+        y: center + 53
+    score1_y:
+        y: center - 28
+    score2_y:
+        y: center - 115
+    score3_y:
+        y: center - 202
+    score4_y:
+        y: center - 289
+  
+widgets:
+    playerscore:
+        - type: text
+          text: (player_name)
+          style: label_y, font_style,name_x
+          z: 10
+          animations:
+            show_slide:
+              - property: opacity
+                value: 0
+                duration: 0.5s
+                easing: in_out_quint
+              - property: opacity
+                value: 1
+                duration: 0.5s
+                repeat: true
+                easing: in_out_quint
+        - type: text
+          text: (award)
+          style: label_y,font_style,rank_x
+          z: 10
+          animations:
+            show_slide:
+              - property: opacity
+                value: 0
+                duration: 0.5s
+                easing: in_out_quint
+              - property: opacity
+                value: 1
+                duration: 0.5s
+                repeat: true
+                easing: in_out_quint
+        - type: text
+          text: (value)
+          style: label_y, font_style,score_x, score_size
+          z: 10
+          animations:
+            show_slide:
+              - property: opacity
+                value: 0
+                duration: 0.5s
+                easing: in_out_quint
+              - property: opacity
+                value: 1
+                duration: 0.5s
+                repeat: true
+                easing: in_out_quint
+
+    highscore1:
+        - type: text
+          text: (machine|score1_name)
+          style: score1_y, font_style,name_x
+          z: 10
+        - type: text
+          text: (machine|score1_label)
+          style: score1_y,font_style,rank_x
+          z: 10
+        - type: text
+          text: (machine|score1_value)
+          style: score1_y,font_style,score_x, score_size
+          z: 10
+    highscore2:
+        - type: text
+          text: (machine|score2_name)
+          style: score2_y, font_style,name_x
+          z: 10
+        - type: text
+          text: (machine|score2_label)
+          style: score2_y,font_style,rank_x
+          z: 10
+        - type: text
+          text: (machine|score2_value)
+          style: score2_y,font_style,score_x, score_size
+          z: 10
+    highscore3:
+        - type: text
+          text: (machine|score3_name)
+          style: score3_y, font_style,name_x
+          z: 10
+        - type: text
+          text: (machine|score3_label)
+          style: score3_y,font_style,rank_x
+          z: 10
+        - type: text
+          text: (machine|score3_value)
+          style: score3_y,font_style,score_x, score_size
+          z: 10
+    highscore4:
+        - type: text
+          text: (machine|score4_name)
+          style: score4_y, font_style,name_x
+          z: 10
+        - type: text
+          text: (machine|score4_label)
+          style: score4_y,font_style,rank_x
+          z: 10
+        - type: text
+          text: (machine|score4_value)
+          style: score4_y,font_style,score_x, score_size
+          z: 10
 
 
 slides:
@@ -378,16 +524,6 @@ sound_system:
             volume: 1
             loop: true
 
-assets:
-    sounds:
-        default:
-            load: on_demand
-        music:
-            track: music
-        main:
-            #file: C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/attract/sounds/music/main.wav
-            file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/sounds/music/main.wav
-
 sound_player:
     mode_attract_started:
         main:
@@ -396,22 +532,84 @@ sound_player:
         main:
             action: stop
 
+images:
+    highscore_initials:
+        load: preload
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/high_score/images/Highscore_initials.png
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/high_score/images/Highscore_initials.png
+
 event_player:
-#  mode_attract_started:
-#    - cmd_flipper_disable
-#  mode_base_started:
-#    - cmd_flipper_enable
-   tilt:
-     - cmd_flipper_disable
+   mode_attract_started:
+        - cmd_all_flippers_disable
    ball_will_start:
-     - cmd_flipper_enable
+        - cmd_upper_flippers_enable
+   mode_base_started:
+        - cmd_upper_flippers_enable
+        - cmd_dive_flippers_disable
+   mode_dive_started:
+        - cmd_dive_flippers_enable
+        - cmd_upper_flippers_disable
+   dive_detection_done:
+        - cmd_eject_dive_ball
+   torpedos_Complete:
+        - cmd_dive_flippers_disable
+   mode_dive_ended:
+        - cmd_upper_flippers_enable
+        - cmd_release_upper_ball
+   tilt:
+        - cmd_all_flippers_disable
+   game_ended:
+        - cmd_all_flippers_disable
+   timer_dive_detect_complete:
+        - dive_detection_done
+
+coil_player:
+    cmd_eject_dive_ball:
+        c_dive_launch: pulse
+    s_dive_hold_active:
+        c_upper_dive_hold:
+            action: enable
+            hold_power: .2
+
 player_vars:
     score:
+        value_type: int
         initial_value: 0
     level:
+        value_type: int
+        initial_value: 0
+    multiplier:
+        value_type: int
         initial_value: 1
+    rank:
+        value_type: str
+        initial_value: BOOTCAMP
+    mb_time:
+        value_type: int
+        initial_value: 99
+    mb_curTime:
+        value_type: int
+        initial_value: 0
+    dive_lvl:
+        value_type: int
+        initial_value: 0
+    torpedos_goal:
+        value_type: int
+        initial_value: 0
+    torpedo_hits:
+        value_type: int
+        initial_value: 0
+    cur_drinks:
+        value_type: int
+        initial_value: 0
 
 modes:
     - tilt
     - base
+    - dive
+    - restrelax
     - level1
+    - level2
+    - level3
+    - high_score
+    - multiball

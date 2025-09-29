@@ -1,0 +1,240 @@
+#config_version=6
+
+mode:
+    start_events: dive_mode_Begin
+    stop_events: dive_mode_Complete
+    priority: 300
+
+images:
+    lvl1_hit0:
+        width: 1920
+        height: 1080
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/dive/images/dive_lvl1_hit0.png
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/dive/images/dive_lvl1_hit0.png
+    lvl1_hit1:
+        width: 1920
+        height: 1080
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/dive/images/dive_lvl1_hit1.png
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/dive/images/dive_lvl1_hit1.png
+    lvl1_hit2:
+        width: 1920
+        height: 1080
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/dive/images/dive_lvl1_hit2.png
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/dive/images/dive_lvl1_hit2.png
+    lvl2_hit0:
+        width: 1920
+        height: 1080
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/dive/images/dive_lvl2_hit0.png
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/dive/images/dive_lvl2_hit0.png
+    lvl2_hit1:
+        width: 1920
+        height: 1080
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/dive/images/dive_lvl2_hit1.png
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/dive/images/dive_lvl2_hit1.png
+    lvl2_hit2:
+        width: 1920
+        height: 1080
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/dive/images/dive_lvl2_hit2.png
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/dive/images/dive_lvl2_hit2.png
+    lvl2_hit3:
+        width: 1920
+        height: 1080
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/dive/images/dive_lvl2_hit3.png
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/dive/images/dive_lvl2_hit3.png
+    lvl2_hit4:
+        width: 1920
+        height: 1080
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/dive/images/dive_lvl2_hit4.png
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/dive/images/dive_lvl2_hit4.png
+
+videos:
+    diveBG:
+        width: 1920
+        height: 1080   
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/dive/videos/diveBG.mp4
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/dive/videos/diveBG.mp4
+    diveComplete:
+        width: 1920
+        height: 1080
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/dive/videos/DiveComplete.mp4
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/dive/videos/DiveComplete.mp4
+
+timers:
+    dive_delay_timer:
+        start_value: 0
+        end_value: 1
+        tick_interval: 1s
+        control_events:
+            - action: start
+              event: torpedos_Complete
+            - action: stop
+              event: dive_delay_Complete
+
+show_player:
+    mode_dive_started: dive_display_loop
+
+event_player:
+    mode_dive_started:
+        - torpedos_Begin
+    s_lowerTargets_active: torpedo_hit
+    torpedo_hit{current_player.torpedo_hits>=0}:
+       - hit_1
+    torpedo_hit{current_player.torpedo_hits>=1}:
+       - hit_2
+    torpedo_hit{current_player.torpedo_hits>=2 and current_player.dive_lvl == 2}:
+       - hit_3
+    torpedo_hit{current_player.torpedo_hits>=3 and current_player.dive_lvl == 2}:
+       - hit_4
+    torpedo_hit{current_player.torpedo_hits>=current_player.torpedos_goal -1}:
+       - torpedos_Complete
+    slide_congrats_slide_removed:
+       - dive_mode_Complete
+
+slide_player:
+    mode_dive_started: diveIdle
+    timer_dive_delay_timer_complete:
+        congrats_slide:
+            expire: 5s
+
+widgets:
+    score_ui:
+      - type: image
+        image: score
+        z: 10
+      - type: text #Score NUMBER
+        text: (score)
+        font_name: charlie
+        color: black
+        number_grouping: true
+        min_digits: 1
+        font_size: 150
+        x: 1000
+        y: 90
+        z: 11
+    lvl1_ui:
+      - type: image
+        image: lvl1_hit0
+        z: 10
+    lvl1_hit_1:
+      - type: image
+        image: lvl1_hit1
+        z: 10
+    lvl1_hit_2:
+      - type: image
+        image: lvl1_hit2
+        z: 10
+    lvl2_ui:
+      - type: image
+        image: lvl2_hit0
+        z: 10
+    lvl2_hit_1:
+      - type: image
+        image: lvl2_hit1
+        z: 10
+    lvl2_hit_2:
+      - type: image
+        image: lvl2_hit2
+        z: 10
+    lvl2_hit_3:
+      - type: image
+        image: lvl2_hit3
+        z: 10
+    lvl2_hit_4:
+      - type: image
+        image: lvl2_hit4
+        z: 10
+    
+
+widget_player:
+    mode_dive_started{current_player.dive_lvl == 1}:
+        lvl1_ui:
+            slide: diveIdle
+            action: add
+        score_ui:
+            slide: diveIdle
+            action: add
+    mode_dive_started{current_player.dive_lvl == 2}:
+        lvl2_ui:
+            slide: diveIdle
+            action: add
+        score_ui:
+            slide: diveIdle
+            action: add
+    hit_1{current_player.dive_lvl == 1}:
+        lvl1_ui:
+            slide: diveIdle
+            action: remove
+        lvl1_hit_1:
+            slide: diveIdle
+            action: add
+    hit_2{current_player.dive_lvl == 1}:
+        lvl1_hit_1:
+            slide: diveIdle
+            action: remove
+        lvl1_hit_2:
+            slide: diveIdle
+            action: add
+    hit_1{current_player.dive_lvl == 2}:
+        lvl2_ui:
+            slide: diveIdle
+            action: remove
+        lvl2_hit_1:
+            slide: diveIdle
+            action: add
+    hit_2{current_player.dive_lvl == 2}:
+        lvl2_hit_1:
+            slide: diveIdle
+            action: remove
+        lvl2_hit_2:
+            slide: diveIdle
+            action: add
+    hit_3{current_player.dive_lvl == 2}:
+        lvl2_hit_2:
+            slide: diveIdle
+            action: remove
+        lvl2_hit_3:
+            slide: diveIdle
+            action: add
+    hit_4{current_player.dive_lvl == 2}:
+        lvl2_hit_3:
+            slide: diveIdle
+            action: remove
+        lvl2_hit_4:
+            slide: diveIdle
+            action: add
+
+slides:
+    diveIdle:
+        - type: video
+          video: diveBG
+          height: 1080
+          width: 1920
+          end_behavior: loop
+          z: 0
+    congrats_slide:
+        - type: text
+          text: YOU DESTROYED THE ENEMY SHIP!!!
+          font_name: charlie
+          font_size: 50
+          y: center + 280
+          color: white
+        - type: text
+          text: CONGRATULATIONS!!!
+          font_name: charlie
+          font_size: 50
+          y: center + 480
+          color: white
+        - type: video
+          video: diveComplete
+          height: 1080
+          width: 1920
+
+variable_player:
+    torpedos_Begin:
+        torpedo_hits:
+            action: set
+            int: 0
+    torpedo_hit:
+        torpedo_hits:
+            action: add
+            int: 1

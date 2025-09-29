@@ -1,0 +1,154 @@
+#config_version=6
+
+mode:
+  start_events: game_ending, start_high_score
+  stop_events: end_high_score
+  priority: 1500
+  game_mode: False
+  use_wait_queue: true
+
+event_player:
+  mode_high_scores_started: high_score_enter_initials
+  text_input_high_score_complete{current_player.score >= score1_value}: score_1_replaced
+  text_input_high_score_complete{current_player.score >= score2_value}: score_2_replaced
+  text_input_high_score_complete{current_player.score >= score3_value}: score_3_replaced
+  text_input_high_score_complete{current_player.score >= score4_value}: score_4_replaced
+  text_input_high_score_complete: high_score_award_display
+#  flipper_cancel: mode_high_scores_stop
+
+high_score:
+  _overwrite: true
+  enter_initials_timeout: 60
+  award_slide_display_time: 7s
+  # define your high score categories and the awards
+  categories: !!omap
+    - score:
+        - "1"
+        - "2"
+        - "3"
+        - "4"
+  # set the defaults
+  defaults:
+    score:
+      - MPF: 1000000
+      - CLD: 900000
+      - KWH: 800000
+      - QUI: 3000
+# optional: change the slides (you can omit all the following)
+slide_player:
+  _overwrite: true
+  high_score_enter_initials: high_score_enter_initials
+  high_score_award_display: high_score_award_display
+
+widget_player:
+    high_score_award_display:
+        playerscore:
+            slide: high_score_award_display
+            action: add
+        highscore1:
+            slide: high_score_award_display
+            action: add
+        highscore2:
+            slide: high_score_award_display
+            action: add
+        highscore3:
+            slide: high_score_award_display
+            action: add
+        highscore4:
+            slide: high_score_award_display
+            action: add
+    score_1_replaced:
+        highscore1:
+            widget_settings:
+                style: score1_y, font_style,name_x, replaced
+    score_2_replaced:
+        highscore2:
+            widget_settings:
+                style: score2_y, font_style,name_x, replaced
+    score_3_replaced:
+        highscore3:
+            widget_settings:
+                style: score3_y, font_style,name_x, replaced
+    score_4_replaced:
+        highscore4:
+            widget_settings:
+                style: score4_y, font_style,name_x, replaced
+
+slides:
+  _overwrite: true
+  high_score_enter_initials:
+    - type: text   #Level Indicator
+      style: big
+      font_size: 50
+      font_name: charlie
+      text: (level)
+      color: black
+      y: center+361
+      x: center+180
+    - type: text #Rank Indicator
+      style: big
+      font_name: charlie
+      font_size: 50
+      text: (rank)
+      color: black
+      y: center+270
+      x: center+250
+    - type: text #Rank Indicator
+      style: big
+      font_name: charlie
+      font_size: 50
+      text: (score)
+      color: black
+      y: center+123
+      x: center-90
+    - type: text_input  #Where Text input is selected
+      initial_char: A
+      dynamic_x: false
+      key: high_score
+      style: big
+      font_name: charlie
+      font_size: 50
+      max_chars: 3
+      y: center-130
+      x: center+140
+      shift_left_event: s_left_flipper_active
+      shift_right_event: s_right_flipper_active
+      select_event: s_launcher_button_active
+      force_complete_event: sw_start
+      color: black
+    - type: text  #Cursor
+      style: big
+      text: '<       >'
+      font_size: 50
+      y: center-125
+      x: center+140
+      color: black
+    - type: text  #Where Text input is put when selected
+      text: ''
+      key: high_score
+      font_size: 50
+      style: big
+      font_name: charlie
+      color: black
+      y: center-2
+      x: center-140
+      animations:
+        show_slide:
+          - property: opacity
+            value: 1
+            duration: 1s
+            easing: in_out_quint
+          - property: opacity
+            value: 0
+            duration: 1s
+            repeat: true
+            easing: in_out_quint
+    - type: image
+      image: highscore_initials
+  high_score_award_display:
+    - type: video
+      video: highscore
+      height: 1080
+      width: 1920
+      end_behavior: loop
+      z: 0

@@ -24,21 +24,50 @@
   slides:
       highscore_slide:
         widgets:
+            - type: text
+              text: NAME
+              style: label_y, font_style,name_x
+            - type: text
+              text: (machine|score1_name)
+              style: score1_y, font_style,name_x
+            - type: text
+              text: (machine|score2_name)
+              style: score2_y, font_style,name_x
+            - type: text
+              text: (machine|score3_name)
+              style: score3_y, font_style,name_x
+            - type: text
+              text: (machine|score4_name)
+              style: score4_y, font_style,name_x
+            - type: text
+              text: (machine|score1_label)
+              style: score1_y,font_style,rank_x
+            - type: text
+              text: (machine|score2_label)
+              style: score2_y,font_style,rank_x
+            - type: text
+              text: (machine|score3_label)
+              style: score3_y,font_style,rank_x
+            - type: text
+              text: (machine|score4_label)
+              style: score4_y,font_style,rank_x
+            - type: text
+              text: SCORE
+              style: label_y, font_style,score_x
+            - type: text
+              text: (machine|score1_value)
+              style: score1_y,font_style,score_x, score_size
+            - type: text
+              text: (machine|score2_value)
+              style: score2_y,font_style,score_x, score_size
+            - type: text
+              text: (machine|score3_value)
+              style: score3_y,font_style,score_x, score_size
+            - type: text
+              text: (machine|score4_value)
+              style: score4_y,font_style,score_x, score_size
             - type: video
               video: highscore
-              height: 1080
-              width: 1920
-              end_behavior: loop
-        transition:
-              type: fade
-              duration: 1s
-
-- duration: 10s
-  slides:
-      lastscore_slide:
-        widgets:
-            - type: video
-              video: lastscore
               height: 1080
               width: 1920
               end_behavior: loop

@@ -1,0 +1,122 @@
+#config_version=6
+
+mode:
+    start_events: level1_Complete
+    stop_events: level2_Complete
+    priority: 100  #(100 - 1,000,000)
+ 
+show_player:
+    mode_level2_started: level2_display_loop
+
+images:
+    location2:
+        load: preload
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/level2/images/level2_location.png
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level2/images/level2_location.png
+    blip2:
+        load: preload
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/level2/images/level2_blip.png
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level2/images/level2_blip.png
+    score2:
+        load: preload
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/level2/images/score_overlay.png
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level2/images/score_overlay.png
+
+videos:
+    level2Slide1:
+        width: 1920
+        height: 1080
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/level2/videos/level2_slide1.mp4
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level2/videos/level2_slide1.mp4
+    level2Slide2:
+        width: 1920
+        height: 1080
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/level2/videos/level2_slide2.mp4
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level2/videos/level2_slide2.mp4
+
+widgets:
+    scoreTxtWidget:
+         type: text #Score NUMBER
+         text: (score)
+         font_name: charlie
+         color: black
+         number_grouping: true
+         min_digits: 1
+         font_size: 150
+         x: 1000
+         y: 90
+    scoreBGWidget:
+         type: image #Start of background
+         image: score
+    locationBlip:
+         type: image
+         image: blip
+         animations:
+            pre_show_slide:
+               - property: opacity
+                 value: 0
+                 duration: 0.5s
+               - property: opacity
+                 value: 1
+                 duration: 2s
+                 repeat: true
+    locationBG:
+         type: image
+         image: location
+    slide1Widget:
+         type: video
+         video: level2Slide1
+         height: 1080
+         width: 1920
+         end_behavior: loop
+    slide2Widget:
+         type: video
+         video: level2Slide2
+         height: 1080
+         width: 1920
+         end_behavior: loop
+
+
+event_player:
+    mode_level2_started:
+        - storm_beach_callout_Begin
+#    s_beachStormer_active:
+#        - beach_stormed
+    beach_Stormed:
+        - pill_box_callout_Begin
+    s_pillbox_active:
+        - pill_box_done
+    pill_box_done:
+        - dive_callout_Begin
+    s_dive_hold_active{current_player.level==2}:
+        - dive_callout_Done
+    dive_callout_Done:
+        - dive_callout_Ended
+    dive_detection_done:
+        - dive_mode_Begin
+    dive_mode_Complete:
+        - mb_Begin
+        - mb_time_start
+    mb_Complete:
+        - level2_Complete
+        - score_check
+
+
+variable_player:
+    mode_level2_started:
+        level:
+            action: set
+            int: 2
+        mb_time:
+            action: set
+            int: 25
+        mb_curTime:
+            action: set
+            int: 25
+        torpedos_goal:
+            action: set
+            int: 4
+    dive_mode_Begin:
+        dive_lvl:
+            action: set
+            int: 2

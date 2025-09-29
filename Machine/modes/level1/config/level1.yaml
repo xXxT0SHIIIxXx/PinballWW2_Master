@@ -1,9 +1,10 @@
 #config_version=6
 
 mode:
-    start_events: mode_base_started
+    start_events: level1_Begin
+    stop_events: level1_Complete
     priority: 100  #(100 - 1,000,000)
- 
+  
 show_player:
     mode_level1_started: level1_display_loop
 
@@ -11,67 +12,62 @@ images:
     location:
         load: preload
         file: /home/wicky567/PinballWW2_Master/Machine/modes/level1/images/level1_location.png
-        #file: C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/level1/images/level1_location.png
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level1/images/level1_location.png
     blip:
         load: preload
         file: /home/wicky567/PinballWW2_Master/Machine/modes/level1/images/level1_blip.png
-        #file: C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/level1/images/level1_blip.png
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level1/images/level1_blip.png
     score:
         load: preload
         file: /home/wicky567/PinballWW2_Master/Machine/modes/level1/images/score_overlay.png
-        #file: C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/level1/images/score_overlay.png
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level1/images/score_overlay.png
 
 videos:
     level1Slide1:
         width: 1920
         height: 1080
         file: /home/wicky567/PinballWW2_Master/Machine/modes/level1/videos/level1_slide1.mp4
-        #file: C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/level1/videos/level1_slide1.mp4
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level1/videos/level1_slide1.mp4
     level1Slide2:
         width: 1920
         height: 1080
         file: /home/wicky567/PinballWW2_Master/Machine/modes/level1/videos/level1_slide2.mp4
-        #file: C:/Users/duffb/OneDrive/Documents/Python Envs/PinBallWW2/Machine/modes/level1/videos/level1_slide2.mp4
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level1/videos/level1_slide2.mp4
 
-widgets:
-    scoreTxtWidget:
-         type: text #Score NUMBER
-         text: (score)
-         font_name: charlie
-         color: black
-         number_grouping: true
-         min_digits: 1
-         font_size: 150
-         x: 1000
-         y: 90
-    scoreBGWidget:
-         type: image #Start of background
-         image: score
-    locationBlip:
-         type: image
-         image: blip
-         animations:
-            pre_show_slide:
-               - property: opacity
-                 value: 0
-                 duration: 0.5s
-               - property: opacity
-                 value: 1
-                 duration: 2s
-                 repeat: true
-    locationBG:
-         type: image
-         image: location
-    slide1Widget:
-         type: video
-         video: level1Slide1
-         height: 1080
-         width: 1920
-         end_behavior: loop
-    slide2Widget:
-         type: video
-         video: level1Slide2
-         height: 1080
-         width: 1920
-         end_behavior: loop
-
+event_player:
+    mode_level1_started:
+        - l1_scoreReq_Begin
+    player_score{current_player.score>=100000}: 
+        - l1_scoreReq_Complete
+        - dive_callout_Begin
+    s_dive_hold_active{current_player.score>=100000}:
+        - dive_callout_Done
+    dive_callout_Done:
+        - dive_callout_Ended
+    dive_detection_done:
+        - dive_mode_Begin
+    dive_mode_Complete:
+        - mb_Begin
+        - mb_time_start
+    mb_Complete:
+        - level1_Complete
+        - score_check
+        
+variable_player:
+    mode_level1_started:
+        level:
+            action: set
+            int: 1
+        mb_time:
+            action: set
+            int: 30
+        mb_curTime:
+            action: set
+            int: 30
+        torpedos_goal:
+            action: set
+            int: 2
+    dive_mode_Begin:
+        dive_lvl:
+            action: set
+            int: 1

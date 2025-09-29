@@ -1,0 +1,151 @@
+#config_version=6
+
+mode:
+    start_events: rr_Begin
+    stop_events: rr_Complete
+    priority: 350
+
+images:
+    drink0:
+        load: preload
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/restrelax/images/rr_drink0
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/restrelax/images/rr_drink0.png
+    drink1:
+        load: preload
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/restrelax/images/rr_drink1
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/restrelax/images/rr_drink1.png
+    drink2:
+        load: preload
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/restrelax/images/rr_drink2
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/restrelax/images/rr_drink2.png
+    drink3:
+        load: preload
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/restrelax/images/rr_drink3
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/restrelax/images/rr_drink3.png
+    drink4:
+        load: preload
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/restrelax/images/rr_drink4
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/restrelax/images/rr_drink4.png
+    drink5:
+        load: preload
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/restrelax/images/rr_drink5
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/restrelax/images/rr_drink5.png
+
+videos:
+    restrelaxBG:
+        width: 1920
+        height: 1080
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/restrelax/videos/rrBG.mp4
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/restrelax/videos/rrBG.mp4
+
+widgets:
+    score_ui:
+      - type: image
+        image: score
+        z: 10
+      - type: text #Score NUMBER
+        text: (score)
+        font_name: charlie
+        color: black
+        number_grouping: true
+        min_digits: 1
+        font_size: 150
+        x: 1000
+        y: 90
+        z: 11
+    rr_drink0:
+        - type: image
+          image: drink0
+          z: 12
+    rr_drink1:
+        - type: image
+          image: drink1
+          z: 12
+    rr_drink2:
+        - type: image
+          image: drink2
+          z: 12
+    rr_drink3:
+        - type: image
+          image: drink3
+          z: 12
+    rr_drink4:
+        - type: image
+          image: drink4
+          z: 12
+    rr_drink5:
+        - type: image
+          image: drink5
+          z: 12
+
+slides:
+    restrelaxBackground:
+        - type: video
+          video: restrelaxBG
+          height: 1080
+          width: 1920
+          z: 0
+          end_behavior: loop
+
+event_player:
+  target_hit{current_player.curDrinks >= 5}: rr_Complete
+
+slide_player:
+    mode_restrelax_started: restrelaxBackground
+
+widget_player:
+    mode_restrelax_started:
+        timerTracker:
+            slide: restrelaxBackground
+            action: add
+        rr_drink0:
+            slide: restrelaxBackground
+            action: add
+        score_ui:
+            slide: restrelaxBackground
+            action: add
+    target_hit{current_player.curDrinks >= 1}:
+        rr_drink0:
+            slide: restrelaxBackground
+            action: remove
+        rr_drink1:
+            slide: restrelaxBackground
+            action: add
+    target_hit{current_player.curDrinks >= 2}:
+        rr_drink1:
+            slide: restrelaxBackground
+            action: remove
+        rr_drink2:
+            slide: restrelaxBackground
+            action: add
+    target_hit{current_player.curDrinks >= 3}:
+        rr_drink2:
+            slide: restrelaxBackground
+            action: remove
+        rr_drink3:
+            slide: restrelaxBackground
+            action: add
+    target_hit{current_player.curDrinks >= 4}:
+        rr_drink3:
+            slide: restrelaxBackground
+            action: remove
+        rr_drink4:
+            slide: restrelaxBackground
+            action: add
+    target_hit{current_player.curDrinks >= 5}:
+        rr_drink4:
+            slide: restrelaxBackground
+            action: remove
+        rr_drink5:
+            slide: restrelaxBackground
+            action: add
+
+variable_player:
+    rr_Begin:
+        cur_Drinks:
+            action: set
+            int: 0
+    target_hit:
+        cur_Drinks:
+            action: add
+            int: 1

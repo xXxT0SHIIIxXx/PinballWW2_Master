@@ -1,0 +1,96 @@
+#config_version=6
+
+mode:
+    start_events: mb_Begin
+    stop_events: mb_Complete
+    priority: 350
+
+images:
+    multiballTimerBG:
+        width: 1920
+        height: 1080
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/multiball/images/mbtimerbg.png
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/multiball/images/mbtimerbg.png
+
+videos:
+    multiballBG:
+        width: 1920
+        height: 1080
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/multiball/videos/mbBG.mp4
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/multiball/videos/mbBG.mp4
+
+widgets:
+    score_ui:
+      - type: image
+        image: score
+        z: 10
+      - type: text #Score NUMBER
+        text: (score)
+        font_name: charlie
+        color: black
+        number_grouping: true
+        min_digits: 1
+        font_size: 150
+        x: 1000
+        y: 90
+        z: 11
+    timerTracker:
+      - type: image
+        image: multiballTimerBG
+        z: 10
+      - type: text
+        text: (mb_curTime)
+        font_name: charlie
+        color: black
+        font_size: 150
+        x: center
+        y: center + 420
+        z: 13
+
+slides:
+    multiballBackground:
+        - type: video
+          video: multiballBG
+          height: 1080
+          width: 1920
+          z: 0
+          end_behavior: loop
+
+event_player:
+  timer_mb_timer_complete: mb_Complete
+
+slide_player:
+    mode_multiball_started: multiballBackground
+
+widget_player:
+    mode_multiball_started:
+        timerTracker:
+            slide: multiballBackground
+            action: add
+        score_ui:
+            slide: multiballBackground
+            action: add
+
+multiballs:
+    main_mb:
+        ball_count: 4
+        start_events: mb_Begin
+        stop_events: mb_Complete
+        shoot_again: 3s
+
+timers:
+    mb_timer:
+        start_value: 0
+        end_value: current_player.mb_time
+        tick_interval: 1s
+        control_events:
+            - action: start
+              event: mb_time_start
+            - action: stop
+              event: mb_Complete
+
+variable_player:
+    timer_mb_timer_tick:
+        mb_curTime:
+            action: add
+            int: -1
