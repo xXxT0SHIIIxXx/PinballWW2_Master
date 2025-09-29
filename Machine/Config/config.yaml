@@ -570,7 +570,9 @@ coil_player:
         c_upper_dive_hold:
             action: enable
             hold_power: .2
-
+    mode_dive_stopped:
+        c_upper_dive_hold:
+            action: disable
 player_vars:
     score:
         value_type: int
