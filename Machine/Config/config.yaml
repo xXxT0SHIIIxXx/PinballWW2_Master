@@ -134,8 +134,6 @@ coils:
         number: 1616-3
     c_upper_dive_hold:
         number: 1616-4
-        default_hold_power: .2
-        allow_enable: true
     c_upper_slingshot:
         number: 1616-5
         default_pulse_ms: 15
@@ -566,13 +564,9 @@ event_player:
 coil_player:
     cmd_eject_dive_ball:
         c_dive_launch: pulse
-    s_dive_hold_active:
+    cmd_release_upper_ball:
         c_upper_dive_hold:
-            action: enable
-            hold_power: .2
-    mode_dive_stopped:
-        c_upper_dive_hold:
-            action: disable
+            action: pulse
 player_vars:
     score:
         value_type: int
