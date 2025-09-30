@@ -551,7 +551,7 @@ event_player:
         - cmd_eject_dive_ball
    torpedos_Complete:
         - cmd_dive_flippers_disable
-   mode_dive_ended:
+   mode_dive_stopped:
         - cmd_upper_flippers_enable
         - cmd_release_upper_ball
    tilt:
