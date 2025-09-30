@@ -20,6 +20,14 @@ videos:
         #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/multiball/videos/mbBG.mp4
 
 widgets:
+    info_panel:
+      - type: image
+        image: infoPanel
+        z: 30
+      - type: text
+        text: (cur_info)
+        style: info_style,info_xy
+        z: 31
     score_ui:
       - type: text #Score NUMBER
         text: (score)
@@ -80,6 +88,9 @@ widget_player:
         score_ui:
             slide: multiballBackground
             action: add
+        info_panel:
+            slide: multiballBackground
+            action: add
 
 multiballs:
     main_mb:
@@ -104,3 +115,11 @@ variable_player:
         mb_curTime:
             action: add
             int: -1
+    mode_multiball_started:
+        cur_info:
+            action: set
+            string: "SCORE POINTS\nTO WIN\nTHE BATTLE!"
+    mode_multiball_stopped:
+        is_mb:
+            action: set
+            int: 0

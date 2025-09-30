@@ -114,35 +114,35 @@ widget_player:
         score_ui:
             slide: restrelaxBackground
             action: add
-    target_hit{current_player.curDrinks >= 1}:
+    target_hit{current_player.curDrinks >= 0}:
         rr_drink0:
             slide: restrelaxBackground
             action: remove
         rr_drink1:
             slide: restrelaxBackground
             action: add
-    target_hit{current_player.curDrinks >= 2}:
+    target_hit{current_player.curDrinks >= 1}:
         rr_drink1:
             slide: restrelaxBackground
             action: remove
         rr_drink2:
             slide: restrelaxBackground
             action: add
-    target_hit{current_player.curDrinks >= 3}:
+    target_hit{current_player.curDrinks >= 2}:
         rr_drink2:
             slide: restrelaxBackground
             action: remove
         rr_drink3:
             slide: restrelaxBackground
             action: add
-    target_hit{current_player.curDrinks >= 4}:
+    target_hit{current_player.curDrinks >= 3}:
         rr_drink3:
             slide: restrelaxBackground
             action: remove
         rr_drink4:
             slide: restrelaxBackground
             action: add
-    target_hit{current_player.curDrinks >= 5}:
+    target_hit{current_player.curDrinks >= 4}:
         rr_drink4:
             slide: restrelaxBackground
             action: remove
@@ -159,3 +159,7 @@ variable_player:
         cur_Drinks:
             action: add
             int: 1
+    mode_restrelax_stopped:
+        is_rr:
+            action: add
+            int: 0

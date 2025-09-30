@@ -4,6 +4,13 @@
   slides:
       locationSlide:
         widgets:
+        - type: image
+          image: infoPanel
+          z: 30
+        - type: text
+          text: (cur_info)
+          style: info_style,info_xy
+          z: 31
         - type: text #Score NUMBER
           text: (score)
           font_name: charlie
@@ -45,6 +52,13 @@
   slides:
       slide1:
         widgets:
+        - type: image
+          image: infoPanel
+          z: 30
+        - type: text
+          text: (cur_info)
+          style: info_style,info_xy
+          z: 31
         - type: text #Score NUMBER
           text: (score)
           font_name: charlie
@@ -81,6 +95,13 @@
   slides:
       slide2:
         widgets:
+        - type: image
+          image: infoPanel
+          z: 30
+        - type: text
+          text: (cur_info)
+          style: info_style,info_xy
+          z: 31
         - type: text #Score NUMBER
           text: (score)
           font_name: charlie

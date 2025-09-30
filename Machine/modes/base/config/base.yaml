@@ -3,12 +3,6 @@
 mode:
     start_events: ball_started
     priority: 100  #(100 - 1,000,000)
-  
-images:
-    infoPanel:
-        load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/base/images/infopanel.png
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/base/images/infopanel.png
 
 event_player:
     mode_base_started{current_player.level==0}: level1_Begin
@@ -17,7 +11,6 @@ event_player:
     mode_base_started{current_player.level==3}: level3_Begin
     level1_Complete: level2_Begin
     level2_Complete: level3_Begin
-    s_lowerTargets_active{dive_mode_Begin}: torpedo_hit
 
 timers:
     dive_detect:
@@ -26,8 +19,10 @@ timers:
         tick_interval: 1s
         control_events:
             - action: start
-              event: s_dive_hold_active
+              event: dive_callout_Done
             - action: stop
+              event: dive_detection_done
+            - action: reset
               event: dive_detection_done
 
 variable_player:

@@ -37,10 +37,10 @@ videos:
 event_player:
     mode_level1_started:
         - l1_scoreReq_Begin
-    player_score{current_player.score>=100000}: 
+    player_score{current_player.score>=100000 and current_player.is_dive == 0}: 
         - l1_scoreReq_Complete
         - dive_callout_Begin
-    s_dive_hold_active{current_player.score>=100000}:
+    s_dive_hold_active{current_player.score>=100000 and current_player.is_mb == 0 and current_player.is_rr == 0}:
         - dive_callout_Done
     dive_callout_Done:
         - dive_callout_Ended
@@ -52,7 +52,7 @@ event_player:
     mb_Complete:
         - level1_Complete
         - score_check
-        
+
 variable_player:
     mode_level1_started:
         level:
@@ -67,7 +67,22 @@ variable_player:
         torpedos_goal:
             action: set
             int: 2
+    l1_scoreReq_Begin:
+        cur_info:
+            action: set
+            string: "SCORE\n100K POINTS\nTO ADVANCE!"
+    dive_callout_Begin:
+        cur_info:
+            action: set
+            string: "GO\nDIVE\nSOLDIER!"
     dive_mode_Begin:
         dive_lvl:
+            action: set
+            int: 1
+        is_dive:
+            action: set
+            int: 1
+    mode_multiball_started:
+        is_mb:
             action: set
             int: 1

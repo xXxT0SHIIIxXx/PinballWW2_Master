@@ -97,6 +97,14 @@ slide_player:
             expire: 5s
 
 widgets:
+    info_panel:
+      - type: image
+        image: infoPanel
+        z: 30
+      - type: text
+        text: (cur_info)
+        style: info_style,info_xy
+        z: 31
     score_ui:
       - type: image
         image: score
@@ -146,6 +154,10 @@ widgets:
     
 
 widget_player:
+    mode_dive_started:
+        info_panel:
+            slide: diveIdle
+            action: add
     mode_dive_started{current_player.dive_lvl == 1}:
         lvl1_ui:
             slide: diveIdle
@@ -234,7 +246,19 @@ variable_player:
         torpedo_hits:
             action: set
             int: 0
+    mode_dive_started{current_player.dive_lvl==1 and current_player.is_dive == 1}:
+        cur_info:
+            action: set
+            string: "HIT 2\nSUCCESSFUL\nTORPEDOS\nON ENEMY SHIP\nTO ADVANCE!"
+    mode_dive_started{current_player.dive_lvl==2 and current_player.is_dive == 1}:
+        cur_info:
+            action: set
+            string: "HIT 4\nSUCCESSFUL\nTORPEDOS\nON ENEMY SHIP\nTO ADVANCE!"
     torpedo_hit:
         torpedo_hits:
             action: add
             int: 1
+    mode_dive_stopped:
+        is_dive:
+            action: set
+            int: 0

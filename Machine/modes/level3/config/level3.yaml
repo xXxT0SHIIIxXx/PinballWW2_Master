@@ -38,7 +38,7 @@ videos:
 event_player:
     mode_level3_started:
         - l3_scoreReq_Begin
-    player_score{current_player.score>=300000}: 
+    player_score{current_player.score>=300000 and current_player.is_rr == 0}: 
         - l3_scoreReq_complete
         - rr_Begin
     rr_Complete:
@@ -61,3 +61,11 @@ variable_player:
         mb_curTime:
             action: set
             int: 20
+    l3_scoreReq_Begin:
+        cur_info:
+            action: set
+            string: "SCORE\n300K POINTS\nTO ADVANCE!"
+    mode_restrelax_started:
+        is_rr:
+            action: set
+            int: 1

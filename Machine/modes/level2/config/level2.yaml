@@ -37,13 +37,13 @@ videos:
 event_player:
     mode_level2_started:
         - storm_beach_callout_Begin
-    beach_Stormed:
+    beach_Stormed{current_player.level == 2}:
         - pill_box_callout_Begin
-    s_pillbox_active:
+    s_pillbox_active{current_player.level == 2}:
         - pill_box_done
-    pill_box_done:
+    pill_box_done{current_player.level == 2}:
         - dive_callout_Begin
-    s_dive_hold_active{current_player.level==2}:
+    s_dive_hold_active{current_player.level==2 and current_player.is_mb == 0 and current_player.is_rr == 0}:
         - dive_callout_Done
     dive_callout_Done:
         - dive_callout_Ended
@@ -71,7 +71,26 @@ variable_player:
         torpedos_goal:
             action: set
             int: 4
+    storm_beach_callout_Begin:
+        cur_info:
+            action: set
+            string: "STORM\nTHE BEACH\nTO ADVANCE!"
+    pill_box_callout_Begin:
+        cur_info:
+            action: set
+            string: "DESTROY\nTHE PILLBOX\nTO ADVANCE!"
+    dive_callout_Begin:
+        cur_info:
+            action: set
+            string: "GO\nDIVE\nSOLDIER!"
     dive_mode_Begin:
         dive_lvl:
             action: set
             int: 2
+        is_dive:
+            action: set
+            int: 1
+    mode_multiball_started:
+        is_mb:
+            action: set
+            int: 1
