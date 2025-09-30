@@ -565,8 +565,7 @@ coil_player:
     cmd_eject_dive_ball:
         c_dive_launch: pulse
     cmd_release_upper_ball:
-        c_upper_dive_hold:
-            action: pulse
+        c_upper_dive_hold: pulse
 player_vars:
     score:
         value_type: int

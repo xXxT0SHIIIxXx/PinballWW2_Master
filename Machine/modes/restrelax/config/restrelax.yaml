@@ -40,9 +40,6 @@ videos:
 
 widgets:
     score_ui:
-      - type: image
-        image: score
-        z: 10
       - type: text #Score NUMBER
         text: (score)
         font_name: charlie
@@ -53,6 +50,19 @@ widgets:
         x: 1000
         y: 90
         z: 11
+      - type: text #multiplier NUMBER
+        text: (multiplier)X
+        font_name: charlie
+        color: yellow
+        number_grouping: true
+        min_digits: 1
+        font_size: 130
+        x: 1700
+        y: 75
+        z: 12
+      - type: image #Start of background
+        image: score
+        z: 10
     rr_drink0:
         - type: image
           image: drink0
