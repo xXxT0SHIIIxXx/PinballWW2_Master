@@ -8,27 +8,27 @@ mode:
 images:
     drink0:
         load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/restrelax/images/rr_drink0
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/restrelax/images/rr_drink0.png
         #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/restrelax/images/rr_drink0.png
     drink1:
         load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/restrelax/images/rr_drink1
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/restrelax/images/rr_drink1.png
         #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/restrelax/images/rr_drink1.png
     drink2:
         load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/restrelax/images/rr_drink2
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/restrelax/images/rr_drink2.png
         #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/restrelax/images/rr_drink2.png
     drink3:
         load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/restrelax/images/rr_drink3
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/restrelax/images/rr_drink3.png
         #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/restrelax/images/rr_drink3.png
     drink4:
         load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/restrelax/images/rr_drink4
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/restrelax/images/rr_drink4.png
         #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/restrelax/images/rr_drink4.png
     drink5:
         load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/restrelax/images/rr_drink5
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/restrelax/images/rr_drink5.png
         #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/restrelax/images/rr_drink5.png
 
 videos:
