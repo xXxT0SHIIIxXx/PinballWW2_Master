@@ -251,7 +251,7 @@ machine:
     balls_installed: 4
 
 game:
-  balls_per_game: 1
+  balls_per_game: 3
 
 flippers:
     left_flipper_upper:
