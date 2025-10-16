@@ -53,6 +53,51 @@ event_player:
         - level1_Complete
         - score_check
 
+widgets:
+    ball_1_UI:
+        - type: image
+          image: ball_1
+          z: 999
+    ball_2_UI:
+        - type: image
+          image: ball_2
+          z: 999
+    ball_3_UI:
+        - type: image
+          image: ball_3
+          z: 999
+
+widget_player:
+    slide_locationSlide_created{current_player.ball==1}:
+        ball_1_UI:
+            slide: locationSlide
+    slide_locationSlide_created{current_player.ball==2}:
+        ball_2_UI:
+            slide: locationSlide
+    slide_locationSlide_created{current_player.ball==3}:
+        ball_3_UI:
+            slide: locationSlide
+    slide_slide1_created{current_player.ball==1}:
+        ball_1_UI:
+            slide: slide1
+    slide_slide1_created{current_player.ball==2}:
+        ball_2_UI:
+            slide: slide1
+    slide_slide1_created{current_player.ball==3}:
+        ball_3_UI:
+            slide: slide1
+    slide_slide2_created{current_player.ball==1}:
+        ball_1_UI:
+            slide: slide2
+    slide_slide2_created{current_player.ball==2}:
+        ball_2_UI:
+            slide: slide2
+    slide_slide2_created{current_player.ball==3}:
+        ball_3_UI:
+            slide: slide2
+          
+
+
 variable_player:
     mode_level1_started:
         level:

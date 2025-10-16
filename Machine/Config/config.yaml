@@ -547,6 +547,19 @@ images:
         load: preload
         file: /home/wicky567/PinballWW2_Master/Machine/modes/base/images/infopanel.png
         #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/base/images/infopanel.png
+    ball_1:
+        load: preload
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/base/images/ball1.png
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/base/images/ball1.png
+    ball_2:
+        load: preload
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/base/images/ball2.png
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/base/images/ball2.png
+    ball_3:
+        load: preload
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/base/images/ball3.png
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/base/images/ball3.png
+
 
 event_player:
    mode_attract_started:
