@@ -347,6 +347,17 @@ ball_devices:
         eject_timeouts: 500ms
         #debug: true
 
+ball_saves:
+  default:
+    active_time: 13s
+    hurry_up_time: 2s
+    grace_period: 2s
+    enable_events: mode_base_started
+    timer_start_events: balldevice_bd_plunger_lane_ball_eject_success
+    auto_launch: true
+    balls_to_save: 1
+    #debug: true
+
 multiballs:
     mb_MultiBall:
         ball_count: 4
@@ -407,6 +418,22 @@ widget_styles:
         y: center - 289
   
 widgets:
+    uncle_sam_widget:
+        - type: image
+          image: uncle_sam
+          z: 10
+          expire: 5s
+          animations:
+            add_to_slide:
+              - property: opacity
+                value: 0
+                duration: 1s
+                easing: in_out_quint
+              - property: opacity
+                value: 1
+                duration: 1s
+                repeat: true
+                easing: in_out_quint
     playerscore:
         - type: text
           text: (player_name)
@@ -508,6 +535,10 @@ widgets:
           z: 10
 
 
+widget_player:
+    ball_save_default_saving_ball: uncle_sam_widget
+        
+
 slides:
   welcome_slide:
     widgets:
@@ -559,6 +590,10 @@ images:
         load: preload
         file: /home/wicky567/PinballWW2_Master/Machine/modes/base/images/ball3.png
         #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/base/images/ball3.png
+    uncle_sam:
+        load: preload
+        file: /home/wicky567/PinballWW2_Master/Machine/modes/base/images/unclesam.png
+        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/base/images/unclesam.png
 
 
 event_player:
