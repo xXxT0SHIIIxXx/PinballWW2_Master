@@ -9,24 +9,20 @@ images:
     credits:
         load: preload
         file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/images/Credits.png
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/attract/images/Credits.png
 
 videos:
     mainmenu:
         width: 1920
         height: 1080
         file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/videos/MainMenu.mp4
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/attract/videos/MainMenu.mp4
     lastscore:
         width: 1920
         height: 1080
         file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/videos/LastScores.mp4
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/attract/videos/LastScores.mp4
     highscore:
         width: 1920
         height: 1080
         file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/videos/HighScores.mp4
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/attract/videos/HighScores.mp4
 
 assets:
     sounds:
@@ -36,4 +32,3 @@ assets:
             track: music
         main:
             file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/sounds/music/main.wav
-            #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/attract/sounds/music/main.wav

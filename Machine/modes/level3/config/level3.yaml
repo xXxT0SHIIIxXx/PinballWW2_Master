@@ -12,27 +12,24 @@ images:
     location3:
         load: preload
         file: /home/wicky567/PinballWW2_Master/Machine/modes/level3/images/level3_location.png
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level3/images/level3_location.png
     blip3:
         load: preload
         file: /home/wicky567/PinballWW2_Master/Machine/modes/level3/images/level3_blip.png
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level3/images/level3_blip.png
     score3:
         load: preload
         file: /home/wicky567/PinballWW2_Master/Machine/modes/level3/images/score_overlay.png
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level3/images/score_overlay.png
 
 videos:
     level3Slide1:
         width: 1920
         height: 1080
         file: /home/wicky567/PinballWW2_Master/Machine/modes/level3/videos/level3_slide1.mp4
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level3/videos/level3_slide1.mp4
+ 
     level3Slide2:
         width: 1920
         height: 1080
         file: /home/wicky567/PinballWW2_Master/Machine/modes/level3/videos/level3_slide2.mp4
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level3/videos/level3_slide2.mp4
+ 
 
 
 event_player:
@@ -61,11 +58,18 @@ variable_player:
         mb_curTime:
             action: set
             int: 20
+        is_mb:
+            action: set
+            int: 0
     l3_scoreReq_Begin:
         cur_info:
             action: set
             string: "SCORE\n300K POINTS\nTO ADVANCE!"
     mode_restrelax_started:
         is_rr:
+            action: set
+            int: 1
+    mode_multiball_started:
+        is_mb:
             action: set
             int: 1

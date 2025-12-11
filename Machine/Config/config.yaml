@@ -44,7 +44,9 @@ switches:
     s_Lane1: #Left side entry to top lane on lower playfield
         number: 3208-15
         tags: playfield_active
-    s_right_slingshot: #1 million point target
+    s_Lt_slingshot: #Left Slingshot Switch
+        number: 3208-16
+    s_Rt_slingshot: #Right Slingshot Switch
         number: 3208-17
     s_plunger_lane: # Lets MPF know a ball is readt for launching
         number: 3208-18
@@ -72,6 +74,8 @@ switches:
         number: 3208-30
         tags: tilt_warning
 #1616 switches
+    s_beach:
+        number: 1616-4
     s_pillbox:
         number: 1616-5
     s_bonus3:  #Drop target 3 // Upgrade for player ==
@@ -114,7 +118,7 @@ coils:
         default_pulse_ms: 20
         platform_settings:
             pwm2_ms: 20
-    c_right_slingshot: #RIGHT SLING SHOT
+    c_Rt_slingshot: #RIGHT SLING SHOT
         number: 3208-4
         default_pulse_ms: 15
     c_RtFlipper_top_main: #RIGHT FLIPPER TOP
@@ -227,7 +231,7 @@ keyboard:
     H:
         switch: s_millPtTarget
     B:
-        switch: s_right_slingshot
+        switch: s_beach
     T:
         switch: s_tilt_bob
     Z:
@@ -312,9 +316,12 @@ autofire_coils:
   ac_upper_slingshot:
     coil:  c_upper_slingshot
     switch: s_upper_slingshot
+  ac_left_slingshot:
+    coil: c_Lt_slingshot
+    switch: s_Lt_slingshot
   ac_right_slingshot:
-    coil: c_right_slingshot
-    switch: s_right_slingshot
+    coil: c_Rt_slingshot
+    switch: s_Rt_slingshot
   ac_popbumper_1:
     coil: c_popbumper_1
     switch: s_popbumper_1
@@ -573,27 +580,21 @@ images:
     highscore_initials:
         load: preload
         file: /home/wicky567/PinballWW2_Master/Machine/modes/high_score/images/Highscore_initials.png
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/high_score/images/Highscore_initials.png
     infoPanel:
         load: preload
         file: /home/wicky567/PinballWW2_Master/Machine/modes/base/images/infopanel.png
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/base/images/infopanel.png
     ball_1:
         load: preload
         file: /home/wicky567/PinballWW2_Master/Machine/modes/base/images/ball1.png
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/base/images/ball1.png
     ball_2:
         load: preload
         file: /home/wicky567/PinballWW2_Master/Machine/modes/base/images/ball2.png
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/base/images/ball2.png
     ball_3:
         load: preload
         file: /home/wicky567/PinballWW2_Master/Machine/modes/base/images/ball3.png
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/base/images/ball3.png
     uncle_sam:
         load: preload
         file: /home/wicky567/PinballWW2_Master/Machine/modes/base/images/unclesam.png
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/base/images/unclesam.png
 
 
 event_player:

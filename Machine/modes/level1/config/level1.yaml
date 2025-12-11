@@ -12,27 +12,22 @@ images:
     location:
         load: preload
         file: /home/wicky567/PinballWW2_Master/Machine/modes/level1/images/level1_location.png
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level1/images/level1_location.png
     blip:
         load: preload
         file: /home/wicky567/PinballWW2_Master/Machine/modes/level1/images/level1_blip.png
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level1/images/level1_blip.png
     score:
         load: preload
         file: /home/wicky567/PinballWW2_Master/Machine/modes/level1/images/score_overlay.png
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level1/images/score_overlay.png
 
 videos:
     level1Slide1:
         width: 1920
         height: 1080
         file: /home/wicky567/PinballWW2_Master/Machine/modes/level1/videos/level1_slide1.mp4
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level1/videos/level1_slide1.mp4
     level1Slide2:
         width: 1920
         height: 1080
         file: /home/wicky567/PinballWW2_Master/Machine/modes/level1/videos/level1_slide2.mp4
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level1/videos/level1_slide2.mp4
 
 event_player:
     mode_level1_started:

@@ -12,31 +12,28 @@ images:
     location2:
         load: preload
         file: /home/wicky567/PinballWW2_Master/Machine/modes/level2/images/level2_location.png
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level2/images/level2_location.png
     blip2:
         load: preload
         file: /home/wicky567/PinballWW2_Master/Machine/modes/level2/images/level2_blip.png
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level2/images/level2_blip.png
     score2:
         load: preload
         file: /home/wicky567/PinballWW2_Master/Machine/modes/level2/images/score_overlay.png
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level2/images/score_overlay.png
 
 videos:
     level2Slide1:
         width: 1920
         height: 1080
         file: /home/wicky567/PinballWW2_Master/Machine/modes/level2/videos/level2_slide1.mp4
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level2/videos/level2_slide1.mp4
     level2Slide2:
         width: 1920
         height: 1080
         file: /home/wicky567/PinballWW2_Master/Machine/modes/level2/videos/level2_slide2.mp4
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/level2/videos/level2_slide2.mp4
 
 event_player:
     mode_level2_started:
         - storm_beach_callout_Begin
+    s_beach_active{current_player.level == 2}:
+        - beach_Stormed
     beach_Stormed{current_player.level == 2}:
         - pill_box_callout_Begin
     s_pillbox_active{current_player.level == 2}:
@@ -65,6 +62,9 @@ variable_player:
         mb_time:
             action: set
             int: 25
+        is_mb:
+            action: set
+            int: 0
         mb_curTime:
             action: set
             int: 25

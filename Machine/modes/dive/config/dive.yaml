@@ -10,54 +10,44 @@ images:
         width: 1920
         height: 1080
         file: /home/wicky567/PinballWW2_Master/Machine/modes/dive/images/dive_lvl1_hit0.png
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/dive/images/dive_lvl1_hit0.png
     lvl1_hit1:
         width: 1920
         height: 1080
         file: /home/wicky567/PinballWW2_Master/Machine/modes/dive/images/dive_lvl1_hit1.png
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/dive/images/dive_lvl1_hit1.png
     lvl1_hit2:
         width: 1920
         height: 1080
         file: /home/wicky567/PinballWW2_Master/Machine/modes/dive/images/dive_lvl1_hit2.png
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/dive/images/dive_lvl1_hit2.png
     lvl2_hit0:
         width: 1920
         height: 1080
         file: /home/wicky567/PinballWW2_Master/Machine/modes/dive/images/dive_lvl2_hit0.png
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/dive/images/dive_lvl2_hit0.png
     lvl2_hit1:
         width: 1920
         height: 1080
         file: /home/wicky567/PinballWW2_Master/Machine/modes/dive/images/dive_lvl2_hit1.png
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/dive/images/dive_lvl2_hit1.png
     lvl2_hit2:
         width: 1920
         height: 1080
         file: /home/wicky567/PinballWW2_Master/Machine/modes/dive/images/dive_lvl2_hit2.png
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/dive/images/dive_lvl2_hit2.png
     lvl2_hit3:
         width: 1920
         height: 1080
         file: /home/wicky567/PinballWW2_Master/Machine/modes/dive/images/dive_lvl2_hit3.png
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/dive/images/dive_lvl2_hit3.png
     lvl2_hit4:
         width: 1920
         height: 1080
         file: /home/wicky567/PinballWW2_Master/Machine/modes/dive/images/dive_lvl2_hit4.png
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/dive/images/dive_lvl2_hit4.png
 
 videos:
     diveBG:
         width: 1920
         height: 1080   
         file: /home/wicky567/PinballWW2_Master/Machine/modes/dive/videos/diveBG.mp4
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/dive/videos/diveBG.mp4
     diveComplete:
         width: 1920
         height: 1080
         file: /home/wicky567/PinballWW2_Master/Machine/modes/dive/videos/DiveComplete.mp4
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/dive/videos/DiveComplete.mp4
 
 timers:
     dive_delay_timer:

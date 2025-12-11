@@ -10,14 +10,11 @@ images:
         width: 1920
         height: 1080
         file: /home/wicky567/PinballWW2_Master/Machine/modes/multiball/images/mbtimerbg.png
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/multiball/images/mbtimerbg.png
-
 videos:
     multiballBG:
         width: 1920
         height: 1080
         file: /home/wicky567/PinballWW2_Master/Machine/modes/multiball/videos/mbBG.mp4
-        #file: C:/Users/duffb/Documents/Python Envs/PinBallWW2/Machine/modes/multiball/videos/mbBG.mp4
 
 widgets:
     info_panel:
