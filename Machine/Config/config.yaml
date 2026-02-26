@@ -17,6 +17,10 @@ fast:
 
 switches:
 #3208 switches
+    s_negaPoints: #takes away __ amount of points
+        number: 3208-4
+    s_drinkTargets: #used in the RR game mode
+        number: 3208-5
     s_trough_jam: #used to make sure ball leaves ball trough and enters plunger/launcher lane
         number: 3208-6
         type: 'NC'
