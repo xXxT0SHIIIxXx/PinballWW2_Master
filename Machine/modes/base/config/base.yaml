@@ -26,6 +26,10 @@ timers:
               event: dive_detection_done
 
 variable_player:
+    s_drinkTargets_active:
+        score: 5000
+    s_negaPoints_active:
+        score: -2000
     s_lowerTargets_active:
         score: 1250 * current_player.multiplier
     s_right_slingshot_active:

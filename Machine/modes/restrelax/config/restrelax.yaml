@@ -59,26 +59,32 @@ widgets:
     rr_drink0:
         - type: image
           image: drink0
+          y: -40
           z: 12
     rr_drink1:
         - type: image
           image: drink1
+          y: -40
           z: 12
     rr_drink2:
         - type: image
           image: drink2
+          y: -40
           z: 12
     rr_drink3:
         - type: image
           image: drink3
+          y: -40
           z: 12
     rr_drink4:
         - type: image
           image: drink4
+          y: -40
           z: 12
     rr_drink5:
         - type: image
           image: drink5
+          y: -40
           z: 12
 
 slides:
@@ -91,7 +97,13 @@ slides:
           end_behavior: loop
 
 event_player:
-  target_hit{current_player.curDrinks >= 5}: rr_Complete
+  s_drinkTargets_active: target_hit
+  target_hit{current_player.cur_Drinks == 0}: drink1
+  target_hit{current_player.cur_Drinks == 1}: drink2
+  target_hit{current_player.cur_Drinks == 2}: drink3
+  target_hit{current_player.cur_Drinks == 3}: drink4
+  target_hit{current_player.cur_Drinks == 4}: drink5
+  target_hit{current_player.cur_Drinks >= 4}: rr_Complete
 
 slide_player:
     mode_restrelax_started: restrelaxBackground
@@ -107,35 +119,35 @@ widget_player:
         score_ui:
             slide: restrelaxBackground
             action: add
-    target_hit{current_player.curDrinks >= 0}:
+    drink1:
         rr_drink0:
             slide: restrelaxBackground
             action: remove
         rr_drink1:
             slide: restrelaxBackground
             action: add
-    target_hit{current_player.curDrinks >= 1}:
+    drink2:
         rr_drink1:
             slide: restrelaxBackground
             action: remove
         rr_drink2:
             slide: restrelaxBackground
             action: add
-    target_hit{current_player.curDrinks >= 2}:
+    drink3:
         rr_drink2:
             slide: restrelaxBackground
             action: remove
         rr_drink3:
             slide: restrelaxBackground
             action: add
-    target_hit{current_player.curDrinks >= 3}:
+    drink4:
         rr_drink3:
             slide: restrelaxBackground
             action: remove
         rr_drink4:
             slide: restrelaxBackground
             action: add
-    target_hit{current_player.curDrinks >= 4}:
+    drink5:
         rr_drink4:
             slide: restrelaxBackground
             action: remove

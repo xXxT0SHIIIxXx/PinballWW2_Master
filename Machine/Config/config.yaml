@@ -205,6 +205,8 @@ drop_target_banks:
 #            tags: playfieldLEDs
 
 keyboard:
+    D:
+        switch: s_drinkTargets
     Q:
         switch: s_left_flipper
     E:
