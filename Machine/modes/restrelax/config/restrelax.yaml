@@ -8,28 +8,28 @@ mode:
 images:
     drink0:
         load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/restrelax/images/rr_drink0.png
+        file: modes/restrelax/images/rr_drink0.png
     drink1:
         load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/restrelax/images/rr_drink1.png
+        file: modes/restrelax/images/rr_drink1.png
     drink2:
         load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/restrelax/images/rr_drink2.png
+        file: modes/restrelax/images/rr_drink2.png
     drink3:
         load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/restrelax/images/rr_drink3.png
+        file: modes/restrelax/images/rr_drink3.png
     drink4:
         load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/restrelax/images/rr_drink4.png
+        file: modes/restrelax/images/rr_drink4.png
     drink5:
         load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/restrelax/images/rr_drink5.png
+        file: modes/restrelax/images/rr_drink5.png
 
 videos:
     restrelaxBG:
         width: 1920
         height: 1080
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/restrelax/videos/rrBG.mp4
+        file: modes/restrelax/videos/rrBG.mp4
 
 widgets:
     score_ui:

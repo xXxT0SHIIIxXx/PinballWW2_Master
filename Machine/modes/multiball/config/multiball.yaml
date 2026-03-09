@@ -9,12 +9,12 @@ images:
     multiballTimerBG:
         width: 1920
         height: 1080
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/multiball/images/mbtimerbg.png
+        file: G:/Projects/Programming/Python/WW2Pinball/PinballWW2_Master/Machine/modes/multiball/images/mbtimerbg.png
 videos:
     multiballBG:
         width: 1920
         height: 1080
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/multiball/videos/mbBG.mp4
+        file: G:/Projects/Programming/Python/WW2Pinball/PinballWW2_Master/Machine/modes/multiball/videos/mbBG.mp4
 
 widgets:
     info_panel:

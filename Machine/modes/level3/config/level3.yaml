@@ -11,24 +11,24 @@ show_player:
 images:
     location3:
         load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/level3/images/level3_location.png
+        file: modes/level3/images/level3_location.png
     blip3:
         load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/level3/images/level3_blip.png
+        file: modes/level3/images/level3_blip.png
     score3:
         load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/level3/images/score_overlay.png
+        file: modes/level3/images/score_overlay.png
 
 videos:
     level3Slide1:
         width: 1920
         height: 1080
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/level3/videos/level3_slide1.mp4
+        file: modes/level3/videos/level3_slide1.mp4
  
     level3Slide2:
         width: 1920
         height: 1080
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/level3/videos/level3_slide2.mp4
+        file: modes/level3/videos/level3_slide2.mp4
  
 
 

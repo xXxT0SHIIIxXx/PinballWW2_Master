@@ -8,27 +8,18 @@ show_player:
 images:
     credits:
         load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/images/Credits.png
+        file: modes/attract/images/Credits.png
 
 videos:
     mainmenu:
         width: 1920
         height: 1080
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/videos/MainMenu.mp4
+        file: modes/attract/videos/MainMenu.mp4
     lastscore:
         width: 1920
         height: 1080
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/videos/LastScores.mp4
+        file: modes/attract/videos/LastScores.mp4
     highscore:
         width: 1920
         height: 1080
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/videos/HighScores.mp4
-
-assets:
-    sounds:
-        default:
-            load: on_demand
-        music:
-            track: music
-        main:
-            file: /home/wicky567/PinballWW2_Master/Machine/modes/attract/sounds/music/main.wav
+        file: modes/attract/videos/HighScores.mp4

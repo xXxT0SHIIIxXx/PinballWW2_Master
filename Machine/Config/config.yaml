@@ -570,38 +570,121 @@ sound_system:
     tracks:
         music:
             type: standard
-            simultaneous_sounds: 1
+            simultaneous_sounds: 2
             volume: 1
-            loop: true
+        sfx:
+            type: standard
+            simultaneous_sounds: 8
+            preload: true
+            volume: 0.5
+        voice:
+            type: standard
+            simultaneous_sounds: 1
+            volume: 0.7
 
 sound_player:
     mode_attract_started:
         main:
             action: play
+            loops: -1
+            fade_in: 0.5s
+            fade_out: 0.5s
     mode_attract_stopped:
         main:
             action: stop
+        mainLevel:
+            action: play
+            loops: -1
+            fade_in: 0.5s
+            fade_out: 0.5s
+    mode_high_score_started:
+        HighScoreMusic:
+            action: play
+            loops: -1
+            fade_in: 0.5s
+            fade_out: 0.5s
+    mode_high_score_stopped:
+        HighScoreMusic:
+            action: stop
+    mode_level1_stopped:
+        mainLevel:
+            action: stop
+    mode_level2_started:
+        mainLevel:
+            action: start
+    mode_level2_stopped:
+        mainLevel:
+            action: stop
+    mode_level3_started:
+        mainLevel:
+            action: start
+    mode_level3_stopped:
+        mainLevel:
+            action: stop
+
+    torpedo_hit:
+        torpedoExplosion:
+            action: play
+    target_hit:
+        drinkGotten:
+            action: play
+
+assets:
+  sounds:
+    default:
+      load: preload
+    music:
+      track: music
+    sfx:
+      track: sfx
+    voice:
+      track: voice
+
+sounds:
+    mainLevel:
+        file: sounds/music/levelMusic.wav
+        track: music
+        volume: 1
+        priority: 1
+        max_queue_time: 0
+    HighScoreMusic:
+        file: sounds/music/HighScoreMusic.mp3
+        track: music
+        volume: 1
+        max_queue_time: 0
+    main:
+        file: sounds/music/main.wav
+        track: music
+        volume: 1
+        max_queue_time: 0
+    torpedoExplosion:
+        track: music
+        file: sounds/sfx/torpedoExplosion.mp3
+        max_queue_time: 0
+    drinkGotten:
+        track: music
+        file: sounds/sfx/DrinkGot.wav
+        max_queue_time: 0
 
 images:
     highscore_initials:
         load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/high_score/images/Highscore_initials.png
+        file: modes/high_score/images/Highscore_initials.png
     infoPanel:
         load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/base/images/infopanel.png
+        file: modes/base/images/infopanel.png
     ball_1:
         load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/base/images/ball1.png
+        file: modes/base/images/ball1.png
     ball_2:
         load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/base/images/ball2.png
+        file: modes/base/images/ball2.png
     ball_3:
         load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/base/images/ball3.png
+        file: modes/base/images/ball3.png
     uncle_sam:
         load: preload
-        file: /home/wicky567/PinballWW2_Master/Machine/modes/base/images/unclesam.png
-
+        file: modes/base/images/unclesam.png
 
 event_player:
    mode_attract_started:
