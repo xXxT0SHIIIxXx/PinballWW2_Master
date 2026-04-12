@@ -36,7 +36,11 @@ event_player:
         - beach_Stormed
     beach_Stormed{current_player.level == 2}:
         - pill_box_callout_Begin
-    s_pillbox_active{current_player.level == 2}:
+    s_pillbox_targets_active{current_player.level == 2}:
+        - pillbox_target_hit
+    s_pillbox_targets_active{current_player.level == 2 and current_player.pillbox_target_hits == 2}:
+        - pillbox_opened
+    s_pillbox_active{current_player.level == 2 and current_player.pillbox_open == 1}:
         - pill_box_done
     pill_box_done{current_player.level == 2}:
         - dive_callout_Begin
@@ -78,7 +82,26 @@ variable_player:
     pill_box_callout_Begin:
         cur_info:
             action: set
-            string: "DESTROY\nTHE PILLBOX\nTO ADVANCE!"
+            string: "DESTROY\nTHE 3 PILLBOX\n TARGETS TO\n ADVANCE!"
+    pillbox_opened:
+        pillbox_open:
+            action: set
+            int: 1
+        cur_info:
+            action: set
+            string: "DESTROY\nTHE PILLBOX TO\n ADVANCE!"
+    pillbox_target_hit:
+        pillbox_target_hits:
+            action: add
+            int: 1
+    pillbox_target_hit{current_player.level == 2 and current_player.pillbox_target_hits == 1}:
+        cur_info:
+            action: set
+            string: "DESTROY\n 2 MORE PILLBOX\n TARGETS TO\n ADVANCE!"
+    pillbox_target_hit{current_player.level == 2 and current_player.pillbox_target_hits == 2}:
+        cur_info:
+            action: set
+            string: "DESTROY\n 1 MORE PILLBOX\n TARGETS TO\n ADVANCE!"
     dive_callout_Begin:
         cur_info:
             action: set

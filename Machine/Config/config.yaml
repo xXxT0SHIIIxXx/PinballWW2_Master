@@ -62,6 +62,9 @@ switches:
         number: 3208-21
     s_trough4: #Tracks The Forth and last ball in the trough. Should be up once first ball in ejected to plunger
         number: 3208-22
+    s_pillbox_targets:
+        number: 3208-23
+        tags: playfield_active
     s_launcher_button: #LAUNCH BUTTON
         number: 3208-24
         debounce: quick
@@ -611,19 +614,19 @@ sound_player:
             action: stop
     mode_level2_started:
         mainLevel:
-            action: start
+            action: play
     mode_level2_stopped:
         mainLevel:
             action: stop
     mode_level3_started:
         mainLevel:
-            action: start
+            action: play
     mode_level3_stopped:
         mainLevel:
             action: stop
 
     torpedo_hit:
-        torpedoExplosion:
+        dive_sounds:
             action: play
     target_hit:
         drinkGotten:
@@ -641,6 +644,7 @@ assets:
       track: voice
 
 sounds:
+ # GAME MODE MUSIC
     mainLevel:
         file: sounds/music/levelMusic.wav
         track: music
@@ -657,14 +661,103 @@ sounds:
         track: music
         volume: 1
         max_queue_time: 0
-    torpedoExplosion:
-        track: music
-        file: sounds/sfx/torpedoExplosion.mp3
+ # NORMAL SOUNDS
+    bomber:
+        track: sfx
+        file: sounds/sfx/norm_sounds/bomber.mp3
         max_queue_time: 0
+    chopper1:
+        track: sfx
+        file: sounds/sfx/norm_sounds/chopper1.mp3
+        max_queue_time: 0
+    chopper2:
+        track: sfx
+        file: sounds/sfx/norm_sounds/chopper2.mp3
+        max_queue_time: 0
+    explo2:
+        track: sfx
+        file: sounds/sfx/norm_sounds/explo2.mp3
+        max_queue_time: 0
+    explo3:
+        track: sfx
+        file: sounds/sfx/norm_sounds/explo3.mp3
+        max_queue_time: 0
+    explo4:
+        track: sfx
+        file: sounds/sfx/norm_sounds/explo4.mp3
+        max_queue_time: 0
+    explo5:
+        track: sfx
+        file: sounds/sfx/norm_sounds/explo5.mp3
+        max_queue_time: 0
+    machineGun1:
+        track: sfx
+        file: sounds/sfx/norm_sounds/machineGun1.mp3
+        max_queue_time: 0
+    machineGun2:
+        track: sfx
+        file: sounds/sfx/norm_sounds/machineGun2.mp3
+        max_queue_time: 0
+ # LARGE SOUNDS
+    largeExplo1:
+        track: sfx
+        file: sounds/sfx/larger_sounds/largeExplo1.mp3
+        max_queue_time: 0
+    largeExplo2:
+        track: sfx
+        file: sounds/sfx/larger_sounds/largeExplo2.mp3
+        max_queue_time: 0
+    largeExplo3:
+        track: sfx
+        file: sounds/sfx/larger_sounds/largeExplo3.mp3
+        max_queue_time: 0
+ # DIVE MODE SOUNDS
+    torpedoExplo1:
+        track: sfx
+        file: sounds/sfx/dive_sounds/torpedoExplo1.mp3
+        max_queue_time: 0
+    torpedoExplo2:
+        track: sfx
+        file: sounds/sfx/dive_sounds/torpedoExplo2.mp3
+        max_queue_time: 0
+    torpedoExplo3:
+        track: sfx
+        file: sounds/sfx/dive_sounds/torpedoExplo3.mp3
+        max_queue_time: 0
+ # DRINK MODE SOUNDS (R&R MODE)
     drinkGotten:
-        track: music
+        track: sfx
         file: sounds/sfx/DrinkGot.wav
         max_queue_time: 0
+
+sound_pools:
+  norm_sounds:
+    type: random
+    track: sfx
+    sounds:
+      - bomber
+      - chopper1
+      - chopper2
+      - explo2
+      - explo3
+      - explo4
+      - explo5
+      - machineGun1
+      - machineGun2
+  large_sounds:
+    type: random
+
+    sounds:
+      - largeExplo1
+      - largeExplo2
+      - largeExplo3
+  dive_sounds:
+    type: random
+
+    sounds:
+      - torpedoExplo1
+      - torpedoExplo2
+      - torpedoExplo3
 
 images:
     highscore_initials:
@@ -757,6 +850,12 @@ player_vars:
         value_type: int
         initial_value: 0
     cur_drinks:
+        value_type: int
+        initial_value: 0
+    pillbox_open:
+        value_type: int
+        initial_value: 0
+    pillbox_target_hits:
         value_type: int
         initial_value: 0
 
